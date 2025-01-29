@@ -12,8 +12,8 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Eva Perlay coaching, training",
-  description: "Szakmai partnert keresel új célok eléréséhez? Vezetői és HR tréningek, most ingyenes 30 perces konzultációval a sikeres indulásért.",
+  title: "Coreheed",
+  description: "Coreheed",
 };
 
 export default function RootLayout({ children }) {
