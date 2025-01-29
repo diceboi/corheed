@@ -5,7 +5,45 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --black: #191919;
+  --white:#f5f5f7;
+  --whiteblur:#f5f5f7c9;
+  --mint: #3fffba;
+  --green: #1c4847;
+  --greenhover: #112b2a4a;
+  --lightgreen: #dcffeb;
+  --yellow: #e3bc31;
+  --yellowhover: #ab8e25;
+  
+  --fs-xl: clamp(3.5rem, 12vw + 1rem, 8rem);
+  --fs-600: 2rem;
+  --fs-400: 1rem;
 }
+
+.text-poppins {
+  font-family: var(--poppins);
+}
+
+
+.swiper-button-next::after {
+  color: var(--dukeblue);
+}
+
+.swiper-button-prev::after {
+  color: var(--dukeblue);
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--vistablue)!important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--dukeblue)!important;
+}
+
+/*Carousel*/
+
+
 
 @media (prefers-color-scheme: dark) {
   :root {
