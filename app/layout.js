@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
         {/*<GoogleTagManager gtmId="GTM-M8R4S2LK" />*/}
         {/*<GoogleAnalytics gaId="G-PWVPSEM48X" />*/}
-          <body className={`${poppins.variable} text-poppins bg-[--white]`}>
+          <body className={`${poppins.variable} text-poppins bg-[--white] text-black`}>
             <ContextProvider>
             <Nav />
               {children}
