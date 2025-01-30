@@ -79,7 +79,7 @@ export default function GeneraciokInner() {
               </div>
             </div>
 
-            <InnerColorBox title={'Tapasztalatunk és megközelítésünk'} text={'Évek óta foglalkozunk többgenerációs csapatokkal, és programunk már számos vállalati környezetben elősegítette a generációk közeledését, egymásra hangolódását a munkahelyeken.'} bgcolor={'bg-[--white]'}>
+            <InnerColorBox title={'Tapasztalatunk és megközelítésünk'} titlecolor={'text-[--green]'} text={'Évek óta foglalkozunk többgenerációs csapatokkal, és programunk már számos vállalati környezetben elősegítette a generációk közeledését, egymásra hangolódását a munkahelyeken.'} bgcolor={'bg-[--white]'}>
             <div className='flex flex-col lg:gap-8 gap-4 bg-[--mint] p-4 rounded-2xl'>
                   <H3 classname={'text-center'}>Lépj kapcsolatba velünk, és fedezd fel, hogyan segíthetünk vállalatod generációs különbségeinek áthidalásában!</H3>
                   <MainNavButton link={'/ajanlatkeres'} text={'Ajánlatkérés'} classname={'self-center'} />

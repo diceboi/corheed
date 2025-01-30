@@ -5,6 +5,7 @@ import H3 from '../UI/Typo/H3'
 import WhiteTile from '../UI/WhiteTile'
 import SubTitle from '../UI/Typo/SubTitle'
 import H1 from '../UI/Typo/H1'
+import H2 from '../UI/Typo/H2'
 import Paragraph from '../UI/Typo/Paragraph'
 import MainNavButton from '../UI/Buttons/MainNavButton'
 import Carousel from '../UI/Carousel'
@@ -19,7 +20,7 @@ export default function Hid() {
 
         <div className='flex flex-col justify-evenly items-center lg:gap-8 gap-16' style={{ zIndex: 1 }}>
             <SubTitle>Missziónk</SubTitle>
-            <H1 classname={'text-center text-[--green]'}>Híd a korosztályok között - COREHEED</H1>
+            <H2 classname={'text-center text-[--green]'}>Híd a korosztályok között - COREHEED</H2>
             <Paragraph classname={'text-center lg:w-1/2 w-full'}>Folyamatosan átalakuló, változó világunk és a legújabb munkahelyi trendek újfajta kihívások elé állítják a vállalatokat. A mai üzleti környezet az első a munka világában, amely akár 5 különböző generáció együttműködését kívánja meg. Az elmúlt években a fiatal munkavállalói generáció újraírta a munkaerő megtartás, az elköteleződés és az értékteremtés fogalmát.</Paragraph>
             <div className='relative pt-40'>
                 <Image src={'/bridge.svg'} width={1280} height={500} alt='Híd' className='absolute top-0 -translate-x-1/2 left-1/2 min-w-[120vw]'/>

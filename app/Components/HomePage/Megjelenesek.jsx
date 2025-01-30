@@ -16,6 +16,7 @@ import "swiper/css/scrollbar";
 import SzolgaltatasokTile from "../UI/SzolgaltatasokTile";
 
 import { TbArrowLeft, TbArrowRight } from "react-icons/tb";
+import H2 from "../UI/Typo/H2";
 
 export default function Megjelenesek() {
   // ✅ Create a Swiper reference
@@ -28,7 +29,7 @@ export default function Megjelenesek() {
         
         {/* Header with Navigation Buttons */}
         <div className="flex lg:flex-row flex-col justify-between gap-4 items-baseline">
-          <H1 classname={"text-white"}>Itt találkozhattál velünk</H1>
+          <H2 classname={"text-white"}>Itt találkozhattál velünk</H2>
           <div className="flex flex-nowrap gap-2">
             <button
               onClick={() => swiperRef.current?.slidePrev()}
