@@ -1,9 +1,16 @@
+'use client';
+
+import { motion } from "framer-motion";
+
 export default function Paragraph({ classname, children }) {
   return (
-    <p
+    <motion.p
+      initial={{ opacity: 0}}
+      whileInView={{ opacity: 1}}
+      transition={{duration: 0.8, type: "easeIn", bounce: 0.4}}
       className={`text-[15px] leading-[23px] sm:text-[16px] sm:leading-[24px] md:text-[18px] md:leading-[26px] ${classname}`}
     >
       {children}
-    </p>
+    </motion.p>
   );
 }
