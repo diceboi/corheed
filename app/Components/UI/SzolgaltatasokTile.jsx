@@ -8,13 +8,13 @@ import { motion } from "framer-motion"
 export default function SzolgaltatasokTile({ image, title, link, titlecolor }) {
   return (
     <motion.div 
-    initial={{ opacity: 0, y: 10, scaleX:0.9, scaleY:0.9 }}
-    whileInView={{ opacity: 1, y: 0, scaleX:1, scaleY:1 }}
-    className='flex flex-col justify-between gap-4 w-full h-auto '
+    className='flex flex-col justify-between gap-4 w-full initial={{ opacity: 0, y: 10, scaleX:0.9, scaleY:0.9 }}
+    whileInView={{ opacity: 1, y: 0, scaleX:1, scaleY:1 }}h-auto '
     >
-      <div className='relative w-full h-[300px] rounded-xl overflow-hidden'>
+      <motion.div 
+      className='relative w-full h-[300px] rounded-xl overflow-hidden'>
         <Image src={image} fill alt="Coaching" style={{ objectFit: 'cover' }} />
-      </div>
+      </motion.div>
       <div className="flex lg:flex-row flex-col lg:justify-between lg:items-end gap-2">
         <H3 classname={`font-bold lg:max-w-8/12 max-w-full ${titlecolor}`}>{title}</H3>
         {link && (

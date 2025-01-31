@@ -24,6 +24,17 @@
   font-family: var(--poppins);
 }
 
+.text-inter {
+  font-family: var(--inter);
+}
+
+.text-geist-sans {
+  font-family: var(--font-geist-sans);
+}
+
+.text-geist-mono {
+  font-family: var(--font-geist-mono);
+}
 
 .swiper-button-next::after {
   color: var(--dukeblue);
@@ -56,4 +67,29 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--mint); 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--green); 
+  border-radius: 10px;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--greenhover); 
 }

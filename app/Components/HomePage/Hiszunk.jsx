@@ -16,20 +16,20 @@ export default function Hiszunk() {
             <H2 classname={'text-center text-[--green]'}>Amiben <span className="text-[--yellow] uppercase">hiszünk</span></H2>
             <div className="flex lg:flex-row flex-col items-start gap-8 p-8 bg-[--lightgreen] lg:rounded-full rounded-3xl">
               <div className="flex lg:flex-row flex-row-reverse gap-8">
-                <p className='lg:text-3xl text-xl italic text-[--green] font-light'>Párbeszéd</p>
-                <Image src="/leaf3.svg" width={15} height={15} alt="Leaf Icon" className="opacity-80"/>
+                <p className='lg:text-3xl text-xl italic text-[--green] font-semibold'>Párbeszéd</p>
+                <Image src="/leaf4.svg" width={15} height={15} alt="Leaf Icon" className="opacity-80"/>
               </div>
               <div className="flex lg:flex-row flex-row-reverse gap-8">
-                <p className='lg:text-3xl text-xl italic text-[--green] font-light'>Kölcsönösség</p>
-                <Image src="/leaf3.svg" width={15} height={15} alt="Leaf Icon" className="opacity-80"/>
+                <p className='lg:text-3xl text-xl italic text-[--green] font-semibold'>Kölcsönösség</p>
+                <Image src="/leaf4.svg" width={15} height={15} alt="Leaf Icon" className="opacity-80"/>
               </div>
               <div className="flex lg:flex-row flex-row-reverse gap-8">
-                <p className='lg:text-3xl text-xl italic text-[--green] font-light'>Hitelesség</p>
-                <Image src="/leaf3.svg" width={15} height={15} alt="Leaf Icon" className="opacity-80"/>
+                <p className='lg:text-3xl text-xl italic text-[--green] font-semibold'>Hitelesség</p>
+                <Image src="/leaf4.svg" width={15} height={15} alt="Leaf Icon" className="opacity-80"/>
               </div>
               <div className="flex lg:flex-row flex-row-reverse gap-8">
-                <p className='lg:text-3xl text-xl italic text-[--green] font-light'>Megújulás</p>
-                <Image src="/leaf3.svg" width={15} height={15} alt="Leaf Icon" className="lg:hidden block opacity-80"/>
+                <p className='lg:text-3xl text-xl italic text-[--green] font-semibold'>Megújulás</p>
+                <Image src="/leaf4.svg" width={15} height={15} alt="Leaf Icon" className="lg:hidden block opacity-80"/>
               </div>
             </div>
         </div>

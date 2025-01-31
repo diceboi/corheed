@@ -11,6 +11,26 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        sans: ['var(--font-geist-sans)'],
+        mono: ['var(--font-geist-mono)'],
+      },
+      container: {
+        // you can configure the container to be centered
+        center: true,
+  
+        // or have default horizontal padding
+        padding: '',
+  
+        // default breakpoints but with 40px removed
+        screens: {
+          sm: '664px',
+          md: '728px',
+          lg: '964px',
+          xl: '1140px',
+          '2xl': '1280px',
+        },
+      },
     },
   },
   plugins: [],

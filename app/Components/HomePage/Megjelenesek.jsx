@@ -57,13 +57,13 @@ export default function Megjelenesek() {
             onSwiper={(swiper) => (swiperRef.current = swiper)}
             breakpoints={{
                 640: {
-                  slidesPerView: 1.25,
+                  slidesPerView: 2.25,
                 },
                 768: {
-                  slidesPerView: 2,
+                  slidesPerView: 2.25,
                 },
                 1024: {
-                  slidesPerView: 2,
+                  slidesPerView: 3,
                 },
               }}
           >

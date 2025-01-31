@@ -24,29 +24,29 @@ export default function Footer() {
                 height={300}
                 alt={"footer logo"}
               />
-              <h3 className="text-white">Coreheed Consulting Kft.</h3>
+              <h3 className="text-[--lightgreen]">Coreheed Consulting Kft.</h3>
               <div className="flex flex-col gap-2">
                 <div className="flex flex-nowrap items-center gap-2">
                   <TbMail className="min-w-6 min-h-6 text-[--yellow]" />
-                  <button href="mailto:info@coreheed.hu" className="text-white">
+                  <button href="mailto:info@coreheed.hu" className="text-[--lightgreen]">
                     info@coreheed.hu
                   </button>
                 </div>
                 <div className="flex flex-nowrap items-center gap-2">
                   <TbPhone className="min-w-6 min-h-6 text-[--yellow]" />
-                  <button href="tel:06 30 123 4567" className="text-white">
+                  <button href="tel:06 30 123 4567" className="text-[--lightgreen]">
                     06 30 123 4567
                   </button>
                 </div>
                 <div className="flex flex-nowrap items-center gap-2">
                   <TbMapPin className="min-w-6 min-h-6 text-[--yellow]" />
-                  <button className="text-white">
+                  <button className="text-[--lightgreen]">
                     1094 Budapest, Valami u. 17. 1/13
                   </button>
                 </div>
                 <div className="flex flex-nowrap items-center gap-2">
                   <TbClock className="min-w-6 min-h-6 text-[--yellow]" />
-                  <button className="text-white">Hét-Pén 08:00-16:00</button>
+                  <button className="text-[--lightgreen]">Hét-Pén 08:00-16:00</button>
                 </div>
               </div>
             </div>
@@ -55,43 +55,43 @@ export default function Footer() {
                 <h3 className="text-[--yellow] font-bold text-lg pb-8">Szolgáltatások</h3>
                 <Link
                   href={"/szolgaltatasaink/generaciok-egyuttmukodese-program"}
-                  className="text-white"
+                  className="text-[--lightgreen]"
                 >
                   Generációk együttműködése program
                 </Link>
                 <Link
                   href={"/szolgaltatasaink/fiatalbarat-munkahely-program"}
-                  className="text-white"
+                  className="text-[--lightgreen]"
                 >
                   Fiatalbarát munkahely program
                 </Link>
                 <Link
                   href={"/szolgaltatasaink/csaladi-vallalkozasok-utodlasa"}
-                  className="text-white"
+                  className="text-[--lightgreen]"
                 >
                   Családi vállalkozások utódlása
                 </Link>
                 <Link
                   href={"/szolgaltatasaink/keszsegfejlesztes"}
-                  className="text-white"
+                  className="text-[--lightgreen]"
                 >
                   Készségfejlesztés
                 </Link>
                 <Link
                   href={"/szolgaltatasaink/tehetsegmenedzsment"}
-                  className="text-white"
+                  className="text-[--lightgreen]"
                 >
                   Tehetségmenedzsment
                 </Link>
                 <Link
                   href={"/szolgaltatasaink/coaching-teamcoaching"}
-                  className="text-white"
+                  className="text-[--lightgreen]"
                 >
                   Coaching / Teamcoaching
                 </Link>
                 <Link
                   href={"/szolgaltatasaink/profile-xt-teszt"}
-                  className="text-white"
+                  className="text-[--lightgreen]"
                 >
                   Profile XT teszt
                 </Link>
@@ -102,19 +102,19 @@ export default function Footer() {
                 <h3 className="text-[--yellow] font-bold text-lg pb-8">Információk</h3>
                 <Link
                   href={"/adatkezelesi-tajekoztato"}
-                  className="text-white"
+                  className="text-[--lightgreen]"
                 >
                   Adatkezelés
                 </Link>
                 <Link
                   href={"/kapcsolat"}
-                  className="text-white"
+                  className="text-[--lightgreen]"
                 >
                   Kapcsolat
                 </Link>
                 <Link
                   href={"/ajanlatkeres"}
-                  className="text-white"
+                  className="text-[--lightgreen]"
                 >
                   Ajánlatkérés
                 </Link>

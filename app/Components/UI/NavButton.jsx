@@ -35,7 +35,7 @@ export default function NavButton({ title, items, link, scrolled, isOpen, toggle
         </Link>
       ) : (
         <div
-          className={`flex flex-col items-center gap-2 py-2 lg:px-4 pl-1 lg:-mb-0 -mb-2 rounded-md lg:group-hover:bg-[--mint] font-semibold text-[--white] hover:text-[--green]`}
+          className={`flex flex-col items-center gap-2 py-2 lg:px-4 pl-1 lg:-mb-0 -mb-2 rounded-md lg:group-hover:bg-[--mint] font-semibold text-[--white] hover:text-[--green] active:text-[--green]`}
         >
           <div className="flex flex-nowrap gap-2 items-center" onClick={toggleSubMenu}>
             {title}

@@ -99,7 +99,7 @@ export default function Hero() {
         <div className="absolute z-10 left-0 top-0 w-1/2 h-full -ml-1 bg-gradient-to-r from-[--white] to-[#f5f5f700]"></div>
           
         </div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center lg:w-10/12 w-full h-full z-20 px-4">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center container w-full h-full z-20 px-4">
           <div className="flex flex-col gap-4 lg:w-1/2 w-full">
             <Image src={'/logos/coreheed-square-logo-green.svg'} alt={'Logo'} width={300} height={300} className={'lg:w-24 w-14 h-auto'}/>
             {slider === "forest" && (
