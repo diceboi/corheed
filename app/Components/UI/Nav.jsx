@@ -90,20 +90,20 @@ export default function Nav() {
         className={`flex flex-row items-center w-full bg-[--green] shadow-lg font-regular fixed top-0 transition-all duration-200 z-50`}
       >
         <div
-          className={`flex flex-col justify-center w-11/12 m-auto h-20`}
+          className={`flex flex-col justify-center w-full m-auto`}
         >
-          <div className="w-full flex flex-row items-center px-1 py-1">
+          <div className="w-full flex flex-row items-center px-4 h-20">
             <div className="flex flex-row items-center justify-start gap-8">
               <Link
                 href="/"
-                className={`flex flex-row items-center justify-start w-48 h-8 transition-all duration-200`}
+                className={`flex flex-row items-center justify-start w-56 h-auto transition-all duration-200`}
               >
                   <Image
                     src="/logos/logo-base.webp"
                     alt="Logo"
-                    width={250}
-                    height={50}
-                    className=""
+                    width={300}
+                    height={200}
+                    className="w-32-h-auto"
                   />
               </Link>
 

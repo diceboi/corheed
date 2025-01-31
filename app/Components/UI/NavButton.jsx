@@ -22,7 +22,7 @@ export default function NavButton({ title, items, link, scrolled, isOpen, toggle
       {link ? (
         <Link href={link} onClick={toggleMobileMenu}>
           <span
-            className={`flex flex-nowrap items-center gap-2 py-2 px-4 rounded-md lg:group-hover:bg-[--greenhover] font-semibold text-[--white]`}
+            className={`flex flex-nowrap items-center gap-2 py-2 px-4 rounded-md lg:group-hover:bg-[--mint] font-semibold text-[--white] hover:text-[--green]`}
           >
             {title}
             {items && (
@@ -35,7 +35,7 @@ export default function NavButton({ title, items, link, scrolled, isOpen, toggle
         </Link>
       ) : (
         <div
-          className={`flex flex-col items-center gap-2 py-2 lg:px-4 pl-1 lg:-mb-0 -mb-2 rounded-md lg:group-hover:bg-[--greenhover] font-semibold text-[--white]`}
+          className={`flex flex-col items-center gap-2 py-2 lg:px-4 pl-1 lg:-mb-0 -mb-2 rounded-md lg:group-hover:bg-[--mint] font-semibold text-[--white] hover:text-[--green]`}
         >
           <div className="flex flex-nowrap gap-2 items-center" onClick={toggleSubMenu}>
             {title}
@@ -50,7 +50,7 @@ export default function NavButton({ title, items, link, scrolled, isOpen, toggle
               </div>
               <div className="hidden lg:block">
                 <TbChevronDown className={`flex group-hover:hidden text-[--mint]`} />
-                <TbChevronUp className={`group-hover:flex hidden text-[--mint]`} />
+                <TbChevronUp className={`group-hover:flex hidden text-[--green]`} />
               </div>
               </>
             )}
