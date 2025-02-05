@@ -19,7 +19,7 @@ export default function KapcsolatPage() {
 
       const mailOptions = {
         from: formData.email,
-        to: 'szasz.szabolcs1995@gmail.com',
+        to: 'info@coreheed.hu',
         subject: `Új üzenet a weboldalról ${formData.name} részéről`,
         text: `Név: ${formData.name}\nEmail: ${formData.email}\nTelefonszám: ${formData.phone}\nTárgy: ${formData.subject}\n\nÜzenet: ${formData.message}`,
         html: '',

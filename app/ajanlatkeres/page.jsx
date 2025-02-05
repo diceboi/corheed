@@ -18,7 +18,7 @@ export default function AjanlatkeresPage() {
 
       const mailOptions = {
         from: formData.email,
-        to: 'szasz.szabolcs1995@gmail.com',
+        to: 'info@coreheed.hu',
         subject: `Új ajánlatkérés érkezett a weboldalról, ${formData.name} részéről`,
         text: `Név: ${formData.name}\nEmail: ${formData.email}\nTelefonszám: ${formData.phone}\nAjánlatkérés tárgya: ${formData.subject}\n\nÜzenet: ${formData.message}`,
         html: '',
