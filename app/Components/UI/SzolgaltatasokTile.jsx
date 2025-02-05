@@ -8,8 +8,9 @@ import { motion } from "framer-motion"
 export default function SzolgaltatasokTile({ image, title, link, titlecolor }) {
   return (
     <motion.div 
-    className='flex flex-col justify-between gap-4 w-full initial={{ opacity: 0, y: 10, scaleX:0.9, scaleY:0.9 }}
-    whileInView={{ opacity: 1, y: 0, scaleX:1, scaleY:1 }}h-auto '
+    className='flex flex-col justify-between gap-4 w-full'
+    initial={{ opacity: 0, y: 10, scaleX:0.9, scaleY:0.9 }}
+    whileInView={{ opacity: 1, y: 0, scaleX:1, scaleY:1 }}
     >
       <motion.div 
       className='relative w-full h-[300px] rounded-xl overflow-hidden'>

@@ -6,6 +6,7 @@ import Footer from "./Components/UI/Footer";
 import ContextProvider from "./Context";
 import { GoogleTagManager, GoogleAnalytics } from '@next/third-parties/google'
 import Nav from "./Components/UI/Nav";
+import { Toaster } from "sonner";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
             <Nav />
               {children}
             <Footer />
+            <Toaster position="bottom-center" richColors />
             </ContextProvider>
           </body>
         

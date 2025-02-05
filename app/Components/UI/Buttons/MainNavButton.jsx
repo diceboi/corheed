@@ -11,6 +11,7 @@ export default function MainNavButton({
   classname,
   onclick,
   scrolled,
+  type
 }) {
   const [hovered, setHovered] = useState(false);
 
@@ -93,6 +94,7 @@ export default function MainNavButton({
       onMouseEnter={() => setHovered(true)} // Trigger animation on hover
       onMouseLeave={() => setHovered(false)} // Stop animation when unhovered
       onClick={onclick}
+      type={type}
     >
       {/* Conditional Leaves Animation */}
       {hovered && (
@@ -153,7 +155,7 @@ export default function MainNavButton({
           </Link>
         ) : (
           <BtnText
-            classname={`px-4 py-2 group-hover:text-white w-full h-full transition-all duration-200`}
+            classname={`px-4 py-2 group-hover:text-black w-full h-full transition-all duration-200`}
           >
             {text}
           </BtnText>
