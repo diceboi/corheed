@@ -146,7 +146,7 @@ export default function Megjelenesek() {
             </SwiperSlide>
             <SwiperSlide>
               <SzolgaltatasokTile
-                image={"/rendezvenyek/12_podcast.webp"}
+                image={"/rendezvenyek/12_Podcast.webp"}
                 title={"Podcast"}
                 titlecolor={"text-white"}
               />
