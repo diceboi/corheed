@@ -28,7 +28,7 @@ export default function Modal({ children, openstate, onClose, classname }) {
         <TbCircleX className="w-10 h-10 text-[--mint] hover:text-[--yellow]" />
       </button>
       <motion.div
-        className={`relative flex flex-col items-center bg-white bg-opacity-75 backdrop-blur-md shadow-2xl w-[90%] max-w-lg p-8 ${classname} overflow-y-auto rounded-3xl`}
+        className={`relative flex flex-col items-center bg-[--lightgreen] bg-opacity-75 backdrop-blur-md shadow-2xl w-[90%] max-w-lg p-8 ${classname} overflow-y-auto rounded-3xl`}
         initial={{ y: -50, opacity: 0 }}
         style={{ maxHeight: '90vh' }} // Constrain modal height
         animate={{ y: 0, opacity: 1 }}

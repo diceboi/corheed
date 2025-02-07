@@ -6,6 +6,7 @@ import H1 from "../UI/Typo/H1";
 import MainNavButton from "../UI/Buttons/MainNavButton";
 import { useState, useEffect } from "react";
 import ToggleSwitch from "../UI/ToggleSwitch";
+import { motion } from "framer-motion"
 
 export default function Hero() {
 
@@ -18,14 +19,14 @@ export default function Hero() {
   useEffect(() => {
     const interval = setInterval(() => {
       setSlider((prev) => (prev === "forest" ? "bridge" : "forest"));
-    }, 5000); // 5000ms = 5 seconds
+    }, 8000); // 5000ms = 5 seconds
 
     return () => clearInterval(interval); // Cleanup on unmount
   }, []);
 
   return (
     <section className="flex flex-col bg-[--green] w-full pt-20">
-      <div className="relative flex lg:flex-row flex-col lg:rounded-b-[90px] rounded-b-[50px] shadow-xl overflow-hidden">
+      <div className="relative flex lg:flex-row flex-col lg:rounded-b-[90px] rounded-b-[50px] overflow-hidden">
         
         <div className="relative flex flex-col lg:items-end lg:w-1/3 w-full bg-[--white] p-4 lg:h-[70vh] h-[70vh] z-20">
         {slider === "forest" && (
@@ -57,17 +58,21 @@ export default function Hero() {
         <div className="hidden lg:block relative lg:w-2/3 rounded-br-[90px] overflow-hidden lg:h-[70vh] h-[70vh]">
         {slider === "forest" && (
           <>
-          <Image
+          <motion.img
+            initial={{ opacity: 0, translateX: -40 }}
+            animate={{ opacity: 1, translateX: 0 }}
+            exit={{ opacity: 0, translateX: 40 }}
+            transition={{ duration: 1.2, ease: 'easeOut', type: 'spring', bounce: 0.4 }}
             src="/forest-bg.webp"
-            fill
             alt="Kis fa nő az erdő mélyén"
             style={{ objectFit: "cover", objectPosition: "50% 50%" }}
+            className="absolute top-0 left-0"
           />
           <Image
             src="/tree-shape.svg"
             fill
             alt="Kis fa nő az erdő mélyén"
-            className="absolute z-20 left-0 top-0 w-full h-auto -ml-1"
+            className="absolute z-20 left-0 top-0 w-full h-auto -ml-1 transition-all duration-500"
             style={{
               objectFit: "contain",
               objectPosition: "left top",
@@ -77,11 +82,15 @@ export default function Hero() {
         )}
         {slider === "bridge" && (
           <>
-          <Image
+          <motion.img
+            initial={{ opacity: 0, translateX: -40 }}
+            animate={{ opacity: 1, translateX: 0 }}
+            exit={{ opacity: 0, translateX: 40 }}
+            transition={{ duration: 1.2, ease: 'easeOut', type: 'spring', bounce: 0.4 }}
             src="/bridge-bg.webp"
-            fill
             alt="Híd a fák között"
             style={{ objectFit: "cover", objectPosition: "50% 50%" }}
+            className="absolute top-0 left-0"
           />
           <Image
             src="/bridge-shape.svg"

@@ -25,7 +25,7 @@ export default function CsaladiVallalkozasokInner() {
               </div>
               <div className='flex flex-col gap-4 lg:w-1/2 w-full'>
                 <div className='flex flex-col items-end justify-center relative w-full h-[132px] bg-[--green] rounded-3xl p-8 mt-20 mb-20'>
-                    <Paragraph classname={'font-bold text-center text-white w-[30%]'}>Magyar kisvállalkozások</Paragraph>
+                    <Paragraph classname={'font-bold text-center text-white w-[35%] text-xs'}>Magyar kis- és középvállalkozások</Paragraph>
                     <div className='absolute top-0 left-0 flex flex-col items-end justify-center h-[116px] w-[60%] bg-[--mint] rounded-3xl p-8 '>
                         <Paragraph classname={'absolute top-40 left-2/3 -translate-x-1/2 font-bold text-center min-w-[100px]'}>Családi vállalkozás</Paragraph>
                         <div className='absolute -bottom-10 left-2/3 -translate-x-1/2 bg-[--green] w-[2px] h-14'></div>
@@ -70,7 +70,8 @@ export default function CsaladiVallalkozasokInner() {
               </div>
             </div>
 
-            <InnerColorBox title={'Családi vállalkozások utódlása'} titlecolor={'text-white'} text={'Készítsd fel vállalkozásod az utódlásra és élj azzal a szakmai támogatással, amivel hozzá tudunk segíteni a generációváltás sikeres megvalósításához! A vállalkozásod egyéni helyzetére szabott, saját stratégiát alkotunk számotokra a generációváltáshoz. Nem csupán a szervezetre vonatkozó működés stabilizálásában, a folyamatoptimalizálásban vagy a gazdasági vonatkozásokban segítünk, hanem a folyamat érzelmi, mentális részében is melletted leszünk.'} textcolor={'text-white'} bgcolor={'bg-[--green]'}>                
+            <InnerColorBox title={'Családi vállalkozások utódlása'} titlecolor={'text-white'} text={'Készítsd fel vállalkozásod az utódlásra és élj azzal a szakmai támogatással, amivel hozzá tudunk segíteni a generációváltás sikeres megvalósításához! A vállalkozásod egyéni helyzetére szabott, saját stratégiát alkotunk számotokra a generációváltáshoz.'} textcolor={'text-white'} bgcolor={'bg-[--green]'}>   
+              <H3 classname={'text-center text-white'}>Nem csupán a szervezetre vonatkozó működés stabilizálásában, a folyamatoptimalizálásban vagy a gazdasági vonatkozásokban segítünk, hanem a folyamat érzelmi, mentális részében is melletted leszünk.</H3>             
                 <MainNavButton link={'/ajanlatkeres'} text={'Ajánlatkérés'} classname={'self-center'} />
             </InnerColorBox>
 

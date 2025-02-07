@@ -17,7 +17,7 @@ export default function SzolgaltatasokTile({ image, title, link, titlecolor }) {
         <Image src={image} fill alt="Coaching" style={{ objectFit: 'cover' }} />
       </motion.div>
       <div className="flex lg:flex-row flex-col lg:justify-between lg:items-end gap-2">
-        <H3 classname={`font-bold lg:max-w-8/12 max-w-full ${titlecolor}`}>{title}</H3>
+        <h3 className={`font-bold lg:max-w-8/12 max-w-full ${titlecolor} text-inter text-[18px] leading-[22px] sm:text-[20px] sm:leading-[24px] md:text-[24px] md:leading-[28px] lg:text-[22px] lg:leading-[30px] font-bold tracking-tight`}>{title}</h3>
         {link && (
           <MainNavButton classname={'min-w-fit max-h-fit'} text={'Tovább'} link={link} />
         )}

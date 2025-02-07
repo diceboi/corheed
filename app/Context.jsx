@@ -48,7 +48,7 @@ export default function ContextProvider({ children }) {
           {form === "mezes-lendvai-dorottya" && (
             <div className="space-y-8">
               <div className="flex flex-nowrap gap-4 items-center">
-                <Image src='/csapat/mezes-lendvai-dorottya.webp' width={150} height={150} alt="Lendvai-Mézes Dorottya" className="rounded-full border-4 border-[--mint]"/>
+                <Image src='/csapat/mezes-lendvai-dorottya.webp' width={150} height={150} alt="Lendvai-Mézes Dorottya" className="rounded-full border-4 border-[--green]"/>
                 <H3 className="text-[--blue] font-bold text-2xl">Mézes-Lendvai Dorottya</H3>
               </div>
               <Paragraph>
@@ -63,7 +63,7 @@ export default function ContextProvider({ children }) {
           {form === "mezes-aron" && (
             <div className="space-y-8">
               <div className="flex flex-nowrap gap-4 items-center">
-                <Image src='/csapat/mezes-aron.webp' width={150} height={150} alt="Mézes Áron" className="rounded-full border-4 border-[--mint]"/>
+                <Image src='/csapat/mezes-aron.webp' width={150} height={150} alt="Mézes Áron" className="rounded-full border-4 border-[--green]"/>
                 <H3 className="text-[--blue] font-bold text-2xl">Mézes Áron</H3>
               </div>
               <Paragraph>
@@ -77,7 +77,7 @@ export default function ContextProvider({ children }) {
           {form === "mezes-hanga" && (
             <div className="space-y-8">
               <div className="flex flex-nowrap gap-4 items-center">
-                <Image src='/csapat/mezes-hanga.webp' width={150} height={150} alt="Mézes Hanga" className="rounded-full border-4 border-[--mint]"/>
+                <Image src='/csapat/mezes-hanga.webp' width={150} height={150} alt="Mézes Hanga" className="rounded-full border-4 border-[--green]"/>
                 <H3 className="text-[--blue] font-bold text-2xl">Mézes Hanga</H3>
               </div>
             </div>
@@ -86,7 +86,7 @@ export default function ContextProvider({ children }) {
           {form === "toth-kinga" && (
             <div className="space-y-8">
               <div className="flex flex-nowrap gap-4 items-center">
-                <Image src='/csapat/toth-kinga.webp' width={150} height={150} alt="Tóth Kinga" className="rounded-full border-4 border-[--mint]"/>
+                <Image src='/csapat/toth-kinga.webp' width={150} height={150} alt="Tóth Kinga" className="rounded-full border-4 border-[--green]"/>
                 <H3 className="text-[--blue] font-bold text-2xl">Tóth Kinga</H3>
               </div>
               <Paragraph>
@@ -101,7 +101,7 @@ export default function ContextProvider({ children }) {
           {form === "dr-kiraly-zsolt" && (
             <div className="space-y-8">
               <div className="flex flex-nowrap gap-4 items-center">
-                <Image src='/csapat/dr-kiraly-zsolt.webp' width={150} height={150} alt="Dr. Király Zsolt" className="rounded-full border-4 border-[--mint]"/>
+                <Image src='/csapat/dr-kiraly-zsolt.webp' width={150} height={150} alt="Dr. Király Zsolt" className="rounded-full border-4 border-[--green]"/>
                 <H3 className="text-[--blue] font-bold text-2xl">Dr. Király Zsolt</H3>
               </div>
               <Paragraph>
@@ -115,7 +115,7 @@ export default function ContextProvider({ children }) {
           {form === "domotor-katalin" && (
             <div className="space-y-8">
               <div className="flex flex-nowrap gap-4 items-center">
-                <Image src='/csapat/domotor-katalin.webp' width={150} height={150} alt="Dömötör Katalin" className="rounded-full border-4 border-[--mint]"/>
+                <Image src='/csapat/domotor-katalin.webp' width={150} height={150} alt="Dömötör Katalin" className="rounded-full border-4 border-[--green]"/>
                 <H3 className="text-[--blue] font-bold text-2xl">Dömötör Katalin</H3>
               </div>
               <Paragraph>
@@ -123,6 +123,34 @@ export default function ContextProvider({ children }) {
               </Paragraph>
               <Paragraph>Szenvedélyem az emberek és a szervezetek fejlesztése. Vezetői tapasztalatom révén erős stratégiai gondolkodásmóddal és célorientált működési szemlélettel rendelkezem, amelyet kiegészítek a coachként is alkalmazott empatikus, személyre szabott megközelítés módommal.</Paragraph>
               <Paragraph>Hiszek abban, hogy vállalati környezetben a stratégiai fókusz és az emberközpontúság ötvözése a siker kulcsa.</Paragraph>
+            </div>
+          )}
+
+          {form === "pajer-kata" && (
+            <div className="space-y-8">
+              <div className="flex flex-nowrap gap-4 items-center">
+                <Image src='/csapat/pajer-kata.webp' width={150} height={150} alt="Pájer Kata" className="rounded-full border-4 border-[--green]"/>
+                <H3 className="text-[--blue] font-bold text-2xl">Pájer Kata</H3>
+              </div>
+              <Paragraph>
+              A Budapesti Corvinus Egyetemen végeztem Emberi Erőforrás alapszakon, majd a Metropolitan Egyetemen szereztem Business - és Team coach diplomát. Többéves szakmai tapasztalattal rendelkezem a toborzás és recruitment területén, kis- és nagyvállalati környezetben egyaránt. Célom, hogy segítsem a munkavállalókat és a szervezeteket a hatékonyabb működésben és a fenntartható növekedésben. 
+              </Paragraph>
+              <Paragraph>Az egyéni és team coaching folyamatokban is jártas vagyok és angol nyelven is magabiztosan támogatom a csapatok és vezetők fejlődését a szervezeteknél.</Paragraph>
+            </div>
+          )}
+
+          {form === "seres-nikolett" && (
+            <div className="space-y-8">
+              <div className="flex flex-nowrap gap-4 items-center">
+                <Image src='/csapat/seres-nikolett.webp' width={150} height={150} alt="Seres Nikolett" className="rounded-full border-4 border-[--green]"/>
+                <H3 className="text-[--blue] font-bold text-2xl">Seres Nikolett</H3>
+              </div>
+              <Paragraph>
+              Több mint 15 éves tapasztalattal rendelkezem a külső és belső kommunikáció, a PR, az elköteleződésnövelés és a munkáltatói márkaépítés területén. A Külker nemzetközi kommunikáció szakát követően néhány évnyi integrált ügynökségi tapasztalat után az elmúlt 10 évben több nagyvállalat kommunikációs vezetőjeként szereztem széles körű tapasztalatot, mindig is emberekkel és a fejlesztésükkel foglalkoztam.
+              </Paragraph>
+              <Paragraph>Pályakezdőként, account manager pozícióban olyan cégek kampányain dolgoztam, mint az Unilever, a T-mobile vagy a Sanofi-Aventis. Majd a BAT és a Philip Morris dohányipari cégek teljes körű vállalati kommunikációjáért feleltem. 6,5 éven át vezettem a Telenor belső kommunikációs osztályát, jelenleg pedig a JVSZ - Üzleti Szövetség operatív igazgatója vagyok.</Paragraph>
+              <Paragraph>A technológiai forradalom és a rekordtempóra gyorsult digitális világban kutatom a motiváció, a megtartás, és a munkavállalói élmény szerepét, illetve a jelen kor munkakörnyezeti, szemléletváltási, kommunikációs, generációs és digitális kihívásait.</Paragraph>
+              <Paragraph>Az emberek motivációjával, a változó munkakörnyezettel, változáskezeléssel, a reziliencia fejlesztésével és munkavállalói elköteleződéssel foglalkozom. Hiszek a közösség és az együttműködés erejében, a fejlődési szemléletben (growth mindset), valamint az employer branding és az employee experience hatékonyság- és teljesítménynövelő hatásában.</Paragraph>
             </div>
           )}
         </>

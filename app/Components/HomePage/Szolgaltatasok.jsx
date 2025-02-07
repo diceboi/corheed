@@ -15,7 +15,7 @@ export default function Partner() {
         <div className="flex flex-col lg:rounded-t-[90px] rounded-t-[50px] bg-[--white] overflow-hidden px-4">
             <div className='flex flex-col gap-16 container m-auto py-20'>
                 <H2 classname={'text-center text-[--green]'}>Szolgáltatások</H2>
-                <div className='grid lg:grid-cols-3 grid-cols-2 lg:gap-16 gap-4'>
+                <div className='grid lg:grid-cols-3 grid-cols-2 lg:gap-8 gap-4'>
                     <SzolgaltatasokTile image={'/szolgaltatasok/generaciok.webp'} title={'Generációk együttműködése program'} link={'/szolgaltatasaink/generaciok-egyuttmukodese-program'} />
                     <SzolgaltatasokTile image={'/szolgaltatasok/fiatalbarat.webp'} title={'Fiatalbarát munkahely program'} link={'/szolgaltatasaink/fiatalbarat-munkahely-program'} />
                     <SzolgaltatasokTile image={'/szolgaltatasok/utodlas.webp'} title={'Családi vállalkozások utódlása'} link={'/szolgaltatasaink/csaladi-vallalkozasok-utodlasa'} />

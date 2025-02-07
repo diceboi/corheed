@@ -46,8 +46,8 @@ export default function KapcsolatInner({ sendMail }) {
 
   return (
     <section className="relative w-full m-auto px-4 pb-20 lg:pt-96 pt-60 overflow-hidden">
-        <Image src="/kapcsolathero_kapcsolat.png" fill alt="Kapcsolat kép" style={{ objectFit: 'contain', objectPosition: 'top' }} className="lg:block hidden"/>
-        <Image src="/kapcsolathero_kapcsolat.png" fill alt="Kapcsolat kép" style={{ objectFit: 'contain', objectPosition: '50% 8%' }} className="lg:hidden block"/>
+        <Image src="/kapcsolathero1.webp" fill alt="Kapcsolat kép" style={{ objectFit: 'contain', objectPosition: 'top' }} className="lg:block hidden"/>
+        <Image src="/kapcsolathero1.webp" fill alt="Kapcsolat kép" style={{ objectFit: 'contain', objectPosition: '50% 8%' }} className="lg:hidden block"/>
         <div className="absolute w-[500px] h-[500px] -translate-x-1/2 -translate-y-1/2 left-1/3 top-2/3 bg-[--yellow] rounded-full blur-3xl z-10 opacity-25"></div>
         <div className="absolute w-[500px] h-[500px] -translate-x-1/2 -translate-y-1/2 left-2/3 top-1/3 bg-[--mint] rounded-full blur-3xl z-10 opacity-10"></div>
       <div className="container m-auto relative z-10">

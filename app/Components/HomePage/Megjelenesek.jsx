@@ -69,22 +69,99 @@ export default function Megjelenesek() {
           >
             <SwiperSlide>
               <SzolgaltatasokTile
-                image={"/szolgaltatasok/generaciok.webp"}
-                title={"Generációk együttműködése program"}
+                image={"/rendezvenyek/01_HiFest.webp"}
+                title={"HiFest"}
                 titlecolor={"text-white"}
               />
             </SwiperSlide>
             <SwiperSlide>
               <SzolgaltatasokTile
-                image={"/szolgaltatasok/fiatalbarat.webp"}
-                title={"Fiatalbarát munkahely program"}
+                image={"/rendezvenyek/02_Adom_a_ZET!_magazinmusor.webp"}
+                title={"Adom a ZÉT! magazinműsor"}
                 titlecolor={"text-white"}
               />
             </SwiperSlide>
             <SwiperSlide>
               <SzolgaltatasokTile
-                image={"/szolgaltatasok/utodlas.webp"}
-                title={"Családi vállalkozások utódlása"}
+                image={"/rendezvenyek/03_GenZ_Fest_Portfolio.webp"}
+                title={"GenZ Fest Portfolio"}
+                titlecolor={"text-white"}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <SzolgaltatasokTile
+                image={"/rendezvenyek/04_Hello_Fonok_Deloitte_Konferencia.webp"}
+                title={"Hello Főnök Deloitte Konferencia"}
+                titlecolor={"text-white"}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <SzolgaltatasokTile
+                image={"/rendezvenyek/05_HR_Power_interju.webp"}
+                title={"HR Power interjú"}
+                titlecolor={"text-white"}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <SzolgaltatasokTile
+                image={"/rendezvenyek/06_HR_Brandem_Konferencia.webp"}
+                title={"HR Brandem Konferencia"}
+                titlecolor={"text-white"}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <SzolgaltatasokTile
+                image={"/rendezvenyek/07_Cafe_Talks.webp"}
+                title={"Café Talks"}
+                titlecolor={"text-white"}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <SzolgaltatasokTile
+                image={"/rendezvenyek/08_Business_Fest.webp"}
+                title={"Business Fest"}
+                titlecolor={"text-white"}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <SzolgaltatasokTile
+                image={"/rendezvenyek/09_HVG_allasborze.webp"}
+                title={"HVG állásbőrze"}
+                titlecolor={"text-white"}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <SzolgaltatasokTile
+                image={"/rendezvenyek/10_ICF_Coaching_Konferencia.webp"}
+                title={"ICF Coaching Konferencia"}
+                titlecolor={"text-white"}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <SzolgaltatasokTile
+                image={"/rendezvenyek/11_Korosi_Csoma_Sandor_Kulturalis_Kozpont.webp"}
+                title={"Kőrösi Csoma Sándor Kultúrális Központ"}
+                titlecolor={"text-white"}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <SzolgaltatasokTile
+                image={"/rendezvenyek/12_podcast.webp"}
+                title={"Podcast"}
+                titlecolor={"text-white"}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <SzolgaltatasokTile
+                image={"/rendezvenyek/13_Portfolio_GenZ_Fest_speaker.webp"}
+                title={"Portfolio GenZ Fest speaker"}
+                titlecolor={"text-white"}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <SzolgaltatasokTile
+                image={"/rendezvenyek/14_Publio_Konyvhet.webp"}
+                title={"Publio Könyvhét"}
                 titlecolor={"text-white"}
               />
             </SwiperSlide>

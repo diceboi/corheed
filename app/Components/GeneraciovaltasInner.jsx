@@ -66,7 +66,7 @@ export default function GeneraciovaltasInner() {
             </div>
             <div className='flex flex-col gap-4 lg:w-1/2 w-full'>
             <div className='flex flex-col items-end justify-center relative w-full h-[132px] bg-[--green] rounded-3xl p-8 mt-28'>
-                <Paragraph classname={'font-bold text-center text-white w-[80%] z-10'}>Generációváltást után csődbe ment cégek</Paragraph>
+                <Paragraph classname={'font-bold text-center text-white w-[80%] z-10'}>Generációváltás után csődbe ment cégek</Paragraph>
                 <p className='absolute -translate-x-1/2 -translate-y-1/2 top-1/2 lg:left-3/5 left-1/2 font-bold lg:text-8xl text-8xl opacity-15'>80%</p>
                 <div className='absolute top-0 left-0 flex flex-col items-end justify-center h-[116px] w-[20%] bg-[--mint] rounded-3xl p-8'>
                     <Paragraph classname={'absolute -top-20 lg:left-1/2 left-0 lg:-translate-x-1/2 font-bold text-center'}>Generációváltást túlélő cégek</Paragraph>
