@@ -21,8 +21,8 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Coreheed",
-  description: "Coreheed",
+  title: "Coreheed Consulting - Híd a generációk között",
+  description: "Partner a generációk együttműködésében, a szemléletváltásban és az utódlásban. A többgenerációs csapatok szakmai támogatója.",
 };
 
 export default function RootLayout({ children }) {

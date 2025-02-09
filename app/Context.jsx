@@ -79,7 +79,11 @@ export default function ContextProvider({ children }) {
               <div className="flex flex-nowrap gap-4 items-center">
                 <Image src='/csapat/mezes-hanga.webp' width={150} height={150} alt="Mézes Hanga" className="rounded-full border-4 border-[--green]"/>
                 <H3 className="text-[--blue] font-bold text-2xl">Mézes Hanga</H3>
-              </div>
+                </div>
+                <Paragraph>Az emberek fejlesztése és a tehetségek kibontakoztatása iránti elhivatottságom végigkísérte eddigi szakmai pályafutásomat. Alapdiplomámat a Budapesti Corvinus Egyetemen szereztem Tehetségmenedzsment specializáción, majd az ELTE-n Szervezetfejlesztést tanultam mesterszakon, hogy még átfogóbb tudással támogathassam a vállalatokat. </Paragraph>
+                <Paragraph>Több éves nagyvállalati tapasztalattal rendelkezem, főként tehetségmenedzsment és szervezetfejlesztési programokban dolgozom, így betekintést nyertem a szervezetek kihívásaiba, napi működésébe és megküzdési stratégiáiba. </Paragraph>
+                <Paragraph>Egyetemi éveim alatt én magam is részese lehettem tehetségmenedzsment programoknak, így saját élményeimet és tapasztalataimat is beépítve dolgozom azon, hogy a lehető leghatékonyabban segítsek más tehetséges fiatal munkavállalónak.</Paragraph>
+              
             </div>
           )}
 

@@ -44,7 +44,7 @@ export default function Footer() {
                 <div className="flex flex-nowrap items-center gap-2">
                   <TbPhone className="min-w-6 min-h-6 text-[--yellow]" />
                   <button href="tel:06 30 123 4567" className="text-[--lightgreen]">
-                    06 30 123 4567
+                    06 30 328 2517
                   </button>
                 </div>
                 <div className="flex flex-nowrap items-center gap-2">
