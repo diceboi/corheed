@@ -101,6 +101,22 @@ export default function KapcsolatInner({ sendMail }) {
                 {...register("message")}
               />
               {errors.message && <span className="text-red-500">{errors.message.message}</span>}
+
+              <div className="flex flex-nowrap items-start gap-2 text-white">
+                <input
+                  type="checkbox"
+                  name="acceptance"
+                  id="acceptance"
+                  required
+                  className="p-4 text-lg bg-[--white] mt-1"
+                />
+                <label htmlFor="acceptance">
+                  Elolvastam, megértettem, és elfogadom az{" "}
+                  <Link className="underline " href='/adatkezelesi-tajekoztato'>adatkezelési tájékoztatóban </Link>
+                  foglaltakat.*
+                </label>
+              </div>
+              
               <MainNavButton type={"submit"} classname={"self-center"} text={isSubmitting ? "Küldés..." : "Küldés"}>
                 {isSubmitting ? "Küldés..." : "Küldés"}
               </MainNavButton>
