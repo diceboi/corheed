@@ -47,9 +47,9 @@ export default function page() {
         </Paragraph>
         <ul>
           <li>Név: Coreheed Consulting Kft.</li>
-          <li>Székhely: ...</li>
-          <li>Adószám: ...</li>
-          <li>Cég-nyilvántartási szám: ...</li>
+          <li>Székhely: 2040 Budaörs, Ibolya utca 60.</li>
+          <li>Adószám: 32531813-1-13</li>
+          <li>Cég-nyilvántartási szám: 13-09-233401</li>
           <li>Mobil: +36 30 328 2517</li>
           <li>E-mail: info@coreheed.hu</li>
         </ul>
