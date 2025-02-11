@@ -98,7 +98,7 @@ export default function KeszsegfejlesztesInner() {
             />
             <KeszsegfejlesztesTile
               image={"/szolgaltatasok/prezentacios.webp"}
-              shortwords={'alapozó, ismeretátadó, érzékenyítő tréning'}
+              shortwords={'gyakorlati know-how, ismeretátadó tréning'}
               title={"Prezentációs technikák"}
               text={'Add át hatékonyabban azt a tudást, amivel már rendelkezel! Sajátítsd el az AI alapú eszközöket, amivel gyorsabban és színesebben tudod elkészíteni a prezentációdat!'}
               link={"/ajanlatkeres"}

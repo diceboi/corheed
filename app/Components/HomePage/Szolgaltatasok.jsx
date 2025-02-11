@@ -20,7 +20,7 @@ export default function Partner() {
                     <SzolgaltatasokTile image={'/szolgaltatasok/fiatalbarat.webp'} title={'Fiatalbarát munkahely program'} link={'/szolgaltatasaink/fiatalbarat-munkahely-program'} />
                     <SzolgaltatasokTile image={'/szolgaltatasok/utodlas.webp'} title={'Családi vállalkozások utódlása'} link={'/szolgaltatasaink/csaladi-vallalkozasok-utodlasa'} />
                     <SzolgaltatasokTile image={'/szolgaltatasok/keszsegfejlesztes.webp'} title={'Készségfejlesztés'} link={'/szolgaltatasaink/keszsegfejlesztes'} />
-                    <SzolgaltatasokTile image={'/szolgaltatasok/tehetsegmenedzsment.webp'} title={'Tehetség menedzsment'} link={'/szolgaltatasaink/tehetsegmenedzsment'} />
+                    <SzolgaltatasokTile image={'/szolgaltatasok/tehetsegmenedzsment.webp'} title={'Tehetségmenedzsment'} link={'/szolgaltatasaink/tehetsegmenedzsment'} />
                     <SzolgaltatasokTile image={'/szolgaltatasok/coaching.webp'} title={'Coaching / Teamcoaching'} link={'/szolgaltatasaink/coaching-teamcoaching'} />
                 </div>
             </div>
