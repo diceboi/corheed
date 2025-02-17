@@ -15,8 +15,9 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import SzolgaltatasokTile from "../UI/SzolgaltatasokTile";
 
-import { TbArrowLeft, TbArrowRight } from "react-icons/tb";
+import { TbArrowLeft, TbArrowRight, TbBrandYoutube } from "react-icons/tb";
 import H2 from "../UI/Typo/H2";
+import Link from "next/link";
 
 export default function Megjelenesek() {
   // ✅ Create a Swiper reference
@@ -26,7 +27,7 @@ export default function Megjelenesek() {
     <RegularContainer classname={"relative bg-[--green] py-20"}>
       <div className="flex flex-col gap-8 w-full px-4">
         <SubTitle>Megjelenések</SubTitle>
-        
+
         {/* Header with Navigation Buttons */}
         <div className="flex lg:flex-row flex-col justify-between gap-4 items-baseline">
           <H2 classname={"text-white"}>Itt találkozhattál velünk</H2>
@@ -56,16 +57,16 @@ export default function Megjelenesek() {
             pagination={{ clickable: true }}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
             breakpoints={{
-                640: {
-                  slidesPerView: 2.25,
-                },
-                768: {
-                  slidesPerView: 2.25,
-                },
-                1024: {
-                  slidesPerView: 3,
-                },
-              }}
+              640: {
+                slidesPerView: 2.25,
+              },
+              768: {
+                slidesPerView: 2.25,
+              },
+              1024: {
+                slidesPerView: 3,
+              },
+            }}
           >
             <SwiperSlide>
               <SzolgaltatasokTile
@@ -79,6 +80,14 @@ export default function Megjelenesek() {
                 image={"/rendezvenyek/02_Adom_a_ZET!_magazinmusor.webp"}
                 title={"Adom a ZÉT! magazinműsor"}
                 titlecolor={"text-white"}
+                custombutton={
+                  <Link href="https://www.youtube.com/playlist?list=PL9dPn8abKvYX18q0gTKsiWQDZIqmSJf6E" target="__blank">
+                    <button className="absolute bottom-4 left-4 flex flex-nowrap text-white gap-2 items-center px-4 py-2 shadow-md transition-all rounded-full bg-red-600 hover:bg-red-800">
+                      <TbBrandYoutube />
+                      Megnézem
+                    </button>
+                  </Link>
+                }
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -139,7 +148,9 @@ export default function Megjelenesek() {
             </SwiperSlide>
             <SwiperSlide>
               <SzolgaltatasokTile
-                image={"/rendezvenyek/11_Korosi_Csoma_Sandor_Kulturalis_Kozpont.webp"}
+                image={
+                  "/rendezvenyek/11_Korosi_Csoma_Sandor_Kulturalis_Kozpont.webp"
+                }
                 title={"Kőrösi Csoma Sándor Kultúrális Központ"}
                 titlecolor={"text-white"}
               />

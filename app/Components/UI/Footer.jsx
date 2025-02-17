@@ -27,8 +27,8 @@ export default function Footer() {
               />
               <h3 className="text-[--lightgreen]">Coreheed Consulting Kft.</h3>
               <div className="flex flex-nowrap gap-2">
-                <FaFacebook className="min-w-6 h-auto text-[--lightgreen]"/>
-                <FaLinkedin className="min-w-6 h-auto text-[--lightgreen]"/>
+                <Link href="https://www.facebook.com/profile.php?id=61572865276294" target="__blank"><FaFacebook className="min-w-6 h-auto text-[--lightgreen]"/></Link>
+                <Link href="http://linkedin.com/company/coreheed-consulting-kft" target="__blank"><FaLinkedin className="min-w-6 h-auto text-[--lightgreen]"/></Link>
               </div>
             </div>
             <div className="flex flex-col gap-8 justify-center items-center">
