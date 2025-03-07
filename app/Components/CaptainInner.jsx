@@ -93,7 +93,6 @@ export default function CaptainInner() {
 
             <div className="flex flex-col gap-4">
                <MainNavButton link={'/ajanlatkeres'} text={'Ajánlatkérés'} classname={'self-center'} />
-                <Link className="self-center text-white underline" href="https://www.captain.hu/" target="_blank"><Label>Bővebb infó: captain.hu</Label></Link> 
             </div>
             
         </InnerColorBox>
