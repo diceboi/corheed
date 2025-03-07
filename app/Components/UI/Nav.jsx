@@ -72,6 +72,10 @@ export default function Nav() {
           title: "Profile XT teszt",
           link: "/szolgaltatasaink/profile-xt-teszt",
         },
+        {
+          title: "CAPtAin teszt",
+          link: "/szolgaltatasaink/captain-teszt",
+        },
       ],
     },
     {

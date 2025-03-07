@@ -53,7 +53,7 @@ export default function KeszsegfejlesztesInner() {
 
         <div className="flex flex-col gap-8 px-4">
           <H2 classname={'text-[--green]'}>Programjaink</H2>
-          <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-16 gap-4 ">
+          <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-16 gap-8">
             <KeszsegfejlesztesTile
               image={"/szolgaltatasok/generacios.webp"}
               shortwords={'alapozó, ismeretátadó, érzékenyítő tréning'}

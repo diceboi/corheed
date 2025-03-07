@@ -10,6 +10,7 @@ import MainNavButton from "./UI/Buttons/MainNavButton";
 import mailformSchema from "../utils/email-validation/mail-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { toast } from "sonner";
+import { useRouter } from "next/navigation";
 
 import { motion } from "framer-motion";
 import Paragraph from "./UI/Typo/Paragraph";
@@ -19,6 +20,8 @@ import { useForm } from "react-hook-form";
 export default function KapcsolatInner({ sendMail }) {
 
   const [productName, setProductName] = useState("");
+
+  const router = useRouter();
 
   const { 
     register,
@@ -39,6 +42,7 @@ export default function KapcsolatInner({ sendMail }) {
     if (result.success) {
       toast.success("Az üzenetet sikeresen elküldtük!");
       reset();
+      router.push("/koszonjuk");
     } else {  
       toast.error("Hiba történt az üzenet küldése során. Kérjük próbálja újra!");
     }

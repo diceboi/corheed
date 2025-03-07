@@ -17,7 +17,7 @@ export default function KeszsegfejlesztesTile({ image, title, shortwords, text, 
       className='relative w-full h-[200px] rounded-xl overflow-hidden'>
         <Image src={image} fill alt="Coaching" style={{ objectFit: 'cover' }} />
       </motion.div>
-      <div className="flex flex-col gap-4 h-[480px] justify-between p-8">
+      <div className="flex flex-col gap-4 lg:min-h-[480px] justify-between p-8">
         <div className="flex flex-col gap-4">
           <H3 classname={`font-bold lg:max-w-8/12 max-w-full ${titlecolor}`}>{title}</H3>
           <Paragraph classname={'italic font-semibold text-[--green] border-y border-white py-2'}>{shortwords}</Paragraph>

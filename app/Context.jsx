@@ -97,8 +97,8 @@ export default function ContextProvider({ children }) {
                 &apos;Minden emberhez vezet egy út.&apos;
               </Paragraph>
               <Paragraph>Személyes mottóm, melyet igyekszem egész életemen át követni családanyaként, barátként, munkatársként, segítő szakemberként.</Paragraph>
-              <Paragraph>Elsősorban gyermek- és ifjúsági coachként segítem a fiatal generációt mind egyénileg, mind csoportban, teamben. Kiemelet területem minden korosztálynál a tehetségnevelés, csapatok terén a közösségépítés. Alfa és Z generációs kutatással is foglalkozom; folyamatosan bővítem ismereteimet, tudásom a fiatal generációkról és a generációk együttéléséről, munkahelyi együttműködéséről.</Paragraph>
-              <Paragraph>Fontosnak tartom az önkéntességet: évek óta az Egyszülős Központban végzek coaching munkát, valamint a Magyar Református Szeretetszolgálat Nyilas Misi Ösztöndíj Programját vezetem - ez utóbbiért a Szeretetszolgálattól 2024-ben megkaptam a „Kiváló Önkéntes Díj”-at. 2023 óta az ICF Hungary Jószolgálati csapatának (CSR) tagjaként coach és projekt koordinátorként is dolgozom.</Paragraph>
+              <Paragraph>Elsősorban gyermek- és ifjúsági coachként segítem a fiatal generációt mind egyénileg, mind teamben. Kiemelt területeim a tehetségnevelés, pályaválasztás, közösségépítés (iskolai, csapat), de felkarolom a 22-24 éves korosztály kapunyitási pánikját is, támogatva ezzel őket a biztonságos egyetemi életből való kilépésben. Alfa és Z generációs kutatással ugyancsak foglalkozom; folyamatosan bővítem tudásom a fiatal generációkról és a generációk együttéléséről, munkahelyi együttműködéséről.</Paragraph>
+              <Paragraph>Fontosnak tartom az önkéntességet: évek óta az Egyszülős Központban és a Magyar Református Szeretetszolgálatnál végzek coaching munkát. A Nyilas Misi Ösztöndíj Program vezetéséért 2024-ben megkaptam a Szeretetszolgálat „Kiváló Önkéntes Díj”-át. 2023 óta az ICF Hungary CSR csapatában coach és projekt koordinátorként is tevékenykedem.</Paragraph>
             </div>
           )}
           
@@ -157,6 +157,19 @@ export default function ContextProvider({ children }) {
               <Paragraph>Az emberek motivációjával, a változó munkakörnyezettel, változáskezeléssel, a reziliencia fejlesztésével és munkavállalói elköteleződéssel foglalkozom. Hiszek a közösség és az együttműködés erejében, a fejlődési szemléletben (growth mindset), valamint az employer branding és az employee experience hatékonyság- és teljesítménynövelő hatásában.</Paragraph>
             </div>
           )}
+
+          {form === "belayane-najoua" && (
+            <div className="space-y-8">
+              <div className="flex flex-nowrap gap-4 items-center">
+                <Image src='/csapat/belayane-najoua.webp' width={150} height={150} alt="Belayane Najoua" className="rounded-full border-4 border-[--green]"/>
+                <H3 className="text-[--blue] font-bold text-2xl">Belayane Najoua</H3>
+              </div>
+              <Paragraph>
+              Najoua PR és kommunikációs szakember, az Agence Najoua alapítója, valamint a Munch PR és partnerségi területének vezetője. Közel öt éve csatlakozott a Munch csapatához első teljes munkaidős állásában, és azóta meghatározó szerepet játszik a CEE legnagyobb ételmentő platformjának márkaépítésében, amely négy országban is sikeresen működik. Korábban újságíróként több mint 200 cikket publikált társadalmi és környezeti kérdésekről elismert médiumokban. Rendszeresen tart előadásokat márkaépítésről és fenntartható kommunikációról vezető oktatási intézményekben. A Signature PR Award 2024 egyik legfiatalabb jelöltje volt, a Magyar PR Szövetség tagja, és aktívan részt vesz a Startup Hungary közösség életében.
+              </Paragraph>
+            </div>
+          )}
+
         </>
       </Modal>
 

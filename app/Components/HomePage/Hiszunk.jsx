@@ -4,6 +4,7 @@ import RegularContainer from "../UI/RegularContainer";
 import H1 from "../UI/Typo/H1";
 import H2 from "../UI/Typo/H2";
 import Image from "next/image";
+import MainNavButton from "../UI/Buttons/MainNavButton";
 
 export default function Hiszunk() {
   return (
@@ -32,6 +33,7 @@ export default function Hiszunk() {
                 <Image src="/leaf4.svg" width={15} height={15} alt="Leaf Icon" className="lg:hidden block opacity-80"/>
               </div>
             </div>
+            <MainNavButton link={'/kapcsolat'} text={'Lépj kapcsolatba velünk'} classname={'my-2'}/>
         </div>
         
     </RegularContainer>

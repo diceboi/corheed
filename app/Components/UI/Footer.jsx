@@ -37,25 +37,25 @@ export default function Footer() {
               <h3 className="text-[--yellow] font-bold text-lg pb-8 ">Elérhetőségek</h3>
                 <div className="flex flex-nowrap items-center gap-2">
                   <TbMail className="min-w-6 min-h-6 text-[--yellow]" />
-                  <button href="mailto:info@coreheed.hu" className="text-[--lightgreen]">
+                  <a href="mailto:info@coreheed.hu" className="text-[--lightgreen]">
                     info@coreheed.hu
-                  </button>
+                  </a>
                 </div>
                 <div className="flex flex-nowrap items-center gap-2">
                   <TbPhone className="min-w-6 min-h-6 text-[--yellow]" />
-                  <button href="tel:06 30 123 4567" className="text-[--lightgreen]">
+                  <a href="tel:06 30 123 4567" className="text-[--lightgreen]">
                     06 30 328 2517
-                  </button>
+                  </a>
                 </div>
                 <div className="flex flex-nowrap items-center gap-2">
                   <TbMapPin className="min-w-6 min-h-6 text-[--yellow]" />
-                  <button className="text-[--lightgreen]">
+                  <p className="text-[--lightgreen]">
                     2040. Budaörs
-                  </button>
+                  </p>
                 </div>
                 <div className="flex flex-nowrap items-center gap-2">
                   <TbClock className="min-w-6 min-h-6 text-[--yellow]" />
-                  <button className="text-[--lightgreen]">Hét-Pén 09:00-16:00</button>
+                  <p className="text-[--lightgreen]">Hét-Pén 09:00-16:00</p>
                 </div>
               </div>
             </div>
