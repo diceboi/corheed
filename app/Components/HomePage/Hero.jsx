@@ -28,7 +28,7 @@ export default function Hero() {
     <section className="flex flex-col bg-[--green] w-full pt-20">
       <div className="relative flex lg:flex-row flex-col lg:rounded-b-[90px] rounded-b-[50px] overflow-hidden">
 
-        <div className="relative flex flex-col lg:items-end lg:w-1/5 w-full bg-[--white] p-4 lg:h-[50vh] h-[50vh] z-20">
+        <div className="relative flex flex-col lg:items-end lg:w-1/5 w-full bg-[--white] p-4 lg:h-[50vh] h-[70vh] z-20">
           {slider === "forest" && (
             <Image
               src="/tree-shape-2.svg"
@@ -55,7 +55,7 @@ export default function Hero() {
           )}
 
         </div>
-        <div className="hidden lg:block relative lg:w-4/5 rounded-br-[90px] overflow-hidden lg:h-[50vh] h-[50vh]">
+        <div className="hidden lg:block relative lg:w-4/5 rounded-br-[90px] overflow-hidden lg:h-[50vh] h-[70vh]">
           {slider === "forest" && (
             <>
               <motion.img
@@ -109,16 +109,20 @@ export default function Hero() {
 
         </div>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center container w-full h-full z-20 px-4">
-          <div className="flex flex-col gap-4 lg:w-1/2 w-full">
-            <Image src={'/logos/coreheed-square-logo-green.svg'} alt={'Logo'} width={300} height={300} className={'lg:w-24 w-14 h-auto'} />
-            {slider === "forest" && (
-              <H1 classname={'text-[--green]'}>A többgenerációs csapatok szakmai támogatója</H1>
-            )}
-            {slider === "bridge" && (
-              <H1 classname={'text-[--green]'}>Híd a generációk között </H1>
-            )}
+          <div className="flex lg:flex-row flex-col gap-8 lg:w-1/2 w-full items-start">
 
-            <MainNavButton link={'/kapcsolat'} text={'Lépj kapcsolatba velünk!'} classname={'my-2'} />
+            <Image src={'/logos/coreheed-square-logo-green.svg'} alt={'Logo'} width={300} height={300} className={'lg:w-16 w-14 h-auto'} />
+            <div className="flex flex-col items-start gap-4">
+              {slider === "forest" && (
+                <H1 classname={'text-[--green]'}>A többgenerációs csapatok szakmai támogatója</H1>
+              )}
+              {slider === "bridge" && (
+                <H1 classname={'text-[--green]'}>Híd a generációk között </H1>
+              )}
+
+
+              <MainNavButton link={'/kapcsolat'} text={'Lépj kapcsolatba velünk!'} classname={'my-2'} />
+            </div>
           </div>
         </div>
 
