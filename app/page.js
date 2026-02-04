@@ -9,12 +9,11 @@ import Megjelenesek from "./Components/HomePage/Megjelenesek";
 export default function Home() {
   return (
     <>
-    <Hero />
-    <Partner/>
-    <Hid/>
-    <Szolgaltatasok />
-    <Hiszunk />
-    <Megjelenesek />
+      <Hero />
+      <Partner />
+      <Hid />
+      <Szolgaltatasok />
+      <Megjelenesek />
     </>
   );
 }
