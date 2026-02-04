@@ -115,7 +115,7 @@ export default function Hero() {
               <H1 classname={'text-[--green]'}>A többgenerációs csapatok szakmai támogatója</H1>
             )}
             {slider === "bridge" && (
-              <H1 classname={'text-[--green]'}>Híd a generációk között</H1>
+              <H1 classname={'text-[--green]'}>Híd a generációk között </H1>
             )}
             
             <MainNavButton link={'/kapcsolat'} text={'Ajánlatkérés'} classname={'my-2'}/>
