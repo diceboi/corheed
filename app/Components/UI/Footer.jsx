@@ -81,10 +81,10 @@ export default function Footer() {
                   Családi vállalkozások utódlása
                 </Link>
                 <Link
-                  href={"/szolgaltatasaink/keszsegfejlesztes"}
+                  href={"/vallalati-treningek"}
                   className="text-[--lightgreen]"
                 >
-                  Készségfejlesztés
+                  Vállalati tréningek
                 </Link>
                 <Link
                   href={"/szolgaltatasaink/tehetsegmenedzsment"}

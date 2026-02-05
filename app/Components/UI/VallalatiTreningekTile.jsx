@@ -6,7 +6,7 @@ import H3 from "./Typo/H3"
 import { motion } from "framer-motion"
 import Paragraph from "./Typo/Paragraph";
 
-export default function KeszsegfejlesztesTile({ image, title, shortwords, text, link, titlecolor }) {
+export default function VallalatiTreningekTile({ image, title, shortwords, text, link, titlecolor }) {
   return (
     <motion.div
     className='flex flex-col justify-start w-full bg-[--white] rounded-3xl' 

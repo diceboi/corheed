@@ -28,28 +28,26 @@ export default function Megjelenesek() {
       <div className="flex flex-col gap-8 w-full px-4">
         <SubTitle>Megjelenések</SubTitle>
 
-        {/* Header with Navigation Buttons */}
-        <div className="flex lg:flex-row flex-col justify-between gap-4 items-baseline">
-          <H2 classname={"text-white"}>Itt találkozhattál velünk</H2>
-          <div className="flex flex-nowrap gap-2">
-            <button
-              onClick={() => swiperRef.current?.slidePrev()}
-              className="w-8 h-8 bg-[--yellow] rounded-full flex items-center justify-center"
-            >
-              <TbArrowLeft className="min-w-6 min-h-6" />
-            </button>
-            <button
-              onClick={() => swiperRef.current?.slideNext()}
-              className="w-8 h-8 bg-[--yellow] rounded-full flex items-center justify-center"
-            >
-              <TbArrowRight className="min-w-6 min-h-6" />
-            </button>
-          </div>
-        </div>
+        <H2 classname={"text-white"}>Itt találkozhattál velünk</H2>
 
         {/* Swiper Component */}
-        <div className="flex lg:flex-row rounded-lg overflow-hidden">
-          <Swiper
+        <div className="flex lg:flex-row relative">
+          {/* Navigation Buttons */}
+          <button
+            onClick={() => swiperRef.current?.slidePrev()}
+            className="absolute -left-5 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-[--yellow] hover:bg-[--yellowhover] transition-all rounded-full flex items-center justify-center shadow-lg"
+          >
+            <TbArrowLeft className="min-w-6 min-h-6" />
+          </button>
+          <button
+            onClick={() => swiperRef.current?.slideNext()}
+            className="absolute -right-5 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-[--yellow] hover:bg-[--yellowhover] transition-all rounded-full flex items-center justify-center shadow-lg"
+          >
+            <TbArrowRight className="min-w-6 min-h-6" />
+          </button>
+
+          <div className="w-full rounded-lg overflow-hidden">
+            <Swiper
             ref={swiperRef} // ✅ Assign ref to Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={16}
@@ -176,7 +174,8 @@ export default function Megjelenesek() {
                 titlecolor={"text-white"}
               />
             </SwiperSlide>
-          </Swiper>
+            </Swiper>
+          </div>
         </div>
       </div>
     </RegularContainer>

@@ -18,17 +18,17 @@ import MainNavButton from "./UI/Buttons/MainNavButton";
 import IconBox from "./UI/IconBox";
 import InnerColorBox from "./UI/InnerColorBox";
 import SzolgaltatasokTile from "./UI/SzolgaltatasokTile";
-import KeszsegfejlesztesTile from "./UI/KeszsegfejlesztesTile";
+import VallalatiTreningekTile from "./UI/VallalatiTreningekTile";
 
-export default function KeszsegfejlesztesInner() {
+export default function VallalatiTreningekInner() {
   return (
     <RegularContainer classname={"lg:py-20 py-8 bg-white"}>
       <div className="flex flex-col lg:gap-40 gap-20">
         <div className="flex lg:flex-row flex-col items-center lg:gap-16 gap-8 px-4">
           <div className="flex flex-col gap-4 lg:w-1/2">
-            <H2 classname={"text-[--green]"}>Élményalapú készségfejlesztés</H2>
+            <H2 classname={"text-[--green]"}>Élményalapú vállalati tréningek</H2>
             <Paragraph>
-              Készségfejlesztő-, együttműködést fejlesztő programjaink az
+              Vállalati tréningjeink, együttműködést fejlesztő programjaink az
               élményalapú tanulást és az ismeretek mindennapi életbe történő
               átültetését célozzák meg. Az elméleti ismereteken és
               készségfejlesztésen túl, azonnal használható gyakorlati eszközöket
@@ -54,63 +54,63 @@ export default function KeszsegfejlesztesInner() {
         <div className="flex flex-col gap-8 px-4">
           <H2 classname={'text-[--green]'}>Programjaink</H2>
           <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-16 gap-8">
-            <KeszsegfejlesztesTile
+            <VallalatiTreningekTile
               image={"/szolgaltatasok/generacios.webp"}
               shortwords={'alapozó, ismeretátadó, érzékenyítő tréning'}
               title={"Generációs különbségek a munkahelyen"}
               text={'Készülj fel a legfiatalabb munkavállalók megjelenésére! Tudj meg többet a különböző generációk működéséről, attitűdjéről és építsd be ezeket a vállalati csapatműködésbe!'}
               link={"/ajanlatkeres"}
             />
-            <KeszsegfejlesztesTile
+            <VallalatiTreningekTile
               image={"/szolgaltatasok/asszertiv.webp"}
               shortwords={'kommunikációfejlesztés, készségfejlesztő tréning'}
               title={"Asszertív kommunikáció - generációs sajátoságokkal"}
               text={'Ismerd meg és sajátítsd el azokat a kommunikációs technikákat és készségeket, melyekkel transzparensebben és hatékonyabban tudsz kommunikálni a többgenerációs csapatokban.'}
               link={"/ajanlatkeres"}
             />
-            <KeszsegfejlesztesTile
+            <VallalatiTreningekTile
               image={"/szolgaltatasok/stressz.webp"}
               shortwords={'önismereti, készségfejlesztő tréning'}
               title={"Stressz- és konfliktuskezelés"}
               text={'Fordítsd át a stresszben lévő energiát a megoldások megtalálására! Sajátítsd el a konfliktusok hatékony kezeléséhez szükséges eszköztárat.'}
               link={"/ajanlatkeres"}
             />
-            <KeszsegfejlesztesTile
+            <VallalatiTreningekTile
               image={"/szolgaltatasok/valtozaskezeles.webp"}
               shortwords={'önismereti, készségfejlesztő tréning'}
               title={"Változáskezelés, reziliencia fejlesztés"}
               text={'Változásokkal, átalakulással nézel szembe? Fejleszd csapatod reziliencia, vagyis lelki állóképesség szintjét, hogy eredményesebben tudjon megküzdeni az új helyzetekkel.'}
               link={"/ajanlatkeres"}
             />
-            <KeszsegfejlesztesTile
+            <VallalatiTreningekTile
               image={"/szolgaltatasok/ugyfelszolgalat.webp"}
               shortwords={'gyakorlati know-how, ismeretátadó tréning'}
               title={"Ügyfélszolgálat a Z generáció világában"}
               text={'Mivel szólítsd meg a Z-generációs ügyfeleidet? Hogyan kommunikáljon az ügyfélszolgálat? Segítünk megérteni a jövő generációjának fontos igényeit, hogy könnyebben elérhesd őket.'}
               link={"/ajanlatkeres"}
             />
-            <KeszsegfejlesztesTile
+            <VallalatiTreningekTile
               image={"/szolgaltatasok/toborzas.webp"}
               shortwords={'gyakorlati know-how, ismeretátadó tréning'}
               title={"Toborzás a Z generáció világában"}
               text={'Mi alapján választ a hasonló lehetőségek közül egy fiatal munkavállaló? Tudj meg többet a fiatal generáció számára vonzó vállalati értékekről, hogy Téged válasszon!'}
               link={"/ajanlatkeres"}
             />
-            <KeszsegfejlesztesTile
+            <VallalatiTreningekTile
               image={"/szolgaltatasok/prezentacios.webp"}
               shortwords={'gyakorlati know-how, ismeretátadó tréning'}
               title={"Prezentációs technikák"}
               text={'Add át hatékonyabban azt a tudást, amivel már rendelkezel! Sajátítsd el az AI alapú eszközöket, amivel gyorsabban és színesebben tudod elkészíteni a prezentációdat!'}
               link={"/ajanlatkeres"}
             />
-            <KeszsegfejlesztesTile
+            <VallalatiTreningekTile
               image={"/szolgaltatasok/egyuttmukodesfejlesztes.webp"}
               shortwords={'önismereti, készségfejlesztő tréning'}
               title={"Együttműködésfejlesztés"}
               text={'Fejleszd csapatod együttműködését, hogy eredményesebben érjétek el a kitűzött célokat! Az együttműködés abban is segíti a csapatot, hogy könnyebben megküzdjön az új helyzetekkel.'}
               link={"/ajanlatkeres"}
             />
-            <KeszsegfejlesztesTile
+            <VallalatiTreningekTile
               image={"/szolgaltatasok/szemelyes-hatekonysag.webp"}
               shortwords={'önismereti, készségfejlesztő tréning'}
               title={"Személyes hatékonyság fejlesztés"}

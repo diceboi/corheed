@@ -8,7 +8,7 @@ import MainNavButton from "../UI/Buttons/MainNavButton";
 
 export default function Hiszunk() {
   return (
-    <RegularContainer classname={'relative bg-white py-20 overflow-hidden'}>
+    <RegularContainer classname={'relative bg-white lg:pb-20 pt-20 overflow-hidden'}>
 
         <Image src={'/leaf2.svg'} width={300} height={300} alt='Levél' className='absolute -top-40 -left-20 opacity-10 rotate-90 blur-lg'/>
         <Image src={'/leaf2.svg'} width={300} height={300} alt='Levél' className='absolute -botom-20 -right-20 opacity-20 blur-sm'/>
@@ -33,7 +33,6 @@ export default function Hiszunk() {
                 <Image src="/leaf4.svg" width={15} height={15} alt="Leaf Icon" className="lg:hidden block opacity-80"/>
               </div>
             </div>
-            <MainNavButton link={'/kapcsolat'} text={'Lépj kapcsolatba velünk'} classname={'my-2'}/>
         </div>
         
     </RegularContainer>

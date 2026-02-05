@@ -42,45 +42,66 @@ export default function Nav() {
       link: '/rolunk',
     },
     {
-      title: "Szolgáltatásaink",
+      title: "Vállalati tréningek",
+      link: '/vallalati-treningek',
+    },
+    {
+      title: "Fejlesztői programok",
       items: [
         {
-          title: "Generációk együttműködése program",
-          link: "/szolgaltatasaink/generaciok-egyuttmukodese-program",
+          title: "Vezetőfejlesztés",
+          link: "/fejlesztoi-programok/vezeto-fejlesztes",
         },
         {
-          title: "Fiatalbarát munkahely program",
-          link: "/szolgaltatasaink/fiatalbarat-munkahely-program",
+          title: "Business coaching / Team Coaching",
+          link: "/fejlesztoi-programok/business-coaching-team-coaching",
         },
         {
-          title: "Családi vállalkozások utódlása",
-          link: "/szolgaltatasaink/csaladi-vallalkozasok-utodlasa",
-        },
-        {
-          title: "Készségfejlesztés",
-          link: "/szolgaltatasaink/keszsegfejlesztes",
+          title: "Gyermek- és ifjúsági coaching",
+          link: "/fejlesztoi-programok/gyermek-es-ifjusagi-coaching",
         },
         {
           title: "Tehetségmenedzsment",
-          link: "/szolgaltatasaink/tehetsegmenedzsment",
+          link: "/fejlesztoi-programok/tehetsegmenedzsment",
         },
         {
-          title: "Coaching / Teamcoaching",
-          link: "/szolgaltatasaink/coaching-teamcoaching",
+          title: "Szakmai csapatépítés",
+          link: "/fejlesztoi-programok/szakmai-csapatepites",
         },
         {
           title: "Profile XT teszt",
-          link: "/szolgaltatasaink/profile-xt-teszt",
+          link: "/fejlesztoi-programok/profile-xt-teszt",
         },
         {
           title: "CAPtAin teszt",
-          link: "/szolgaltatasaink/captain-teszt",
+          link: "/fejlesztoi-programok/captain-teszt",
         },
       ],
     },
     {
       title: "Generációváltás",
-      link: "/generaciovaltas",
+      items: [
+        {
+          title: "Generációk együttműködése program",
+          link: "/generaciovaltas/generaciok-egyuttmukodese-program",
+        },
+        {
+          title: "Cégutódlás, utódlástervezés",
+          link: "/generaciovaltas/cegutodas-utodlastervezes",
+        },
+        {
+          title: "Generációs különbségek a munkahelyen",
+          link: "/generaciovaltas/generacios-kulonbsegek-a-munkahelyen",
+        },
+        {
+          title: "Fiatalbarát munkahely program",
+          link: "/generaciovaltas/fiatalbarat-munkahely-program",
+        },
+      ],
+    },
+    {
+      title: "Blog",
+      link: "/blog",
     },
     {
       title: "Kapcsolat",
@@ -112,22 +133,17 @@ export default function Nav() {
               </Link>
 
               {/*Desktop Menu*/}
-              <ul className="hidden md:flex flex-row gap-2 text-lg">
+              <ul className="hidden lg:flex flex-row gap-2 text-lg">
                 {menus.map((menu, index) => (
                   <NavButton key={index} {...menu} scrolled={isScrolled} />
                 ))}
               </ul>
             </div>
             <div className="flex flex-row justify-end w-full">
-              <MainNavButton
-                text={"Ajánlatkérés"}
-                link={"/ajanlatkeres"}
-                classname={"md:block hidden"}
-                scrolled={isScrolled}
-              />
+              
               {/*Mobile Menu*/}
 
-              <div className="md:hidden">
+              <div className="lg:hidden">
                 <TbMenu2
                   className={`min-w-8 min-h-8 text-white`}
                   onClick={toggleMobileMenu}
@@ -159,6 +175,12 @@ export default function Nav() {
                   </motion.div>
                 )}
               </div>
+              <MainNavButton
+                text={"Ajánlatkérés"}
+                link={"/ajanlatkeres"}
+                classname={"lg:block hidden"}
+                scrolled={isScrolled}
+              />
             </div>
           </div>
         </div>

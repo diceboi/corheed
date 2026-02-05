@@ -17,12 +17,12 @@ export default function NavButton({ title, items, link, scrolled, isOpen, toggle
       initial="initial"
       animate="initial"
       whileHover={"whileInView"}
-      className="group flex lg:flex-col relative lg:justify-center lg:h-16"
+      className="group flex flex-col relative lg:justify-center lg:h-16 w-full lg:w-auto"
     >
       {link ? (
         <Link href={link} onClick={toggleMobileMenu}>
           <span
-            className={`flex flex-nowrap items-center gap-2 py-2 px-4 rounded-md lg:group-hover:bg-[--mint] font-semibold text-[--white] hover:text-[--green]`}
+            className={`flex flex-nowrap items-center gap-2 py-2 lg:px-4 px-1 rounded-md lg:group-hover:bg-[--mint] font-semibold text-[--white] text-sm lg:group-hover:text-[--green] whitespace-nowrap`}
           >
             {title}
             {items && (
@@ -34,11 +34,12 @@ export default function NavButton({ title, items, link, scrolled, isOpen, toggle
           </span>
         </Link>
       ) : (
-        <div
-          className={`flex flex-col items-center gap-2 py-2 lg:px-4 pl-1 lg:-mb-0 -mb-2 rounded-md lg:group-hover:bg-[--mint] font-semibold text-[--white] hover:text-[--green] active:text-[--green]`}
-        >
-          <div className="flex flex-nowrap gap-2 items-center" onClick={toggleSubMenu}>
-            {title}
+        <>
+          <div
+            className={`flex flex-row justify-between items-center w-full py-2 lg:px-4 px-1 rounded-md lg:group-hover:bg-[--mint] font-semibold text-[--white] text-sm lg:group-hover:text-[--green] lg:whitespace-nowrap`}
+            onClick={toggleSubMenu}
+          >
+            <span>{title}</span>
             {items && (
               <>
               <div className="lg:hidden block">
@@ -57,18 +58,16 @@ export default function NavButton({ title, items, link, scrolled, isOpen, toggle
           </div>
 
           {items && (
-            <>
-              <motion.div
-                initial={{ height: 0 }}
-                animate={{ height: isOpen ? 'auto' : 0 }}
-                transition={{ duration: 0.2, ease: 'easeInOut' }}
-                className="flex lg:hidden flex-col overflow-hidden"
-              >
-                <MobileSubMenu items={items} />
-              </motion.div>
-            </>
+            <motion.div
+              initial={{ height: 0 }}
+              animate={{ height: isOpen ? 'auto' : 0 }}
+              transition={{ duration: 0.2, ease: 'easeInOut' }}
+              className="flex lg:hidden flex-col overflow-hidden w-full"
+            >
+              <MobileSubMenu items={items} />
+            </motion.div>
           )}
-        </div>
+        </>
       )}
 
       {items && <SubMenu items={items} />}
