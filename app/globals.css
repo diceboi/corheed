@@ -88,6 +88,11 @@
   }
 }
 
+/* Larger bullet points for lists */
+ul li::marker {
+  font-size: 1.5em;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);

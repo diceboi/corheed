@@ -59,63 +59,63 @@ export default function VallalatiTreningekInner() {
               shortwords={'alapozó, ismeretátadó, érzékenyítő tréning'}
               title={"Generációs különbségek a munkahelyen"}
               text={'Készülj fel a legfiatalabb munkavállalók megjelenésére! Tudj meg többet a különböző generációk működéséről, attitűdjéről és építsd be ezeket a vállalati csapatműködésbe!'}
-              link={"/ajanlatkeres"}
+              detailLink={"/vallalati-treningek/generacios-kulonbsegek"}
             />
             <VallalatiTreningekTile
               image={"/szolgaltatasok/asszertiv.webp"}
-              shortwords={'kommunikációfejlesztés, készségfejlesztő tréning'}
-              title={"Asszertív kommunikáció - generációs sajátoságokkal"}
-              text={'Ismerd meg és sajátítsd el azokat a kommunikációs technikákat és készségeket, melyekkel transzparensebben és hatékonyabban tudsz kommunikálni a többgenerációs csapatokban.'}
-              link={"/ajanlatkeres"}
+              shortwords={'kommunikációfejlesztő, készségfejlesztő tréning'}
+              title={"Asszertív kommunikáció"}
+              text={'Ismerd meg és sajátítsd el azokat a kommunikációs technikákat és készségeket, melyekkel transzparensebben és hatékonyabban tudsz kommunikálni munkahelyi helyzetekben.'}
+              detailLink={"/vallalati-treningek/asszertiv-kommunikacio"}
             />
             <VallalatiTreningekTile
               image={"/szolgaltatasok/stressz.webp"}
               shortwords={'önismereti, készségfejlesztő tréning'}
               title={"Stressz- és konfliktuskezelés"}
-              text={'Fordítsd át a stresszben lévő energiát a megoldások megtalálására! Sajátítsd el a konfliktusok hatékony kezeléséhez szükséges eszköztárat.'}
-              link={"/ajanlatkeres"}
+              text={'Alakítsd át a stresszt erőforrássá! Sajátítsd el a konfliktusok hatékony kezeléséhez szükséges eszköztárat és fejleszd stressztűrő képességedet.'}
+              detailLink={"/vallalati-treningek/stressz-konfliktuskezeles"}
             />
             <VallalatiTreningekTile
               image={"/szolgaltatasok/valtozaskezeles.webp"}
               shortwords={'önismereti, készségfejlesztő tréning'}
-              title={"Változáskezelés, reziliencia fejlesztés"}
-              text={'Változásokkal, átalakulással nézel szembe? Fejleszd csapatod reziliencia, vagyis lelki állóképesség szintjét, hogy eredményesebben tudjon megküzdeni az új helyzetekkel.'}
-              link={"/ajanlatkeres"}
+              title={"Változáskezelés és reziliencia fejlesztés"}
+              text={'Fejleszd csapatod vagy saját rezilienciádat, vagyis lelki állóképességét! Tanulj meg eredményesebben megküzdeni a változásokkal és az új helyzetekkel.'}
+              detailLink={"/vallalati-treningek/valtozaskezeles"}
             />
             <VallalatiTreningekTile
               image={"/szolgaltatasok/ugyfelszolgalat.webp"}
               shortwords={'gyakorlati know-how, ismeretátadó tréning'}
               title={"Ügyfélszolgálat a Z generáció világában"}
-              text={'Mivel szólítsd meg a Z-generációs ügyfeleidet? Hogyan kommunikáljon az ügyfélszolgálat? Segítünk megérteni a jövő generációjának fontos igényeit, hogy könnyebben elérhesd őket.'}
-              link={"/ajanlatkeres"}
+              text={'Hogyan kommunikáljon az ügyfélszolgálat Z generációs ügyfelekkel? Segítünk megérteni a jövő generációjának igényeit és elvárásait.'}
+              detailLink={"/vallalati-treningek/ugyfelszolgalat-z-generacio"}
             />
             <VallalatiTreningekTile
               image={"/szolgaltatasok/toborzas.webp"}
               shortwords={'gyakorlati know-how, ismeretátadó tréning'}
               title={"Toborzás a Z generáció világában"}
-              text={'Mi alapján választ a hasonló lehetőségek közül egy fiatal munkavállaló? Tudj meg többet a fiatal generáció számára vonzó vállalati értékekről, hogy Téged válasszon!'}
-              link={"/ajanlatkeres"}
+              text={'Mi tesz vonzóvá egy munkáltatót a Z generáció szemében? Tudj meg többet a fiatal generáció elvárásairól és hatékony toborzási módszereiről.'}
+              detailLink={"/vallalati-treningek/toborzas-z-generacio"}
             />
             <VallalatiTreningekTile
               image={"/szolgaltatasok/prezentacios.webp"}
               shortwords={'gyakorlati know-how, ismeretátadó tréning'}
               title={"Prezentációs technikák"}
-              text={'Add át hatékonyabban azt a tudást, amivel már rendelkezel! Sajátítsd el az AI alapú eszközöket, amivel gyorsabban és színesebben tudod elkészíteni a prezentációdat!'}
-              link={"/ajanlatkeres"}
+              text={'Add át hatékonyabban tudásodat! Sajátítsd el a modern prezentációs technikákat és AI eszközöket, hogy gyorsabban és színesebben állítsd össze előadásaidat.'}
+              detailLink={"/vallalati-treningek/prezentacios-technikak"}
             />
             <VallalatiTreningekTile
               image={"/szolgaltatasok/egyuttmukodesfejlesztes.webp"}
               shortwords={'önismereti, készségfejlesztő tréning'}
               title={"Együttműködésfejlesztés"}
-              text={'Fejleszd csapatod együttműködését, hogy eredményesebben érjétek el a kitűzött célokat! Az együttműködés abban is segíti a csapatot, hogy könnyebben megküzdjön az új helyzetekkel.'}
-              link={"/ajanlatkeres"}
+              text={'Fejleszd csapatod együttműködését! Gyakorlati módszerekkel érjétek el a célokat hatékonyabban és kezeljétek jobban a változásokat.'}
+              detailLink={"/vallalati-treningek/egyuttmukodes-fejlesztes"}
             />
             <VallalatiTreningekTile
               image={"/szolgaltatasok/szemelyes-hatekonysag.webp"}
               shortwords={'önismereti, készségfejlesztő tréning'}
               title={"Személyes hatékonyság fejlesztés"}
               text={'Növeld tudatosan a személyes hatékonyságodat, hogy a tevékenységek könnyebben, tervezhetőbben és gyorsabban végrehajthatóvá váljanak.'}
-              link={"/ajanlatkeres"}
+              detailLink={"/vallalati-treningek/szemelyes-hatekonysag-fejlesztes"}
             />
           </div>
         </div>

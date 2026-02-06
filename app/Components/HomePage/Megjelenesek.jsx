@@ -174,6 +174,41 @@ export default function Megjelenesek() {
                 titlecolor={"text-white"}
               />
             </SwiperSlide>
+            <SwiperSlide>
+              <SzolgaltatasokTile
+                image={"/rendezvenyek/Portfolio_GenZ_Fest.webp"}
+                title={"Portfolio GenZ Fest"}
+                titlecolor={"text-white"}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <SzolgaltatasokTile
+                image={"/rendezvenyek/GenZ_sajtoesemeny.webp"}
+                title={"GenZ sajtóesemény"}
+                titlecolor={"text-white"}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <SzolgaltatasokTile
+                image={"/rendezvenyek/Nyugat-MO-i-Gazdasagi-Forum.webp"}
+                title={"Nyugat-Magyarországi Gazdasági Fórum"}
+                titlecolor={"text-white"}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <SzolgaltatasokTile
+                image={"/rendezvenyek/Next-GEN-Camp.webp"}
+                title={"Next-GEN Camp"}
+                titlecolor={"text-white"}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <SzolgaltatasokTile
+                image={"/rendezvenyek/HRight-Now-Konferencia.webp"}
+                title={"HRight Now Konferencia"}
+                titlecolor={"text-white"}
+              />
+            </SwiperSlide>
             </Swiper>
           </div>
         </div>

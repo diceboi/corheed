@@ -65,7 +65,7 @@ export default function Hero() {
                 transition={{ duration: 1.2, ease: 'easeOut', type: 'spring', bounce: 0.4 }}
                 src="/forest-bg.webp"
                 alt="Kis fa nő az erdő mélyén"
-                style={{ objectFit: "cover", objectPosition: "50% 50%" }}
+                style={{ objectFit: "cover", objectPosition: "50% 50%", width: "100%", height: "100%" }}
                 className="absolute top-0 left-0"
               />
               <Image
@@ -89,7 +89,7 @@ export default function Hero() {
                 transition={{ duration: 1.2, ease: 'easeOut', type: 'spring', bounce: 0.4 }}
                 src="/bridge-bg.webp"
                 alt="Híd a fák között"
-                style={{ objectFit: "cover", objectPosition: "50% 50%" }}
+                style={{ objectFit: "cover", objectPosition: "50% 50%", width: "100%", height: "100%" }}
                 className="absolute top-0 left-0"
               />
               <Image

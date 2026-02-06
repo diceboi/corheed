@@ -53,6 +53,10 @@ export default function Nav() {
           link: "/fejlesztoi-programok/vezeto-fejlesztes",
         },
         {
+          title: "Job-fit mérés",
+          link: "/fejlesztoi-programok/jobfit-meres",
+        },
+        {
           title: "Business coaching / Team Coaching",
           link: "/fejlesztoi-programok/business-coaching-team-coaching",
         },
