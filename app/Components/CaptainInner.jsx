@@ -27,7 +27,6 @@ import MainNavButton from "./UI/Buttons/MainNavButton";
 import IconBox from "./UI/IconBox";
 import InnerColorBox from "./UI/InnerColorBox";
 import SzolgaltatasokTile from "./UI/SzolgaltatasokTile";
-import KeszsegfejlesztesTile from "./UI/KeszsegfejlesztesTile";
 import { TbMessagesOff, TbMoodPuzzled,TbHierarchy3 } from "react-icons/tb";
 import InfoBlock from "./UI/InfoBlock";
 import WeThinkBlock from "./UI/WeThinkBlock";
