@@ -34,10 +34,10 @@ export default function SubMenu({ items }) {
   return (
     <motion.ul
       variants={dropdown}
-      className={`hidden lg:flex flex-col lg:absolute top-[60px] lg:-left-6 -lef-0 p-4 gap-2 bg-[--green] w-max text-sm rounded-b-lg`}
+      className={`hidden min-[1400px]:flex flex-col min-[1400px]:absolute top-[60px] min-[1400px]:-left-6 -lef-0 p-4 gap-3 bg-[--green] w-max text-md rounded-b-lg`}
     >
       {items.map((item, index) => (
-        <Link href={item.link} key={index} className={`h-6 hover:bg-[--mint] text-[--white] hover:text-[--green] w-fit px-2 pt-[2px] pb-[12px] rounded-md`}>
+        <Link href={item.link} key={index} className={`h-6 hover:bg-[--mint] text-[--white] hover:text-[--green] w-fit px-2 rounded-md`}>
         <li>
         <span className="font-medium">{item.title}</span>
         </li>

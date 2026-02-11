@@ -46,27 +46,27 @@ export default function Nav() {
       link: '/vallalati-treningek',
     },
     {
-      title: "Fejlesztői programok",
+      title: "Fejlesztő programok",
       items: [
         {
           title: "Vezetőfejlesztés",
-          link: "/fejlesztoi-programok/vezeto-fejlesztes",
+          link: "/fejleszto-programok/vezeto-fejlesztes",
         },
         {
           title: "Job-fit mérés",
-          link: "/fejlesztoi-programok/jobfit-meres",
+          link: "/fejleszto-programok/jobfit-meres",
         },
         {
           title: "Business coaching / Team Coaching",
-          link: "/fejlesztoi-programok/business-coaching-team-coaching",
+          link: "/szolgaltatasaink/coaching-teamcoaching",
         },
         {
           title: "Gyermek- és ifjúsági coaching",
-          link: "/fejlesztoi-programok/gyermek-es-ifjusagi-coaching",
+          link: "/fejleszto-programok/gyermek-es-ifjusagi-coaching",
         },
         {
           title: "Tehetségmenedzsment",
-          link: "/fejlesztoi-programok/tehetsegmenedzsment",
+          link: "/szolgaltatasaink/tehetsegmenedzsment",
         },
         {
           title: "Szakmai csapatépítés",
@@ -74,11 +74,11 @@ export default function Nav() {
         },
         {
           title: "Profile XT teszt",
-          link: "/fejlesztoi-programok/profile-xt-teszt",
+          link: "/szolgaltatasaink/profile-xt-teszt",
         },
         {
           title: "CAPtAin teszt",
-          link: "/fejlesztoi-programok/captain-teszt",
+          link: "/szolgaltatasaink/captain-teszt",
         },
       ],
     },
@@ -87,19 +87,19 @@ export default function Nav() {
       items: [
         {
           title: "Generációk együttműködése program",
-          link: "/generaciovaltas/generaciok-egyuttmukodese-program",
+          link: "/szolgaltatasaink/generaciok-egyuttmukodese-program",
         },
         {
           title: "Cégutódlás, utódlástervezés",
-          link: "/generaciovaltas/cegutodas-utodlastervezes",
+          link: "/szolgaltatasaink/csaladi-vallalkozasok-utodlasa",
         },
         {
-          title: "Generációs különbségek a munkahelyen",
-          link: "/generaciovaltas/generacios-kulonbsegek-a-munkahelyen",
+          title: "Generációs különbségek – munkahelyi érzékenyítés",
+          link: "/vallalati-treningek/generacios-kulonbsegek",
         },
         {
           title: "Fiatalbarát munkahely program",
-          link: "/generaciovaltas/fiatalbarat-munkahely-program",
+          link: "/szolgaltatasaink/fiatalbarat-munkahely-program",
         },
       ],
     },
@@ -137,7 +137,7 @@ export default function Nav() {
               </Link>
 
               {/*Desktop Menu*/}
-              <ul className="hidden lg:flex flex-row gap-2 text-lg">
+              <ul className="hidden min-[1400px]:flex flex-row gap-2 text-lg">
                 {menus.map((menu, index) => (
                   <NavButton key={index} {...menu} scrolled={isScrolled} />
                 ))}
@@ -147,7 +147,7 @@ export default function Nav() {
               
               {/*Mobile Menu*/}
 
-              <div className="lg:hidden">
+              <div className="min-[1400px]:hidden">
                 <TbMenu2
                   className={`min-w-8 min-h-8 text-white`}
                   onClick={toggleMobileMenu}
@@ -182,7 +182,7 @@ export default function Nav() {
               <MainNavButton
                 text={"Ajánlatkérés"}
                 link={"/ajanlatkeres"}
-                classname={"lg:block hidden"}
+                classname={"min-[1400px]:block hidden"}
                 scrolled={isScrolled}
               />
             </div>

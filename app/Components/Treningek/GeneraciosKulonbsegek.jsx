@@ -1,262 +1,131 @@
-import React from "react";
-import RegularContainer from "../UI/RegularContainer";
-import H2 from "../UI/Typo/H2";
-import H3 from "../UI/Typo/H3";
-import Label from "../UI/Typo/Label";
-import Paragraph from "../UI/Typo/Paragraph";
-import MainNavButton from "../UI/Buttons/MainNavButton";
-import { TbUsers, TbBulb, TbChartLine, TbTarget } from "react-icons/tb";
+import React from 'react'
+import RegularContainer from '../UI/RegularContainer'
+import H2 from '../UI/Typo/H2'
+import H3 from '../UI/Typo/H3'
+import Paragraph from '../UI/Typo/Paragraph'
+import MainNavButton from '../UI/Buttons/MainNavButton'
+import IconBox from '../UI/IconBox'
+import InnerColorBox from '../UI/InnerColorBox'
+import InfoBlock from '../UI/InfoBlock'
+import { TbUsersGroup, TbMessage2, TbBulb, TbMoodSmile, TbTargetArrow, TbHeartHandshake, TbChartBar, TbUserCheck, TbBrain, TbHierarchy, TbCheck, TbEye, TbEar, TbBriefcase } from "react-icons/tb"
 
 export default function GeneraciosKulonbsegek() {
   return (
-    <RegularContainer classname={"lg:py-20 py-8 bg-white"}>
-      <div className="flex flex-col lg:gap-16 gap-8 px-4">
-        
-        {/* GENERAL TRAINING - Introduction Section */}
-        <div className="flex flex-col gap-6">
-          <H3 classname={'text-[--green] italic font-semibold'}>
-            Alapozó, ismeretátadó, érzékenyítő tréning
-          </H3>
-          <Paragraph>
-            A munkahelyeken ma már akár 5 generáció is együtt dolgozik, eltérő értékrenddel, 
-            kommunikációs stílussal és elvárásokkal. Ezek a különbségek gyakran félreértésekhez 
-            és feszültségekhez vezetnek – azonban megfelelő tudással és érzékenyítéssel komoly 
-            erőforrássá alakíthatók.
-          </Paragraph>
-          <Paragraph>
-            Ez a tréning segít megérteni a különböző generációk működését, különös tekintettel 
-            a legfiatalabb munkavállalók megjelenésére, és gyakorlati szemléletet ad a hatékonyabb 
-            együttműködéshez.
-          </Paragraph>
-        </div>
-
-        {/* What Participants Learn */}
-        <div className="flex flex-col gap-6 bg-[--lightgreen] rounded-3xl p-8 lg:p-12">
-          <H2 classname={'text-[--green]'}>A tréningen résztvevők:</H2>
-          <ul className="flex flex-col gap-4">
-            <li className="flex gap-4 items-start">
-              <span className="text-[--green] mt-1 flex-shrink-0">
-                <TbBulb size={24} />
-              </span>
-              <Paragraph classname={'m-0'}>
-                megismerik a különböző generációk jellemzőit, motivációit és attitűdjeit
+    <RegularContainer classname={'lg:py-20 py-8 bg-white'}>
+        <div className='flex flex-col lg:gap-40 gap-20'>
+            {/* Intro Section */}
+            <div className='flex flex-col gap-8 px-4'>
+              <H2 classname={'text-[--green]'}>Alapozó, ismeretátadó, érzékenyítő tréning</H2>
+              <Paragraph>
+                A mai üzleti környezet az első a munka világában, amely akár 5 különböző generáció együttműködését kívánja meg! 
+                A munkahelyek generációs összetétele az elmúlt években jelentősen átalakult és ez a változás csak tovább gyorsul. 
+                Ma már egy szervezeten belül egyszerre vannak jelen a Baby Boomerek, az X, Y és Z generáció tagjai, sőt, 
+                egyre inkább megjelenik a legfiatalabb generáció is a munka világában: az Alfa generáció.
               </Paragraph>
-            </li>
-            <li className="flex gap-4 items-start">
-              <span className="text-[--green] mt-1 flex-shrink-0">
-                <TbBulb size={24} />
-              </span>
-              <Paragraph classname={'m-0'}>
-                megértik a generációs különbségek hátterét és munkahelyi hatásait
-              </Paragraph>
-            </li>
-            <li className="flex gap-4 items-start">
-              <span className="text-[--green] mt-1 flex-shrink-0">
-                <TbBulb size={24} />
-              </span>
-              <Paragraph classname={'m-0'}>
-                tudatosabbá válnak saját kommunikációs és együttműködési stílusukban
-              </Paragraph>
-            </li>
-            <li className="flex gap-4 items-start">
-              <span className="text-[--green] mt-1 flex-shrink-0">
-                <TbBulb size={24} />
-              </span>
-              <Paragraph classname={'m-0'}>
-                eszközöket kapnak a generációk közötti konfliktusok megelőzéséhez és kezeléséhez
-              </Paragraph>
-            </li>
-            <li className="flex gap-4 items-start">
-              <span className="text-[--green] mt-1 flex-shrink-0">
-                <TbBulb size={24} />
-              </span>
-              <Paragraph classname={'m-0'}>
-                felkészülnek a legfiatalabb munkavállalók hatékony bevonására és megtartására
-              </Paragraph>
-            </li>
-          </ul>
-        </div>
-
-        {/* Target Audience */}
-        <div className="flex flex-col gap-6">
-          <H2 classname={'text-[--green]'}>Kiknek ajánljuk?</H2>
-          <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
-            <div className="flex gap-3 items-center bg-white border-2 border-[--lightgreen] rounded-2xl p-4">
-              <TbUsers className="text-[--yellow] flex-shrink-0" size={32} />
-              <Paragraph classname={'m-0 font-semibold text-[--green]'}>
-                csoportvezetőknek
+              <Paragraph>
+                Ez a sokszínűség óriási lehetőség, ugyanakkor komoly kihívás is, ha nincs megfelelő tudás és szemlélet a 
+                generációk közötti együttműködés támogatására. Ez az alapozó, ismeretátadó, érzékenyítő tréning abban segít, 
+                hogy a résztvevők megértsék a generációs különbségek mögött húzódó okokat, és képesek legyenek ezeket 
+                tudatosan beépíteni a mindennapi munkahelyi működésbe.
               </Paragraph>
             </div>
-            <div className="flex gap-3 items-center bg-white border-2 border-[--lightgreen] rounded-2xl p-4">
-              <TbUsers className="text-[--yellow] flex-shrink-0" size={32} />
-              <Paragraph classname={'m-0 font-semibold text-[--green]'}>
-                HR szakembereknek
-              </Paragraph>
-            </div>
-            <div className="flex gap-3 items-center bg-white border-2 border-[--lightgreen] rounded-2xl p-4">
-              <TbUsers className="text-[--yellow] flex-shrink-0" size={32} />
-              <Paragraph classname={'m-0 font-semibold text-[--green]'}>
-                csapatoknak, ahol több generáció dolgozik együtt
-              </Paragraph>
-            </div>
-            <div className="flex gap-3 items-center bg-white border-2 border-[--lightgreen] rounded-2xl p-4">
-              <TbUsers className="text-[--yellow] flex-shrink-0" size={32} />
-              <Paragraph classname={'m-0 font-semibold text-[--green]'}>
-                mindenkinek, aki szeretné javítani a munkahelyi együttműködést és kommunikációt
-              </Paragraph>
-            </div>
-          </div>
-        </div>
 
-        {/* Results */}
-        <div className="flex flex-col gap-6 bg-[--green] rounded-3xl p-8 lg:p-12">
-          <div className="flex gap-4 items-start">
-            <TbChartLine className="text-[--yellow] flex-shrink-0 mt-1" size={32} />
-            <div className="flex flex-col gap-4">
-              <H3 classname={'text-white m-0'}>Eredmény:</H3>
-              <Paragraph classname={'text-white m-0'}>
-                Nyitottabb, befogadóbb szemlélet, hatékonyabb kommunikáció és kiegyensúlyozottabb 
-                csapatmunka a multigenerációs szervezetekben is.
-              </Paragraph>
+            {/* A képzés fókusza */}
+            <div className='flex lg:flex-row flex-col items-start lg:gap-16 gap-8 px-4'>
+              <div className='flex flex-col gap-4 lg:w-1/2'>
+                <H2 classname={'text-[--green]'}>A képzés fókusza</H2>
+                <Paragraph>A tréning során a résztvevők:</Paragraph>
+                <ul className="flex flex-col gap-3 pl-4">
+                  <li className="flex gap-3 items-start">
+                    <span className="text-[--yellow] mt-1">•</span>
+                    <Paragraph classname={'m-0'}>átfogó képet kapnak a különböző generációk szocializációjáról, értékrendjéről és motivációiról,</Paragraph>
+                  </li>
+                  <li className="flex gap-3 items-start">
+                    <span className="text-[--yellow] mt-1">•</span>
+                    <Paragraph classname={'m-0'}>megismerik, hogy mi formálta az egyes korosztályok gondolkodását (társadalmi, technológiai, gazdasági hatások),</Paragraph>
+                  </li>
+                  <li className="flex gap-3 items-start">
+                    <span className="text-[--yellow] mt-1">•</span>
+                    <Paragraph classname={'m-0'}>rálátást nyernek arra, miben különböznek a generációk (munkához való hozzáállás, kommunikáció, visszajelzés, karrier),</Paragraph>
+                  </li>
+                  <li className="flex gap-3 items-start">
+                    <span className="text-[--yellow] mt-1">•</span>
+                    <Paragraph classname={'m-0'}>megértik, miért viselkednek másképp a legfiatalabb munkavállalók és hogyan lehet velük hatékonyan együtt dolgozni.</Paragraph>
+                  </li>
+                </ul>
+              </div>
+              <div className='grid lg:grid-cols-1 grid-cols-1 gap-8 lg:w-1/2 w-full items-center'>
+                 <div className='flex lg:flex-row flex-col gap-8 justify-center'>
+                  <IconBox title={'Szocializáció'} icon={<TbUsersGroup className='lg:min-w-20 min-w-10 h-auto text-[--yellow]'/>}/>
+                  <IconBox title={'Értékrend'} icon={<TbHeartHandshake className='lg:min-w-20 min-w-10 h-auto text-[--yellow]'/>}/>
+                </div>
+                <div className='flex lg:flex-row flex-col gap-8 justify-center'>
+                  <IconBox title={'Motiváció'} icon={<TbTargetArrow className='lg:min-w-20 min-w-10 h-auto text-[--yellow]'/>}/>
+                  <IconBox title={'Kommunikáció'} icon={<TbMessage2 className='lg:min-w-20 min-w-10 h-auto text-[--yellow]'/>}/>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
 
-        {/* SEPARATOR */}
-        <div className="flex items-center gap-4 py-8">
-          <div className="flex-1 h-px bg-[--mint]"></div>
-          <div className="flex flex-col items-center gap-2">
-            <H3 classname={'text-[--green] text-center m-0'}>Vezetői fókusz</H3>
-            <Paragraph classname={'text-[--green] text-center italic m-0'}>
-              Stratégiai szemléletű program vezetőknek
-            </Paragraph>
-          </div>
-          <div className="flex-1 h-px bg-[--mint]"></div>
-        </div>
+            <InfoBlock text={'A képzés nem címkéz és nem általánosít leegyszerűsítő módon, hanem érzékenyít, segít felismerni a saját generációs nézőpontunkat és annak hatását a munkahelyi kapcsolatainkra.'}/>
 
-        {/* LEADERSHIP TRAINING - Introduction Section */}
-        <div className="flex flex-col gap-6">
-          <H3 classname={'text-[--green] italic font-semibold'}>
-            Stratégiai szemléletű, érzékenyítő és gyakorlatorientált tréning vezetőknek
-          </H3>
-          <Paragraph>
-            A vezetők ma egyszerre irányítanak többféle generációt, eltérő motivációkkal, 
-            kommunikációs igényekkel és elvárásokkal. A generációs különbségek figyelmen kívül 
-            hagyása csökkentheti a teljesítményt, növelheti a fluktuációt és gyengítheti az 
-            elköteleződést. Tudatos kezelésük viszont versenyelőnyt jelent.
-          </Paragraph>
-          <Paragraph>
-            Ez a vezetői fókuszú tréning abban támogatja a résztvevőket, hogy magabiztosabban 
-            és hatékonyabban vezessenek multigenerációs csapatokat, különös figyelemmel a 
-            legfiatalabb munkavállalók megjelenésére.
-          </Paragraph>
-        </div>
+            {/* Mihez nyújt támogatást a tréning? */}
+            <div className='flex flex-col gap-8 px-4'>
+              <H2 classname={'text-[--green]'}>Mihez nyújt támogatást a tréning?</H2>
+              
+              <div className="grid lg:grid-cols-2 grid-cols-1 gap-6">
+                <div className="flex flex-col gap-3 bg-white border-2 border-[--mint] p-6 rounded-2xl shadow-md">
+                  <H3 classname={'text-[--green] m-0 text-xl'}>Mélyül a megértés</H3>
+                  <Paragraph classname={'m-0'}>
+                    A résztvevők megértik, hogy a generációs különbségek nem „jók” vagy „rosszak”, hanem eltérő tapasztalatokból fakadnak. 
+                    Képesek lesznek a konfliktusokat nem személyes támadásként, hanem nézőpontbeli eltérésként értelmezni.
+                    <br/><br/>
+                    <strong>Eredmény:</strong> Csökken a feszültség és a félreértések előfordulása a mindennapi munkában.
+                  </Paragraph>
+                </div>
+                
+                <div className="flex flex-col gap-3 bg-white border-2 border-[--mint] p-6 rounded-2xl shadow-md">
+                  <H3 classname={'text-[--green] m-0 text-xl'}>Növeli az empátiát és nyitottságot</H3>
+                  <Paragraph classname={'m-0'}>
+                    A program érzékenyítő jellege miatt a résztvevők tudatosabban kezelik saját előítéleteiket, nyitottabbá válnak 
+                    az eltérő munkastílusokra, és könnyebben találnak közös hangot fiatalabb és idősebb kollégáikkal egyaránt.
+                    <br/><br/>
+                    <strong>Eredmény:</strong> Erősödik a csapatkohézió és a kollégák közötti bizalom.
+                  </Paragraph>
+                </div>
+                
+                <div className="flex flex-col gap-3 bg-white border-2 border-[--mint] p-6 rounded-2xl shadow-md">
+                  <H3 classname={'text-[--green] m-0 text-xl'}>Gyakorlati tudást ad</H3>
+                  <Paragraph classname={'m-0'}>
+                    A tréning külön hangsúlyt helyez az Alfa és Z generációk iránti közeledésre. A résztvevők reális képet kapnak 
+                    a motivációkról, eszközöket a bevonáshoz, és felismerik az erősségeket (digitális magabiztosság, gyors tanulás).
+                    <br/><br/>
+                    <strong>Eredmény:</strong> Vállalati versenyelőny a fiatal, képzett munkaerő bevonzásában és megtartásában.
+                  </Paragraph>
+                </div>
 
-        {/* What Leaders Learn */}
-        <div className="flex flex-col gap-6 bg-[--lightgreen] rounded-3xl p-8 lg:p-12">
-          <H2 classname={'text-[--green]'}>A tréning során a vezetők:</H2>
-          <ul className="flex flex-col gap-4">
-            <li className="flex gap-4 items-start">
-              <span className="text-[--green] mt-1 flex-shrink-0">
-                <TbBulb size={24} />
-              </span>
-              <Paragraph classname={'m-0'}>
-                átlátják az egyes generációk munkahelyi motivációit és elvárásait
-              </Paragraph>
-            </li>
-            <li className="flex gap-4 items-start">
-              <span className="text-[--green] mt-1 flex-shrink-0">
-                <TbBulb size={24} />
-              </span>
-              <Paragraph classname={'m-0'}>
-                felismerik, hogyan hat saját vezetői stílusuk a különböző korosztályokra
-              </Paragraph>
-            </li>
-            <li className="flex gap-4 items-start">
-              <span className="text-[--green] mt-1 flex-shrink-0">
-                <TbBulb size={24} />
-              </span>
-              <Paragraph classname={'m-0'}>
-                fejlesztik generációkhoz illeszkedő kommunikációs és visszajelzési gyakorlatukat
-              </Paragraph>
-            </li>
-            <li className="flex gap-4 items-start">
-              <span className="text-[--green] mt-1 flex-shrink-0">
-                <TbBulb size={24} />
-              </span>
-              <Paragraph classname={'m-0'}>
-                gyakorlati eszközöket kapnak a bevonás, motiválás és megtartás erősítéséhez
-              </Paragraph>
-            </li>
-            <li className="flex gap-4 items-start">
-              <span className="text-[--green] mt-1 flex-shrink-0">
-                <TbBulb size={24} />
-              </span>
-              <Paragraph classname={'m-0'}>
-                felkészülnek a generációs különbségekből fakadó konfliktusok tudatos kezelésére
-              </Paragraph>
-            </li>
-          </ul>
-        </div>
-
-        {/* Leadership Target Audience */}
-        <div className="flex flex-col gap-6">
-          <H2 classname={'text-[--green]'}>Kiknek ajánljuk?</H2>
-          <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
-            <div className="flex gap-3 items-center bg-white border-2 border-[--lightgreen] rounded-2xl p-4">
-              <TbUsers className="text-[--yellow] flex-shrink-0" size={32} />
-              <Paragraph classname={'m-0 font-semibold text-[--green]'}>
-                felső- és középvezetőknek
-              </Paragraph>
+                <div className="flex flex-col gap-3 bg-white border-2 border-[--mint] p-6 rounded-2xl shadow-md">
+                  <H3 classname={'text-[--green] m-0 text-xl'}>Fenntartható szemlélet</H3>
+                  <Paragraph classname={'m-0'}>
+                    Segít kialakítani a fenntartható csapatműködéshez szükséges szemléletet. A résztvevők képesek lesznek a 
+                    generációs különbségeket erőforrásként kezelni és a sokszínűséget a teljesítmény szolgálatába állítani.
+                    <br/><br/>
+                    <strong>Eredmény:</strong> Aktív szereplői lesznek egy befogadóbb, együttműködőbb munkahelyi kultúra megvalósításának.
+                  </Paragraph>
+                </div>
+              </div>
             </div>
-            <div className="flex gap-3 items-center bg-white border-2 border-[--lightgreen] rounded-2xl p-4">
-              <TbUsers className="text-[--yellow] flex-shrink-0" size={32} />
-              <Paragraph classname={'m-0 font-semibold text-[--green]'}>
-                csapatvezetőknek, projektmenedzsereknek
-              </Paragraph>
-            </div>
-            <div className="flex gap-3 items-center bg-white border-2 border-[--lightgreen] rounded-2xl p-4">
-              <TbUsers className="text-[--yellow] flex-shrink-0" size={32} />
-              <Paragraph classname={'m-0 font-semibold text-[--green]'}>
-                HR-vezetőkkel együttműködő döntéshozóknak
-              </Paragraph>
-            </div>
-            <div className="flex gap-3 items-center bg-white border-2 border-[--lightgreen] rounded-2xl p-4">
-              <TbUsers className="text-[--yellow] flex-shrink-0" size={32} />
-              <Paragraph classname={'m-0 font-semibold text-[--green]'}>
-                mindazoknak, akik multigenerációs csapatot irányítanak
-              </Paragraph>
-            </div>
-          </div>
-        </div>
 
-        {/* Leadership Results */}
-        <div className="flex flex-col gap-6 bg-[--green] rounded-3xl p-8 lg:p-12">
-          <div className="flex gap-4 items-start">
-            <TbTarget className="text-[--yellow] flex-shrink-0 mt-1" size={32} />
-            <div className="flex flex-col gap-4">
-              <H3 classname={'text-white m-0'}>Vezetői eredmény:</H3>
-              <Paragraph classname={'text-white m-0'}>
-                Nagyobb elköteleződés, csökkenő fluktuáció, hatékonyabb csapatműködés és olyan 
-                vezetői szemlélet, amely képes hidat építeni a különböző generációk között.
-              </Paragraph>
-            </div>
-          </div>
+            {/* CTA Section */}
+            <InnerColorBox title={'Generációs különbségek – munkahelyi érzékenyítés'} titlecolor={'text-white'} text2={''} textcolor2={'text-white'} bgcolor={'bg-[--green]'}>
+                <Paragraph classname={'text-white text-center'}>
+                  Szeretnéd csapatodat felkészíteni a generációs kihívásokra és növelni az együttműködés hatékonyságát?
+                </Paragraph>
+                <H3 classname={'text-white text-center'}>
+                  Kérj ajánlatot érzékenyítő tréningünkre!
+                </H3>
+                <MainNavButton link={'/ajanlatkeres'} text={'Ajánlatkérés'} classname={'self-center'} />
+            </InnerColorBox>
         </div>
-
-        {/* CTA Section */}
-        <div className="flex flex-col items-center gap-6 py-8">
-          <H2 classname={'text-[--green] text-center'}>
-            Érdekel ez a tréning?
-          </H2>
-          <MainNavButton 
-            link={'/ajanlatkeres'} 
-            text={'Ajánlatkérés'} 
-            classname={'min-w-fit'} 
-          />
-        </div>
-
-      </div>
     </RegularContainer>
-  );
+  )
 }

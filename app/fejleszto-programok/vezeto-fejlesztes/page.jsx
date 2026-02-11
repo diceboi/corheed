@@ -9,7 +9,7 @@ export const metadata = {
     title: "Vezetőfejlesztés | Stratégiai Vezetői Fejlesztés",
     description: "Komplex vezetőfejlesztési program önismeret, készségfejlesztés és stratégiai gondolkodás erősítésére. Támogassuk együtt a vezetőidet!",
     type: "website",
-    url: "https://coreheed.hu/fejlesztoi-programok/vezeto-fejlesztes",
+    url: "https://coreheed.hu/fejleszto-programok/vezeto-fejlesztes",
     images: [
       {
         url: "https://coreheed.hu/szolgaltatasok/vezetofejlesztes.webp",

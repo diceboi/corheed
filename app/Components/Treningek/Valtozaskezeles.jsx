@@ -230,7 +230,7 @@ export default function Valtozaskezeles() {
           <div className="flex gap-4 items-start">
             <TbTarget className="text-[--yellow] flex-shrink-0 mt-1" size={32} />
             <div className="flex flex-col gap-4">
-              <H3 classname={'text-white m-0'}>Vezetői hozadék:</H3>
+              <H3 classname={'text-white m-0'}>Vezetői eredmény:</H3>
               <Paragraph classname={'text-white m-0'}>
                 Nagyobb elfogadás, csökkenő ellenállás, stabilabb csapatműködés és sikeresebb változáskezelés.
               </Paragraph>

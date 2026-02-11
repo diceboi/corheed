@@ -14,8 +14,8 @@ export default function Partner() {
 
       <div className='flex lg:flex-row flex-col justify-between gap-8' style={{ zIndex: 1 }}>
         <WhiteTile image={'/partner-1.svg'} text={<><span className='text-[--yellow]'>Partner</span><span className='text-[--green]'> a generációk<br></br>együttműködésében</span></>} />
-        <WhiteTile image={'/partner-2.svg'} text={<><span className='text-[--yellow]'>Partner</span><span className='text-[--green]'> a generációs<br></br>szemléletváltásban</span></>} />
-        <WhiteTile image={'/partner-3.svg'} text={<><span className='text-[--yellow]'>Partner</span><span className='text-[--green]'> az utódlásban</span></>} />
+        <WhiteTile image={'/partner-2.svg'} text={<><span className='text-[--yellow]'>Partner</span><span className='text-[--green]'> a vállalati<br></br>képzésekben</span></>} />
+        <WhiteTile image={'/partner-3.svg'} text={<><span className='text-[--yellow]'>Partner</span><span className='text-[--green]'> a <br></br>vezetőfejlesztésben</span></>} />
       </div>
     </RegularContainer>
   )

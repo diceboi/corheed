@@ -64,7 +64,7 @@ export default function RolunkMondtak() {
   };
 
   return (
-    <section className="flex flex-col bg-white w-full py-20">
+    <section className="flex flex-col bg-white w-full py-10">
       <div className="flex flex-col container m-auto px-4">
         <div className='flex flex-col items-center gap-16'>
           <H2 classname={'text-center text-[--green]'}>Rólunk mondták</H2>

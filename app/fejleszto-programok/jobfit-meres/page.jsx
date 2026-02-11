@@ -9,7 +9,7 @@ export const metadata = {
     title: "Job-fit mérés | Objektív Kiválasztási Eszköz",
     description: "Objektív adatok a sikeres kiválasztáshoz. A job-fit mérés előrejelzi a beválást és csökkenti a HR kockázatokat.",
     type: "website",
-    url: "https://coreheed.hu/fejlesztoi-programok/jobfit-meres",
+    url: "https://coreheed.hu/fejleszto-programok/jobfit-meres",
     images: [
       {
         url: "https://coreheed.hu/jobfit.webp",

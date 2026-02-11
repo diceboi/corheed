@@ -16,19 +16,19 @@ export default function Hero() {
     setSlider((prev) => (prev === "forest" ? "bridge" : "forest"));
   };
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setSlider((prev) => (prev === "forest" ? "bridge" : "forest"));
-    }, 8000); // 5000ms = 5 seconds
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setSlider((prev) => (prev === "forest" ? "bridge" : "forest"));
+  //   }, 8000); // 5000ms = 5 seconds
 
-    return () => clearInterval(interval); // Cleanup on unmount
-  }, []);
+  //   return () => clearInterval(interval); // Cleanup on unmount
+  // }, []);
 
   return (
     <section className="flex flex-col bg-[--green] w-full pt-20">
       <div className="relative flex lg:flex-row flex-col lg:rounded-b-[90px] rounded-b-[50px] overflow-hidden">
 
-        <div className="relative flex flex-col lg:items-end lg:w-1/5 w-full bg-[--white] p-4 lg:h-[50vh] h-[70vh] z-20">
+        <div className="relative flex flex-col lg:items-end lg:w-1/5 w-full bg-[--white] p-4 lg:h-[50vh] h-[40vh] z-20">
           {slider === "forest" && (
             <Image
               src="/tree-shape-2.svg"
@@ -53,7 +53,6 @@ export default function Hero() {
               }}
             />
           )}
-
         </div>
         <div className="hidden lg:block relative lg:w-4/5 rounded-br-[90px] overflow-hidden lg:h-[50vh] h-[70vh]">
           {slider === "forest" && (
@@ -108,10 +107,10 @@ export default function Hero() {
           <div className="absolute z-10 left-0 top-0 w-1/2 h-full -ml-1 bg-gradient-to-r from-[--white] to-[#f5f5f700]"></div>
 
         </div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center container w-full h-full z-20 px-4">
+        <div className="absolute top-1/2 left-1/4 -translate-x-1/4 -translate-y-1/2 flex flex-col justify-center container w-full h-full z-20 px-4">
           <div className="flex lg:flex-row flex-col gap-8 lg:w-1/2 w-full items-start">
 
-            <Image src={'/logos/coreheed-square-logo-green.svg'} alt={'Logo'} width={300} height={300} className={'lg:w-16 w-14 h-auto'} />
+            <Image src={'/logos/coreheed-square-logo-green.svg'} alt={'Logo'} width={300} height={300} className={'lg:w-20 w-14 h-auto'} />
             <div className="flex flex-col items-start gap-4">
               {slider === "forest" && (
                 <H1 classname={'text-[--green]'}>A többgenerációs csapatok szakmai támogatója</H1>
@@ -126,9 +125,9 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="absolute lg:bottom-8 bottom-4 left-1/2 -translate-x-1/2 z-20">
+        {/* <div className="absolute lg:bottom-8 bottom-4 left-1/2 -translate-x-1/2 z-20">
           <ToggleSwitch isActive={slider === "bridge"} onToggle={handleToggle} />
-        </div>
+        </div> */}
       </div>
     </section>
   );

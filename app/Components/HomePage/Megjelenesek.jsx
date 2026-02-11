@@ -24,7 +24,7 @@ export default function Megjelenesek() {
   const swiperRef = useRef(null);
 
   return (
-    <RegularContainer classname={"relative bg-[--green] py-20"}>
+    <RegularContainer classname={"relative bg-[--green] py-10"}>
       <div className="flex flex-col gap-8 w-full px-4">
         <SubTitle>Megjelenések</SubTitle>
 
@@ -66,6 +66,13 @@ export default function Megjelenesek() {
               },
             }}
           >
+            <SwiperSlide>
+              <SzolgaltatasokTile
+                image={"/rendezvenyek/Nyugat-MO-i-Gazdasagi-Forum.webp"}
+                title={"Nyugat-Magyarországi Gazdasági Fórum"}
+                titlecolor={"text-white"}
+              />
+            </SwiperSlide>
             <SwiperSlide>
               <SzolgaltatasokTile
                 image={"/rendezvenyek/01_HiFest.webp"}
@@ -188,13 +195,7 @@ export default function Megjelenesek() {
                 titlecolor={"text-white"}
               />
             </SwiperSlide>
-            <SwiperSlide>
-              <SzolgaltatasokTile
-                image={"/rendezvenyek/Nyugat-MO-i-Gazdasagi-Forum.webp"}
-                title={"Nyugat-Magyarországi Gazdasági Fórum"}
-                titlecolor={"text-white"}
-              />
-            </SwiperSlide>
+            
             <SwiperSlide>
               <SzolgaltatasokTile
                 image={"/rendezvenyek/Next-GEN-Camp.webp"}

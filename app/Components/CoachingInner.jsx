@@ -42,7 +42,7 @@ export default function CoachingInner() {
           </div>
           <div className="relative flex flex-col gap-4 lg:w-1/2 w-full lg:min-h-[500px] min-h-[300px] rounded-3xl overflow-hidden">
             <Image
-              src={"/szolgaltatasok/coaching2.webp"}
+              src={"/szolgaltatasok/egyeni-coaching.webp"}
               fill
               alt="Egyéni coaching"
               style={{ objectFit: "cover", objectPosition: "50% 50%" }}

@@ -9,7 +9,7 @@ export const metadata = {
     title: "Gyerek Coaching | Játékos Fejlesztés Gyermekeknek",
     description: "Támogató, játékos coaching folyamat gyermekeknek az önbizalom, önismeret és érzelmi fejlődés érdekében.",
     type: "website",
-    url: "https://coreheed.hu/fejlesztoi-programok/gyermek-es-ifjusagi-coaching",
+    url: "https://coreheed.hu/fejleszto-programok/gyermek-es-ifjusagi-coaching",
     images: [
       {
         url: "https://coreheed.hu/gyerek-coaching.webp",

@@ -10,7 +10,11 @@ import { TbSparkles, TbHeart, TbMoodSmile, TbStar } from "react-icons/tb"
 
 export default function GyerekCoachingInner() {
   return (
-    <RegularContainer classname={'lg:py-20 py-8 bg-gradient-to-b from-white via-[#fff5f5] to-white'}>
+    <RegularContainer classname={'lg:py-20 py-8 bg-gradient-to-b from-white via-[#fff5f5] to-white relative overflow-hidden'}>
+        <Image src={'/crayon/Artboard 2.png'} width={700} height={700} alt="Gyerek coaching" className='absolute top-[0vh] -left-[15%]' />
+        <Image src={'/crayon/Artboard 4.png'} width={700} height={700} alt="Gyerek coaching" className='absolute top-[30vh] -right-[15%]' />
+        <Image src={'/crayon/Artboard 8.png'} width={700} height={700} alt="Gyerek coaching" className='absolute top-[120vh] -left-[15%]' />
+        <Image src={'/crayon/Artboard 6.png'} width={700} height={700} alt="Gyerek coaching" className='absolute top-[200vh] -right-[15%]' />
         <div className='flex flex-col lg:gap-32 gap-20'>
             {/* Mi a gyerek coaching? - Playful intro */}
             <div className='flex lg:flex-row flex-col items-center lg:gap-16 gap-8 px-4'>
@@ -21,7 +25,6 @@ export default function GyerekCoachingInner() {
                 
                 <H2 classname={'text-[--green] relative'}>
                   Mi a gyerek coaching?
-                  <span className="absolute -top-4 -right-4 text-4xl">✨</span>
                 </H2>
                 <Paragraph>
                   A gyerek coaching egy támogató, fejlesztő folyamat, mely segíti a gyermekeket abban, hogy jobban 
@@ -35,7 +38,7 @@ export default function GyerekCoachingInner() {
               </div>
               
               <div className='lg:w-1/2 w-full'>
-                <div className="relative bg-gradient-to-br from-[#FFD700] to-[#FFA500] p-8 rounded-[3rem] shadow-xl transform rotate-1">
+                <div className="relative bg-gradient-to-br from-[#FFD700] to-[#FFA500] p-8 rounded-[3rem] shadow-xl transform">
                   <div className="bg-white p-6 rounded-3xl">
                     <div className="grid grid-cols-2 gap-4">
                       <div className="flex flex-col items-center gap-3 bg-[#FFE4E1] p-4 rounded-2xl">
@@ -75,7 +78,7 @@ export default function GyerekCoachingInner() {
                   <div className="absolute -inset-1 bg-gradient-to-r from-[--green] to-[#3fffba] rounded-[2rem] opacity-20"></div>
                   <div className="relative bg-white border-4 border-[--green] p-8 rounded-[2rem]">
                     <H3 classname={'text-[--green] m-0 mb-4'}>Felnőtt coaching</H3>
-                    <ul className="flex flex-col gap-3 pl-4">
+                    <ul className="flex flex-col gap-3">
                       <li className="flex gap-3 items-start">
                         <span className="text-[--green] mt-1 font-bold">→</span>
                         <Paragraph classname={'m-0'}>Tudatos célkitűzések</Paragraph>
@@ -93,14 +96,14 @@ export default function GyerekCoachingInner() {
                 </div>
 
                 {/* Gyerek coaching */}
-                <div className="relative transform -rotate-1">
+                <div className="relative">
                   <div className="absolute -inset-1 bg-gradient-to-r from-[#FFB6C1] via-[#FFD700] to-[#87CEEB] rounded-[2rem] opacity-40"></div>
                   <div className="relative bg-gradient-to-br from-[#FFE4E1] to-[#E0F2F7] border-4 border-[#FF69B4] p-8 rounded-[2rem]">
                     <H3 classname={'text-[#FF1493] m-0 mb-4 flex items-center gap-2'}>
                       Gyerek coaching 
                       <span className="text-2xl">🎨</span>
                     </H3>
-                    <ul className="flex flex-col gap-3 pl-4">
+                    <ul className="flex flex-col gap-3">
                       <li className="flex gap-3 items-start">
                         <span className="text-[#FF69B4] mt-1 font-bold text-xl">★</span>
                         <Paragraph classname={'m-0'}>Játékos módszerek</Paragraph>
@@ -135,7 +138,6 @@ export default function GyerekCoachingInner() {
               <div className='flex flex-col gap-6 lg:w-1/2'>
                 <H2 classname={'text-[--green] relative'}>
                   Milyen eszközökkel dolgozunk?
-                  <span className="absolute -top-6 -right-2 text-3xl">🎈</span>
                 </H2>
                 <Paragraph>
                   A gyerek coaching során életkornak megfelelő, játékos és kreatív eszközöket használunk, hogy a 
@@ -176,8 +178,8 @@ export default function GyerekCoachingInner() {
             {/* Gyakorlati fejlesztési célok */}
             <div className='flex flex-col gap-8 px-4'>
               <div className="text-center">
-                <div className="inline-block bg-gradient-to-r from-[#90EE90] via-[#FFD700] to-[#FF69B4] p-1 rounded-3xl">
-                  <div className="bg-white px-8 py-4 rounded-3xl">
+                <div className="inline-block bg-gradient-to-r from-[#90EE90] via-[#FFD700] to-[#FF69B4] p-2 rounded-3xl">
+                  <div className="bg-white px-8 py-4 rounded-2xl">
                     <H2 classname={'text-[--green] m-0'}>Gyakori fejlesztési célok</H2>
                   </div>
                 </div>
@@ -226,14 +228,15 @@ export default function GyerekCoachingInner() {
             <div className="px-4">
               <div className="relative">
                 <div className="absolute -inset-2 bg-gradient-to-r from-[#FF69B4] via-[#FFD700] to-[#87CEEB] rounded-[3rem] opacity-20 blur-xl"></div>
-                <InnerColorBox title={'Gyerek Coaching'} titlecolor={'text-white'} text2={''} textcolor2={'text-white'} bgcolor={'bg-gradient-to-r from-[--green] to-[#3fffba]'}>
-                    <Paragraph classname={'text-white text-center text-lg'}>
-                      Segítsük együtt gyermekedet abban, hogy magabiztosan, boldogan és tudatosan élje az életét! ✨
+                <InnerColorBox title={'Gyerek Coaching'} titlecolor={'text-white'} text2={''} textcolor2={'text-white'} bgcolor={'bg-gradient-to-r from-[--green] to-[#3fffba] z-10 relative overflow-hidden'}>
+                  <Image src={'/crayon/sticky-note.webp'} width={700} height={700} alt="Gyerek coaching" className='absolute top-0 -left-[15%] opacity-30' />
+                    <Paragraph classname={'text-white text-center text-lg z-10'}>
+                      Segítsük együtt gyermekedet abban, hogy magabiztosan, boldogan és tudatosan élje az életét!
                     </Paragraph>
-                    <H3 classname={'text-white text-center'}>
-                      Hiszünk abban, hogy minden gyerek képes rá! 🌟
+                    <H3 classname={'text-white text-center z-10'}>
+                      Hiszünk abban, hogy minden gyerek képes rá! 
                     </H3>
-                    <MainNavButton link={'/ajanlatkeres'} text={'Ajánlatkérés'} classname={'self-center'} />
+                    <MainNavButton link={'/ajanlatkeres'} text={'Ajánlatkérés'} classname={'self-center z-10'} />
                 </InnerColorBox>
               </div>
             </div>
