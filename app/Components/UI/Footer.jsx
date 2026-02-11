@@ -19,7 +19,7 @@ export default function Footer() {
         <div className="flex flex-col gap-16 w-full">
           <div className="flex lg:flex-row flex-col gap-16 w-full justify-between lg:items-start items-center">
             <div className="flex flex-col gap-8 items-center">
-            <Image
+              <Image
                 src={"/logos/coreheed-square-logo-mint.svg"}
                 width={100}
                 height={300}
@@ -33,9 +33,9 @@ export default function Footer() {
               </div>
             </div>
             <div className="flex flex-col gap-8 justify-center items-center">
-              
+
               <div className="flex flex-col gap-2 lg:text-left text-center">
-              <h3 className="text-[--yellow] font-bold text-lg pb-8 ">Elérhetőségek</h3>
+                <h3 className="text-[--yellow] font-bold text-lg pb-8 ">Elérhetőségek</h3>
                 <div className="flex flex-nowrap items-center gap-2">
                   <TbMail className="min-w-6 min-h-6 text-[--yellow]" />
                   <a href="mailto:info@coreheed.hu" className="text-[--lightgreen]">
@@ -64,19 +64,19 @@ export default function Footer() {
               <div className="flex flex-col lg:items-start items-center gap-2 ">
                 <h3 className="text-[--yellow] font-bold text-lg pb-8 lg:text-left text-center">Szolgáltatások</h3>
                 <Link
-                  href={"/szolgaltatasaink/generaciok-egyuttmukodese-program"}
+                  href={"/generaciovaltas/generaciok-egyuttmukodese-program"}
                   className="text-[--lightgreen]"
                 >
                   Generációk együttműködése program
                 </Link>
                 <Link
-                  href={"/szolgaltatasaink/fiatalbarat-munkahely-program"}
+                  href={"/generaciovaltas/fiatalbarat-munkahely-program"}
                   className="text-[--lightgreen]"
                 >
                   Fiatalbarát munkahely program
                 </Link>
                 <Link
-                  href={"/szolgaltatasaink/csaladi-vallalkozasok-utodlasa"}
+                  href={"/generaciovaltas/cegutodas-utodlastervezes"}
                   className="text-[--lightgreen]"
                 >
                   Családi vállalkozások utódlása
@@ -88,19 +88,19 @@ export default function Footer() {
                   Vállalati tréningek
                 </Link>
                 <Link
-                  href={"/szolgaltatasaink/tehetsegmenedzsment"}
+                  href={"/fejlesztoi-programok/tehetsegmenedzsment"}
                   className="text-[--lightgreen]"
                 >
                   Tehetségmenedzsment
                 </Link>
                 <Link
-                  href={"/szolgaltatasaink/coaching-teamcoaching"}
+                  href={"/fejlesztoi-programok/business-coaching-team-coaching"}
                   className="text-[--lightgreen]"
                 >
                   Coaching / Teamcoaching
                 </Link>
                 <Link
-                  href={"/szolgaltatasaink/profile-xt-teszt"}
+                  href={"/fejlesztoi-programok/profile-xt-teszt"}
                   className="text-[--lightgreen]"
                 >
                   Profile XT teszt

@@ -58,7 +58,7 @@ export default function Nav() {
         },
         {
           title: "Business coaching / Team Coaching",
-          link: "/szolgaltatasaink/coaching-teamcoaching",
+          link: "/fejlesztoi-programok/business-coaching-team-coaching",
         },
         {
           title: "Gyermek- és ifjúsági coaching",
@@ -66,7 +66,7 @@ export default function Nav() {
         },
         {
           title: "Tehetségmenedzsment",
-          link: "/szolgaltatasaink/tehetsegmenedzsment",
+          link: "/fejlesztoi-programok/tehetsegmenedzsment",
         },
         {
           title: "Szakmai csapatépítés",
@@ -74,11 +74,11 @@ export default function Nav() {
         },
         {
           title: "Profile XT teszt",
-          link: "/szolgaltatasaink/profile-xt-teszt",
+          link: "/fejlesztoi-programok/profile-xt-teszt",
         },
         {
           title: "CAPtAin teszt",
-          link: "/szolgaltatasaink/captain-teszt",
+          link: "/fejlesztoi-programok/captain-teszt",
         },
       ],
     },
@@ -87,11 +87,11 @@ export default function Nav() {
       items: [
         {
           title: "Generációk együttműködése program",
-          link: "/szolgaltatasaink/generaciok-egyuttmukodese-program",
+          link: "/generaciovaltas/generaciok-egyuttmukodese-program",
         },
         {
           title: "Cégutódlás, utódlástervezés",
-          link: "/szolgaltatasaink/csaladi-vallalkozasok-utodlasa",
+          link: "/generaciovaltas/cegutodas-utodlastervezes",
         },
         {
           title: "Generációs különbségek – munkahelyi érzékenyítés",
@@ -99,7 +99,7 @@ export default function Nav() {
         },
         {
           title: "Fiatalbarát munkahely program",
-          link: "/szolgaltatasaink/fiatalbarat-munkahely-program",
+          link: "/generaciovaltas/fiatalbarat-munkahely-program",
         },
       ],
     },
