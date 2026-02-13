@@ -27,9 +27,9 @@ export default function Footer() {
               />
               <h3 className="text-[--lightgreen]">Coreheed Consulting Kft.</h3>
               <div className="flex flex-nowrap gap-2">
-                <Link href="https://www.facebook.com/profile.php?id=61572865276294" target="__blank"><FaFacebook className="min-w-6 h-auto text-[--lightgreen]"/></Link>
-                <Link href="http://linkedin.com/company/coreheed-consulting-kft" target="__blank"><FaLinkedin className="min-w-6 h-auto text-[--lightgreen]"/></Link>
-                <Link href="https://www.instagram.com/coreheed_consulting?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="__blank"><FaInstagram className="min-w-6 h-auto text-[--lightgreen]"/></Link>
+                <Link href="https://www.facebook.com/profile.php?id=61572865276294" target="__blank"><FaFacebook className="min-w-6 h-auto text-[--lightgreen]" /></Link>
+                <Link href="http://linkedin.com/company/coreheed-consulting-kft" target="__blank"><FaLinkedin className="min-w-6 h-auto text-[--lightgreen]" /></Link>
+                <Link href="https://www.instagram.com/coreheed_consulting?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="__blank"><FaInstagram className="min-w-6 h-auto text-[--lightgreen]" /></Link>
               </div>
             </div>
             <div className="flex flex-col gap-8 justify-center items-center">
@@ -88,19 +88,19 @@ export default function Footer() {
                   Vállalati tréningek
                 </Link>
                 <Link
-                  href={"/fejlesztoi-programok/tehetsegmenedzsment"}
+                  href={"/fejleszto-programok/tehetsegmenedzsment"}
                   className="text-[--lightgreen]"
                 >
                   Tehetségmenedzsment
                 </Link>
                 <Link
-                  href={"/fejlesztoi-programok/business-coaching-team-coaching"}
+                  href={"/fejleszto-programok/business-coaching-team-coaching"}
                   className="text-[--lightgreen]"
                 >
                   Coaching / Teamcoaching
                 </Link>
                 <Link
-                  href={"/fejlesztoi-programok/profile-xt-teszt"}
+                  href={"/fejleszto-programok/profile-xt-teszt"}
                   className="text-[--lightgreen]"
                 >
                   Profile XT teszt

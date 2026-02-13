@@ -22,8 +22,8 @@ export default function Hid() {
                 {/* <div className='relative z-10'>
                     <Image src={'/bridge.svg'} width={1280} height={500} alt='Híd' className='absolute top-0 -translate-x-1/2 left-1/2 min-w-[120vw]' />
                 </div> */}
-                <Image src={'/leaf2.svg'} width={300} height={300} alt='Levél' className='absolute top-80 -left-20 opacity-10 rotate-90 blur-lg'/>
-                <Image src={'/leaf2.svg'} width={300} height={300} alt='Levél' className='absolute -top-40 -right-20 opacity-20 blur-sm'/>
+                <Image src={'/leaf2.svg'} width={300} height={300} alt='Levél' className='absolute top-80 -left-20 opacity-10 rotate-90 blur-lg' />
+                <Image src={'/leaf2.svg'} width={300} height={300} alt='Levél' className='absolute -top-40 -right-20 opacity-20 blur-sm' />
                 <div className='flex lg:flex-row flex-col items-center lg:gap-20 gap-8 px-4 container mx-auto pt-20'>
                     <div className='relative lg:w-1/2 w-full lg:min-h-[40vh]'>
                         <div className='absolute top-0 left-0 w-full h-full rounded-3xl translate-x-2 translate-y-2 lg:translate-x-8 lg:translate-y-8' style={{ backgroundColor: 'var(--lightgreen)' }}></div>
@@ -42,18 +42,18 @@ export default function Hid() {
                     <div className='grid lg:grid-cols-2 grid-cols-1 justify-center mx-auto gap-8 px-4'>
                         <IconBox title={'Mert tőlünk valódi minőséget kapsz!'} />
                         <IconBox title={'Mert mi nem futószalagon gyártjuk a képzéseket!'} />
-                        <IconBox title={'Mert a programjainkon a szakmaiság mellett jóhangulat is van!'} />
+                        <IconBox title={'Mert a programjainkon a szakmaiság mellett jó hangulat is van!'} />
                         <IconBox title={'Mert 90 % feletti ügyfél elégedettséggel dolgozunk!'} classname={''} />
                     </div>
                     <MainNavButton text="Válassz minket!" link="/ajanlatkeres" />
                 </div>
-                
+
                 <div className="relative flex flex-col w-full">
                     <div className='absolute w-1/5 h-full top-0 left-0 bg-gradient-to-r from-white to-transparent pointer-events-none z-10'></div>
                     <div className='absolute w-1/5 h-full top-0 right-0 bg-gradient-to-l from-white to-transparent pointer-events-none z-10'></div>
                     <Carousel />
                 </div>
-                
+
             </div>
         </div>
     )
