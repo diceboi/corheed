@@ -43,6 +43,7 @@ export default function Nav() {
     },
     {
       title: "Vállalati tréningek",
+      link: "/vallalati-treningek",
       items: [
         {
           title: "Vállalati tréningek",

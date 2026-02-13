@@ -1,5 +1,6 @@
-import SecondaryHero from "@/app/Components/UI/SecondaryHero";
+import TrainingHero from "@/app/Components/UI/TrainingHero";
 import GeneraciosKulonbsegek from "@/app/Components/Treningek/GeneraciosKulonbsegek";
+import Breadcrumbs from "@/app/Components/UI/Breadcrumbs";
 
 export const metadata = {
   title: "Generációs különbségek a munkahelyen | Vállalati Tréning | Coreheed",
@@ -24,9 +25,17 @@ export const metadata = {
 export default function GeneraciosKulonbsegekPage() {
   return (
     <>
-        <SecondaryHero title="Generációs különbségek – munkahelyi érzékenyítés" image={'/szolgaltatasok/generacios.webp'}/>
-        <GeneraciosKulonbsegek />
+      <Breadcrumbs
+        items={[
+          { label: 'Vállalati tréningek', href: '/vallalati-treningek' },
+          { label: 'Generációs különbségek – munkahelyi érzékenyítés' }
+        ]}
+      />
+      <TrainingHero
+        title="Generációs különbségek – munkahelyi érzékenyítés"
+        image={'/szolgaltatasok/generacios.webp'}
+      />
+      <GeneraciosKulonbsegek />
     </>
-    
-  )
+  );
 }

@@ -14,21 +14,51 @@ export default function NavButton({ title, items, link, scrolled, isOpen, toggle
 
   return (
     <li className={`group/menu flex flex-col relative min-[1280px]:justify-center w-full min-[1280px]:w-auto ${items ? 'min-[1280px]:pb-0' : 'min-[1280px]:h-16'}`}>
-      {link ? (
+      {link && !items ? (
+        // Simple link without submenu
         <Link href={link} onClick={toggleMobileMenu}>
           <span
             className={`flex flex-nowrap items-center gap-2 py-2 min-[1280px]:px-4 px-1 rounded-md min-[1280px]:group-hover/menu:bg-[--mint] font-semibold text-[--white] text-md min-[1280px]:group-hover/menu:text-[--green] whitespace-nowrap min-[1280px]:h-16`}
           >
             {title}
-            {items && (
-              <>
-                <TbChevronDown className="flex group-hover/menu:hidden" />
-                <TbChevronUp className="group-hover/menu:flex hidden" />
-              </>
-            )}
           </span>
         </Link>
+      ) : link && items ? (
+        // Desktop: clickable link with hover submenu, Mobile: dropdown toggle
+        <>
+          <Link href={link} onClick={toggleMobileMenu} className="hidden min-[1280px]:block">
+            <span
+              className={`flex flex-nowrap items-center gap-2 py-2 px-4 rounded-md group-hover/menu:bg-[--mint] font-semibold text-[--white] text-md group-hover/menu:text-[--green] whitespace-nowrap h-16`}
+            >
+              {title}
+            </span>
+          </Link>
+
+          <div
+            className={`flex min-[1280px]:hidden flex-row justify-between items-center w-full py-2 px-1 rounded-md font-semibold text-[--white] text-md`}
+            onClick={toggleSubMenu}
+          >
+            <span>{title}</span>
+            {!isOpen ? (
+              <TbChevronDown className={`flex text-[--mint]`} />
+            ) : (
+              <TbChevronUp className={`flex text-[--mint]`} />
+            )}
+          </div>
+
+          {items && (
+            <motion.div
+              initial={{ height: 0 }}
+              animate={{ height: isOpen ? 'auto' : 0 }}
+              transition={{ duration: 0.2, ease: 'easeInOut' }}
+              className="flex min-[1280px]:hidden flex-col overflow-hidden w-full"
+            >
+              <MobileSubMenu items={items} />
+            </motion.div>
+          )}
+        </>
       ) : (
+        // No link, only dropdown
         <>
           <div
             className={`flex flex-row justify-between items-center w-full py-2 min-[1280px]:px-4 px-1 rounded-md min-[1280px]:group-hover/menu:bg-[--mint] font-semibold text-[--white] text-md min-[1280px]:group-hover/menu:text-[--green] min-[1280px]:whitespace-nowrap min-[1280px]:h-16`}

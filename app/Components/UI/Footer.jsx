@@ -70,16 +70,10 @@ export default function Footer() {
                   Generációk együttműködése program
                 </Link>
                 <Link
-                  href={"/generaciovaltas/fiatalbarat-munkahely-program"}
+                  href={"/fejleszto-programok/vezeto-fejlesztes"}
                   className="text-[--lightgreen]"
                 >
-                  Fiatalbarát munkahely program
-                </Link>
-                <Link
-                  href={"/generaciovaltas/cegutodas-utodlastervezes"}
-                  className="text-[--lightgreen]"
-                >
-                  Családi vállalkozások utódlása
+                  Vezetőfejlesztés
                 </Link>
                 <Link
                   href={"/vallalati-treningek"}
@@ -88,22 +82,22 @@ export default function Footer() {
                   Vállalati tréningek
                 </Link>
                 <Link
-                  href={"/fejleszto-programok/tehetsegmenedzsment"}
+                  href={"/generaciovaltas/cegutodas-utodlastervezes"}
                   className="text-[--lightgreen]"
                 >
-                  Tehetségmenedzsment
+                  Utódlástervezés
                 </Link>
                 <Link
                   href={"/fejleszto-programok/business-coaching-team-coaching"}
                   className="text-[--lightgreen]"
                 >
-                  Coaching / Teamcoaching
+                  Business coaching
                 </Link>
                 <Link
-                  href={"/fejleszto-programok/profile-xt-teszt"}
+                  href={"/fejleszto-programok/jobfit-meres"}
                   className="text-[--lightgreen]"
                 >
-                  Profile XT teszt
+                  Job-fit mérés
                 </Link>
               </div>
             </div>
