@@ -4,10 +4,10 @@ import Image from "next/image";
 import H1 from "./Typo/H1";
 import SubTitle from "./Typo/SubTitle";
 
-export default function SecondaryHero({title, image, subtitle}) {
+export default function SecondaryHero({ title, image, subtitle }) {
   return (
     <section className="flex flex-col bg-white w-full pt-20">
-      <div className="relative flex lg:flex-row flex-col lg:rounded-b-[90px] rounded-b-[50px] shadow-xl overflow-hidden">
+      <div className="relative flex lg:flex-row flex-col lg:rounded-b-[90px] shadow-xl overflow-hidden">
         <div className="lg:block hidden relative lg:w-[calc(30%+10rem)] w-full bg-[--white] lg:h-[60vh] h-[40vh] z-10 lg:-ml-14">
           <Image
             src="/tree-shape-2.svg"

@@ -6,23 +6,23 @@ import Image from 'next/image';
 
 const slides = [
     { number: 'Gyökerek' },
-    { number: <Image src="/leaf4.svg" width={15} height={15} alt="Leaf Icon" className="opacity-80"/> },
+    { number: <Image src="/leaf4.svg" width={15} height={15} alt="Leaf Icon" className="opacity-80" /> },
     { number: 'Folytonosság' },
-    { number: <Image src="/leaf4.svg" width={15} height={15} alt="Leaf Icon" className="opacity-80"/> },
+    { number: <Image src="/leaf4.svg" width={15} height={15} alt="Leaf Icon" className="opacity-80" /> },
     { number: 'Változás' },
-    { number: <Image src="/leaf4.svg" width={15} height={15} alt="Leaf Icon" className="opacity-80"/> },
+    { number: <Image src="/leaf4.svg" width={15} height={15} alt="Leaf Icon" className="opacity-80" /> },
     { number: 'Megújulás' },
-    { number: <Image src="/leaf4.svg" width={15} height={15} alt="Leaf Icon" className="opacity-80"/> },
+    { number: <Image src="/leaf4.svg" width={15} height={15} alt="Leaf Icon" className="opacity-80" /> },
     { number: 'Tradíció' },
-    { number: <Image src="/leaf4.svg" width={15} height={15} alt="Leaf Icon" className="opacity-80"/> },
+    { number: <Image src="/leaf4.svg" width={15} height={15} alt="Leaf Icon" className="opacity-80" /> },
     { number: 'Új korszak' },
-    { number: <Image src="/leaf4.svg" width={15} height={15} alt="Leaf Icon" className="opacity-80"/> },
+    { number: <Image src="/leaf4.svg" width={15} height={15} alt="Leaf Icon" className="opacity-80" /> },
     { number: 'Új kihívások' },
-    { number: <Image src="/leaf4.svg" width={15} height={15} alt="Leaf Icon" className="opacity-80"/> },
+    { number: <Image src="/leaf4.svg" width={15} height={15} alt="Leaf Icon" className="opacity-80" /> },
     { number: 'Tapasztalatátadás' },
-    { number: <Image src="/leaf4.svg" width={15} height={15} alt="Leaf Icon" className="opacity-80"/> },
+    { number: <Image src="/leaf4.svg" width={15} height={15} alt="Leaf Icon" className="opacity-80" /> },
     { number: 'Innováció' },
-    { number: <Image src="/leaf4.svg" width={15} height={15} alt="Leaf Icon" className="opacity-80"/> },
+    { number: <Image src="/leaf4.svg" width={15} height={15} alt="Leaf Icon" className="opacity-80" /> },
 ];
 
 const Carousel = () => {
@@ -57,6 +57,7 @@ const Carousel = () => {
         <div className="relative w-full overflow-hidden">
             {/* Wrapping div for seamless looping */}
             <motion.div
+                key={duration} // Force re-render when duration changes
                 className="flex"
                 initial={{ x: '0%' }}
                 animate={{ x: '-100%' }}

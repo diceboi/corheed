@@ -23,7 +23,7 @@ export default function KapcsolatInner({ sendMail }) {
 
   const router = useRouter();
 
-  const { 
+  const {
     register,
     handleSubmit,
     watch,
@@ -43,17 +43,27 @@ export default function KapcsolatInner({ sendMail }) {
       toast.success("Az üzenetet sikeresen elküldtük!");
       reset();
       router.push("/koszonjuk");
-    } else {  
+    } else {
       toast.error("Hiba történt az üzenet küldése során. Kérjük próbálja újra!");
     }
   };
 
   return (
     <section className="relative w-full m-auto px-4 pb-20 lg:pt-96 pt-60 overflow-hidden">
-        <Image src="/kapcsolathero1.webp" fill alt="Kapcsolat kép" style={{ objectFit: 'contain', objectPosition: 'top' }} className="lg:block hidden"/>
-        <Image src="/kapcsolathero1.webp" fill alt="Kapcsolat kép" style={{ objectFit: 'contain', objectPosition: '50% 8%' }} className="lg:hidden block"/>
-        <div className="absolute w-[500px] h-[500px] -translate-x-1/2 -translate-y-1/2 left-1/3 top-2/3 bg-[--yellow] rounded-full blur-3xl z-10 opacity-25"></div>
-        <div className="absolute w-[500px] h-[500px] -translate-x-1/2 -translate-y-1/2 left-2/3 top-1/3 bg-[--mint] rounded-full blur-3xl z-10 opacity-10"></div>
+      <Image src="/kapcsolathero1.webp" fill alt="Kapcsolat kép" style={{ objectFit: 'contain', objectPosition: 'top' }} className="lg:block hidden" />
+      <Image
+        src="/kapcsolathero1.webp"
+        fill
+        alt="Kapcsolat kép"
+        style={{
+          objectFit: "contain",
+          objectPosition: "60% 16%",
+          transform: "scale(1.2)" // vagy 1.3, 1.4 stb.
+        }}
+        className="lg:hidden block"
+      />
+      <div className="absolute w-[500px] h-[500px] -translate-x-1/2 -translate-y-1/2 left-1/3 top-2/3 bg-[--yellow] rounded-full blur-3xl z-10 opacity-25"></div>
+      <div className="absolute w-[500px] h-[500px] -translate-x-1/2 -translate-y-1/2 left-2/3 top-1/3 bg-[--mint] rounded-full blur-3xl z-10 opacity-10"></div>
       <div className="container m-auto relative z-10">
         <div className="flex flex-col gap-8 py-8 lg:px-8 px-4 lg:w-1/2 m-auto bg-[--green] shadow-md rounded-3xl">
           <div className="flex lg:flex-row flex-col justify-center gap-8 items-baseline z-10">
@@ -120,7 +130,7 @@ export default function KapcsolatInner({ sendMail }) {
                   foglaltakat.*
                 </label>
               </div>
-              
+
               <MainNavButton type={"submit"} classname={"self-center"} text={isSubmitting ? "Küldés..." : "Küldés"}>
                 {isSubmitting ? "Küldés..." : "Küldés"}
               </MainNavButton>

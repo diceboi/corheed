@@ -4,9 +4,10 @@ import BlogContent from "@/app/Components/Blog/BlogContent";
 import BlogSidebar from "@/app/Components/Blog/BlogSidebar";
 import RegularContainer from "@/app/Components/UI/RegularContainer";
 import Link from "next/link";
+import Breadcrumbs from "@/app/Components/UI/Breadcrumbs";
 
 export async function generateMetadata({ params }) {
-    const { slug } = params;
+    const { slug } = await params;
 
     try {
         const post = await getPostBySlug(slug);
@@ -29,7 +30,7 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function BlogPostPage({ params }) {
-    const { slug } = params;
+    const { slug } = await params;
 
     let post = null;
     let recentPosts = [];
@@ -73,17 +74,12 @@ export default async function BlogPostPage({ params }) {
     return (
         <>
             {/* Breadcrumbs */}
-            <RegularContainer classname="bg-white pt-28 px-4">
-                <div className="max-w-7xl mx-auto">
-                    <nav className="flex items-center gap-2 text-sm text-gray-600 mb-4">
-                        <Link href="/" className="hover:text-[--green]">Kezdőlap</Link>
-                        <span>/</span>
-                        <Link href="/blog" className="hover:text-[--green]">Blog</Link>
-                        <span>/</span>
-                        <span className="text-[--green]">{post.title}</span>
-                    </nav>
-                </div>
-            </RegularContainer>
+            <Breadcrumbs
+                items={[
+                    { label: "Blog", href: "/blog" },
+                    { label: post.title }
+                ]}
+            />
 
             {/* Title Section */}
             <RegularContainer classname="bg-[--lightgreen] py-12 px-4">

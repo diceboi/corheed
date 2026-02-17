@@ -48,7 +48,7 @@ export default function Hid() {
                     <MainNavButton text="Válassz minket!" link="/ajanlatkeres" />
                 </div>
 
-                <div className="relative flex flex-col w-full">
+                <div className="relative flex flex-col w-full lg:-mb-0 -mb-10">
                     <div className='absolute w-1/5 h-full top-0 left-0 bg-gradient-to-r from-white to-transparent pointer-events-none z-10'></div>
                     <div className='absolute w-1/5 h-full top-0 right-0 bg-gradient-to-l from-white to-transparent pointer-events-none z-10'></div>
                     <Carousel />

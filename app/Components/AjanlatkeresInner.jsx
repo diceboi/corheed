@@ -62,7 +62,11 @@ export default function AjanlatkeresInner({ sendMail }) {
         src="/ajanlatkereshero_kapcsolat.png"
         fill
         alt="Kapcsolat kép"
-        style={{ objectFit: "contain", objectPosition: "50% 8%" }}
+        style={{
+          objectFit: "contain",
+          objectPosition: "60% 25%",
+          transform: "scale(1.5)" // vagy 1.3, 1.4 stb.
+        }}
         className="lg:hidden block"
       />
       <div className="absolute w-[500px] h-[500px] -translate-x-1/2 -translate-y-1/2 left-1/3 top-2/3 bg-[--yellow] rounded-full blur-3xl z-10 opacity-25"></div>
