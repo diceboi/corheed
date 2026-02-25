@@ -51,11 +51,33 @@ function renderBlock(block, index) {
 
             case 'core/list':
                 const ListTag = attributes.ordered ? 'ol' : 'ul';
+                const listClass = attributes.ordered ? 'ml-6 list-decimal space-y-2' : 'ml-6 list-disc space-y-2';
+
+                if (innerBlocks && innerBlocks.length > 0) {
+                    return (
+                        <ListTag className={listClass} key={index}>
+                            {innerBlocks.map((innerBlock, innerIndex) =>
+                                renderBlock(innerBlock, `${index}-${innerIndex}`)
+                            )}
+                        </ListTag>
+                    );
+                }
                 return (
                     <ListTag
                         key={index}
+                        className={listClass}
                         dangerouslySetInnerHTML={{ __html: attributes.values || '' }}
                     />
+                );
+
+            case 'core/list-item':
+                return (
+                    <li key={index}>
+                        <span dangerouslySetInnerHTML={{ __html: attributes.content || '' }} />
+                        {innerBlocks?.map((innerBlock, innerIndex) =>
+                            renderBlock(innerBlock, `${index}-${innerIndex}`)
+                        )}
+                    </li>
                 );
 
 
