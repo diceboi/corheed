@@ -1,4 +1,4 @@
-import { getAllPosts } from "@/lib/wordpress";
+import { getAllPosts, getAllCategories } from "@/lib/wordpress";
 import BlogClient from "./BlogClient";
 
 export const metadata = {
@@ -8,12 +8,16 @@ export const metadata = {
 
 export default async function BlogPage() {
     let posts = [];
+    let categories = [];
 
     try {
-        posts = await getAllPosts();
+        [posts, categories] = await Promise.all([
+            getAllPosts(),
+            getAllCategories(),
+        ]);
     } catch (error) {
-        console.error("Error fetching posts:", error);
+        console.error("Error fetching data:", error);
     }
 
-    return <BlogClient initialPosts={posts} />;
+    return <BlogClient initialPosts={posts} initialCategories={categories} />;
 }

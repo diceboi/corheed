@@ -14,13 +14,15 @@ export default function BlogSidebar({ posts, currentSlug }) {
             </h3>
 
             <div className="flex flex-col gap-4">
-                {sidebarPosts.map((post) => (
-                    <Link key={post.id} href={`/blog/${post.slug}`} className="group">
-                        <div className="flex gap-3 items-start p-3 rounded-lg hover:bg-white transition-colors">
-                            {/* Thumbnail */}
-                            {post.featuredImage?.node?.sourceUrl && (
-                                <div className="relative w-20 h-20 flex-shrink-0 rounded overflow-hidden">
-                                    <Image
+                {sidebarPosts.map((post) => {
+                    const postCatSlug = post.categories?.nodes?.[0]?.slug || 'egyeb';
+                    return (
+                        <Link key={post.id} href={`/blog/${postCatSlug}/${post.slug}`} className="group">
+                            <div className="flex gap-3 items-start p-3 rounded-lg hover:bg-white transition-colors">
+                                {/* Thumbnail */}
+                                {post.featuredImage?.node?.sourceUrl && (
+                                    <div className="relative w-20 h-20 flex-shrink-0 rounded overflow-hidden">
+                                        <Image
                                         src={post.featuredImage.node.sourceUrl}
                                         alt={post.featuredImage.node.altText || post.title}
                                         fill
@@ -44,8 +46,9 @@ export default function BlogSidebar({ posts, currentSlug }) {
                                 </p>
                             </div>
                         </div>
-                    </Link>
-                ))}
+                        </Link>
+                    );
+                })}
             </div>
         </div>
     );

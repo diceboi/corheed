@@ -1,5 +1,30 @@
 import Image from "next/image";
 
+// Helper to ensure external links open in a new tab
+const processHtmlContent = (html) => {
+    if (!html) return '';
+    
+    // Add target="_blank" to external links if not already present
+    return html.replace(/<a([^>]+)>/g, (match, attrs) => {
+        // Check if it already has target
+        if (attrs.includes('target=')) return match;
+        
+        // Extract href
+        const hrefMatch = attrs.match(/href=(["'])(.*?)\1/i);
+        if (!hrefMatch) return match;
+        
+        const href = hrefMatch[2];
+        const isInternal = href.startsWith('/') || href.startsWith('#') ||
+            href.includes('corheed.hu') || href.includes('coreheed.hu') ||
+            href.startsWith('mailto:') || href.startsWith('tel:');
+            
+        if (isInternal) return match;
+        
+        // Add target and rel
+        return `<a${attrs} target="_blank" rel="noopener noreferrer">`;
+    });
+};
+
 // Helper to render Gutenberg blocks
 function renderBlock(block, index) {
     const { name, attributesJSON, innerBlocks } = block;
@@ -15,7 +40,7 @@ function renderBlock(block, index) {
                     <p
                         key={index}
                         className={hasBackground ? 'has-background' : ''}
-                        dangerouslySetInnerHTML={{ __html: attributes.content || '' }}
+                        dangerouslySetInnerHTML={{ __html: processHtmlContent(attributes.content) }}
                     />
                 );
 
@@ -24,7 +49,7 @@ function renderBlock(block, index) {
                 return (
                     <HeadingTag
                         key={index}
-                        dangerouslySetInnerHTML={{ __html: attributes.content || '' }}
+                        dangerouslySetInnerHTML={{ __html: processHtmlContent(attributes.content) }}
                     />
                 );
 
@@ -43,7 +68,7 @@ function renderBlock(block, index) {
                         {attributes.caption && (
                             <figcaption
                                 className="wp-element-caption text-center mt-2"
-                                dangerouslySetInnerHTML={{ __html: attributes.caption }}
+                                dangerouslySetInnerHTML={{ __html: processHtmlContent(attributes.caption) }}
                             />
                         )}
                     </figure>
@@ -66,14 +91,14 @@ function renderBlock(block, index) {
                     <ListTag
                         key={index}
                         className={listClass}
-                        dangerouslySetInnerHTML={{ __html: attributes.values || '' }}
+                        dangerouslySetInnerHTML={{ __html: processHtmlContent(attributes.values) }}
                     />
                 );
 
             case 'core/list-item':
                 return (
                     <li key={index}>
-                        <span dangerouslySetInnerHTML={{ __html: attributes.content || '' }} />
+                        <span dangerouslySetInnerHTML={{ __html: processHtmlContent(attributes.content) }} />
                         {innerBlocks?.map((innerBlock, innerIndex) =>
                             renderBlock(innerBlock, `${index}-${innerIndex}`)
                         )}
@@ -85,7 +110,7 @@ function renderBlock(block, index) {
                 return (
                     <blockquote
                         key={index}
-                        dangerouslySetInnerHTML={{ __html: attributes.value || attributes.citation || '' }}
+                        dangerouslySetInnerHTML={{ __html: processHtmlContent(attributes.value || attributes.citation) }}
                     />
                 );
 
@@ -141,7 +166,7 @@ export default function BlogContent({ blocks, content }) {
     // If we have Gutenberg blocks, use them
     if (blocks && blocks.length > 0) {
         return (
-            <article className="prose prose-lg max-w-none">
+            <article className="prose prose-lg prose-h1:!text-3xl prose-h2:!text-2xl prose-h3:!text-xl prose-h4:!text-lg max-w-none">
                 {blocks.map((block, index) => renderBlock(block, index))}
             </article>
         );
@@ -150,8 +175,8 @@ export default function BlogContent({ blocks, content }) {
     // Fallback to HTML content
     return (
         <article
-            className="prose prose-lg max-w-none"
-            dangerouslySetInnerHTML={{ __html: content || '' }}
+            className="prose prose-lg prose-h1:!text-3xl prose-h2:!text-2xl prose-h3:!text-xl prose-h4:!text-lg max-w-none"
+            dangerouslySetInnerHTML={{ __html: processHtmlContent(content) }}
         />
     );
 }

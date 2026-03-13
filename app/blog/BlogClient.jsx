@@ -4,8 +4,9 @@ import { useState, useEffect } from "react";
 import BlogCard from "../Components/Blog/BlogCard";
 import SearchBar from "../Components/Blog/SearchBar";
 import RegularContainer from "../Components/UI/RegularContainer";
+import CategoryTiles from "../Components/Blog/CategoryTiles";
 
-export default function BlogPage({ initialPosts }) {
+export default function BlogPage({ initialPosts, initialCategories, currentCategorySlug, title, description }) {
     const [filteredPosts, setFilteredPosts] = useState(initialPosts);
     const [searchQuery, setSearchQuery] = useState("");
 
@@ -31,23 +32,33 @@ export default function BlogPage({ initialPosts }) {
     return (
         <>
             {/* Hero Section */}
-            <RegularContainer classname="bg-[--lightgreen] py-32 px-4">
+            <RegularContainer classname="bg-[--lightgreen] pt-32 pb-16 px-4">
                 <div className="max-w-4xl mx-auto text-center">
                     {/* Title */}
-                    <h1 className="text-5xl md:text-6xl font-bold text-[--green] mb-6">
-                        Olvasnivalók
+                    <h1 className="text-5xl md:text-6xl font-bold text-[--green] mb-6 uppercase tracking-tight">
+                        {title || "Olvasnivalók"}
                     </h1>
 
                     {/* Description */}
                     <p className="text-lg text-gray-700 max-w-2xl mx-auto mb-8 leading-relaxed">
-                        Fedezd fel cikkeinket a generációkról, munkahelyi együttműködésről és vezetésfejlesztésről.
-                        Praktikus tanácsok és szakmai insights a mai üzleti világból.
+                        {description || "Fedezd fel cikkeinket a generációkról, munkahelyi együttműködésről és vezetésfejlesztésről. Praktikus tanácsok és szakmai insights a mai üzleti világból."}
                     </p>
 
                     {/* Search Bar */}
-                    <div className="max-w-2xl mx-auto">
+                    <div className="max-w-2xl mx-auto mb-10">
                         <SearchBar onSearch={handleSearch} />
                     </div>
+
+                    {/* Category Block */}
+                    {initialCategories && initialCategories.length > 0 && (
+                        <div className="pt-4">
+                            <CategoryTiles
+                                categories={initialCategories}
+                                currentCategorySlug={currentCategorySlug}
+                                title="Kategóriák"
+                            />
+                        </div>
+                    )}
                 </div>
             </RegularContainer>
 

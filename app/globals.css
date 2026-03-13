@@ -131,8 +131,8 @@ body {
 /*---------H1----------*/
 
 article h1 {
-  font-size: 42px;
-  line-height: 48px;
+  font-size: 32px;
+  line-height: 40px;
   letter-spacing: -0.05em;
   font-weight: 500;
   margin-bottom: 1.5rem;
@@ -141,30 +141,30 @@ article h1 {
 
 @media (min-width: 640px) {
   article h1 {
-    font-size: 48px;
-    line-height: 56px;
+    font-size: 36px;
+    line-height: 44px;
   }
 }
 
 @media (min-width: 768px) {
   article h1 {
-    font-size: 50px;
-    line-height: 58px;
+    font-size: 40px;
+    line-height: 48px;
   }
 }
 
 @media (min-width: 1024px) {
   article h1 {
-    font-size: 56px;
-    line-height: 64px;
+    font-size: 46px;
+    line-height: 54px;
   }
 }
 
 /*---------H2----------*/
 
 article h2 {
-  font-size: 28px;
-  line-height: 32px;
+  font-size: 24px;
+  line-height: 30px;
   letter-spacing: -0.05em;
   font-weight: 500;
   margin-top: 2rem;
@@ -174,29 +174,29 @@ article h2 {
 
 @media (min-width: 640px) {
   article h2 {
-    font-size: 32px;
-    line-height: 36px;
+    font-size: 26px;
+    line-height: 32px;
   }
 }
 
 @media (min-width: 768px) {
   article h2 {
-    font-size: 34px;
-    line-height: 42px;
+    font-size: 28px;
+    line-height: 36px;
   }
 }
 
 @media (min-width: 1024px) {
   article h2 {
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 32px;
+    line-height: 40px;
   }
 }
 
 /*---------H3----------*/
 
 article h3 {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
   letter-spacing: -0.025em;
   font-weight: 600;
@@ -207,21 +207,21 @@ article h3 {
 
 @media (min-width: 640px) {
   article h3 {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 26px;
   }
 }
 
 @media (min-width: 768px) {
   article h3 {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 28px;
   }
 }
 
 @media (min-width: 1024px) {
   article h3 {
-    font-size: 26px;
+    font-size: 24px;
     line-height: 30px;
   }
 }

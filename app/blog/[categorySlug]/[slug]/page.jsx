@@ -1,13 +1,14 @@
-import { getPostBySlug, getRecentPosts } from "@/lib/wordpress";
+import { getPostBySlug, getRecentPosts, getAllCategories } from "@/lib/wordpress";
 import Image from "next/image";
 import BlogContent from "@/app/Components/Blog/BlogContent";
 import BlogSidebar from "@/app/Components/Blog/BlogSidebar";
 import RegularContainer from "@/app/Components/UI/RegularContainer";
 import Link from "next/link";
 import Breadcrumbs from "@/app/Components/UI/Breadcrumbs";
+import CategoryTiles from "@/app/Components/Blog/CategoryTiles";
 
 export async function generateMetadata({ params }) {
-    const { slug } = await params;
+    const { categorySlug, slug } = await params;
 
     try {
         const post = await getPostBySlug(slug);
@@ -30,18 +31,22 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function BlogPostPage({ params }) {
-    const { slug } = await params;
+    const { categorySlug, slug } = await params;
 
     let post = null;
     let recentPosts = [];
+    let categories = [];
 
     try {
-        [post, recentPosts] = await Promise.all([
+        console.log("Fetching post for slug:", slug, "categorySlug:", categorySlug);
+        [post, recentPosts, categories] = await Promise.all([
             getPostBySlug(slug),
             getRecentPosts(5, slug),
+            getAllCategories(),
         ]);
+        console.log("Post found:", !!post);
     } catch (error) {
-        console.error("Error fetching blog post:", error);
+        console.error("Error fetching blog post data:", error);
     }
 
     if (!post) {
@@ -71,12 +76,18 @@ export default async function BlogPostPage({ params }) {
         day: 'numeric'
     });
 
+    const currentCategory = categories.find(c => c.slug === categorySlug);
+
     return (
         <>
             {/* Breadcrumbs */}
             <Breadcrumbs
                 items={[
                     { label: "Blog", href: "/blog" },
+                    { 
+                        label: currentCategory ? currentCategory.name : 'Kategória', 
+                        href: currentCategory ? `/blog/kategoria/${currentCategory.slug}` : '#' 
+                    },
                     { label: post.title }
                 ]}
             />
@@ -85,46 +96,55 @@ export default async function BlogPostPage({ params }) {
             <RegularContainer classname="bg-[--lightgreen] py-12 px-4">
                 <div className="max-w-7xl mx-auto">
                     <p className="text-[--green] font-medium mb-4">{formattedDate}</p>
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[--green]">
+                    <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[--green] leading-tight">
                         {post.title}
                     </h1>
                 </div>
             </RegularContainer>
 
-            {/* Featured Image */}
-            {post.featuredImage?.node?.sourceUrl && (
-                <RegularContainer classname="bg-white px-4">
-                    <div className="max-w-7xl mx-auto -mt-8">
-                        <div className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] rounded-lg overflow-hidden shadow-xl">
-                            <Image
-                                src={post.featuredImage.node.sourceUrl}
-                                alt={post.featuredImage.node.altText || post.title}
-                                fill
-                                className="object-cover"
-                                priority
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
-                            />
-                        </div>
-                    </div>
-                </RegularContainer>
-            )}
-
             {/* Content Area */}
-            <RegularContainer classname="bg-white py-16 px-4">
+            <RegularContainer classname="bg-white py-12 px-4">
                 <div className="max-w-7xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
-                        {/* Main Content */}
+                        {/* Main Content (Left Column) */}
                         <div className="lg:col-span-2">
+                            {/* Featured Image inside left column */}
+                            {post.featuredImage?.node?.sourceUrl && (
+                                <div className="relative w-full h-[250px] md:h-[350px] lg:h-[450px] rounded-lg overflow-hidden shadow-md mb-8">
+                                    <Image
+                                        src={post.featuredImage.node.sourceUrl}
+                                        alt={post.featuredImage.node.altText || post.title}
+                                        fill
+                                        className="object-cover"
+                                        priority
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 66vw, 800px"
+                                    />
+                                </div>
+                            )}
+
+                            {/* Text Content */}
                             <BlogContent blocks={post.blocks} content={post.content} />
                         </div>
 
-                        {/* Sidebar */}
+                        {/* Sidebar (Right Column) */}
                         <div className="lg:col-span-1">
                             <BlogSidebar posts={recentPosts} currentSlug={slug} />
                         </div>
                     </div>
                 </div>
             </RegularContainer>
+
+            {/* Category Tiles */}
+            {categories && categories.length > 0 && (
+                <RegularContainer classname="bg-white pb-8 px-4">
+                    <div className="max-w-4xl mx-auto">
+                        <CategoryTiles 
+                            categories={categories} 
+                            title="Kategóriák"
+                        />
+                    </div>
+                </RegularContainer>
+            )}
 
             {/* Back to Blog */}
             <RegularContainer classname="bg-white pb-16 px-4">
