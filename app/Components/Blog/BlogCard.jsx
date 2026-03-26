@@ -67,6 +67,21 @@ export default function BlogCard({ post }) {
                 <p className="text-gray-600 text-base mb-6 flex-1 line-clamp-3 leading-relaxed">
                     {truncatedExcerpt}
                 </p>
+
+                {/* Tags */}
+                {post.tags?.nodes && post.tags.nodes.length > 0 && (
+                    <div className="flex flex-wrap gap-2 pt-4 mt-auto border-t border-gray-100 pointer-events-auto">
+                        {post.tags.nodes.map(tag => (
+                            <Link 
+                                key={tag.slug} 
+                                href={`/blog/cimke/${tag.slug}`}
+                                className="text-xs font-semibold text-gray-500 hover:text-[--green] bg-gray-50 hover:bg-[--yellow] border border-gray-100 px-3 py-1 rounded-full transition-colors flex items-center gap-1 z-30 relative"
+                            >
+                                <span className="text-[--green]">#</span>{tag.name}
+                            </Link>
+                        ))}
+                    </div>
+                )}
             </div>
         </div>
     );

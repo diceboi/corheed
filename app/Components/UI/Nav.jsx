@@ -137,7 +137,7 @@ export default function Nav() {
         },
         {
           title: "Generációs különbségek – munkahelyi érzékenyítés",
-          link: "/vallalati-treningek/generacios-kulonbsegek",
+          link: "/generaciovaltas/generacios-kulonbsegek",
         },
         {
           title: "Fiatalbarát munkahely program",

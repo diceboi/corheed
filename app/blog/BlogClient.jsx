@@ -5,8 +5,9 @@ import BlogCard from "../Components/Blog/BlogCard";
 import SearchBar from "../Components/Blog/SearchBar";
 import RegularContainer from "../Components/UI/RegularContainer";
 import CategoryTiles from "../Components/Blog/CategoryTiles";
+import TagCloud from "../Components/Blog/TagCloud";
 
-export default function BlogPage({ initialPosts, initialCategories, currentCategorySlug, title, description }) {
+export default function BlogPage({ initialPosts = [], initialCategories = [], initialTags = [], currentCategorySlug, currentTagSlug = null, title, description }) {
     const [filteredPosts, setFilteredPosts] = useState(initialPosts);
     const [searchQuery, setSearchQuery] = useState("");
 
@@ -21,9 +22,10 @@ export default function BlogPage({ initialPosts, initialCategories, currentCateg
 
         const lowerQuery = query.toLowerCase();
         const filtered = initialPosts.filter(post => {
-            const titleMatch = post.title.toLowerCase().includes(lowerQuery);
+            const titleMatch = post.title?.toLowerCase().includes(lowerQuery);
             const excerptMatch = post.excerpt?.toLowerCase().includes(lowerQuery);
-            return titleMatch || excerptMatch;
+            const tagMatch = post.tags?.nodes?.some(tag => tag.name.toLowerCase().includes(lowerQuery));
+            return titleMatch || excerptMatch || tagMatch;
         });
 
         setFilteredPosts(filtered);
@@ -46,7 +48,10 @@ export default function BlogPage({ initialPosts, initialCategories, currentCateg
 
                     {/* Search Bar */}
                     <div className="max-w-2xl mx-auto mb-10">
-                        <SearchBar onSearch={handleSearch} />
+                        <SearchBar onSearch={handleSearch} allPosts={initialPosts} allTags={initialTags} />
+                        {initialTags && initialTags.length > 0 && (
+                            <TagCloud tags={initialTags} currentTagSlug={currentTagSlug} />
+                        )}
                     </div>
 
                     {/* Category Block */}

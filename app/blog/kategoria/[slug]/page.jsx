@@ -1,4 +1,4 @@
-import { getPostsByCategory, getAllCategories } from "@/lib/wordpress";
+import { getPostsByCategory, getAllCategories, getAllTags } from "@/lib/wordpress";
 import BlogClient from "@/app/blog/BlogClient";
 
 export async function generateMetadata({ params }) {
@@ -38,12 +38,14 @@ export default async function CategoryPage({ params }) {
 
     let posts = [];
     let categories = [];
+    let tags = [];
     let currentCategory = null;
 
     try {
-        [posts, categories] = await Promise.all([
+        [posts, categories, tags] = await Promise.all([
             getPostsByCategory(slug),
-            getAllCategories()
+            getAllCategories(),
+            getAllTags()
         ]);
         currentCategory = categories.find(c => c.slug === slug);
     } catch (error) {
@@ -59,6 +61,7 @@ export default async function CategoryPage({ params }) {
         <BlogClient 
             initialPosts={posts} 
             initialCategories={categories} 
+            initialTags={tags}
             currentCategorySlug={slug}
             title={title}
             description={description}

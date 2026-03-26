@@ -1,5 +1,5 @@
 import TrainingHero from "@/app/Components/UI/TrainingHero";
-import GeneraciosKulonbsegek from "@/app/Components/Treningek/GeneraciosKulonbsegek";
+import GeneraciosKulonbsegekMunkahelyen from "@/app/Components/Treningek/GeneraciosKulonbsegekMunkahelyen";
 import Breadcrumbs from "@/app/Components/UI/Breadcrumbs";
 
 export const metadata = {
@@ -28,14 +28,14 @@ export default function GeneraciosKulonbsegekPage() {
       <Breadcrumbs
         items={[
           { label: 'Vállalati tréningek', href: '/vallalati-treningek' },
-          { label: 'Generációs különbségek – munkahelyi érzékenyítés' }
+          { label: 'Generációs különbségek a munkahelyen' }
         ]}
       />
       <TrainingHero
-        title="Generációs különbségek – munkahelyi érzékenyítés"
+        title="Generációs különbségek a munkahelyen"
         image={'/szolgaltatasok/generacios.webp'}
       />
-      <GeneraciosKulonbsegek />
+      <GeneraciosKulonbsegekMunkahelyen />
     </>
   );
 }
