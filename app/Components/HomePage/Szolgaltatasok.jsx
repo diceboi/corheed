@@ -21,7 +21,7 @@ export default function Partner() {
             <SzolgaltatasokTile image={'/vezetofejlesztes.webp'} title={'Vezetőfejlesztés'} link={'/fejleszto-programok/vezeto-fejlesztes'} />
             <SzolgaltatasokTile image={'/szolgaltatasok/keszsegfejlesztes.webp'} title={'Vállalati tréningek'} link={'/vallalati-treningek'} />
             <SzolgaltatasokTile image={'/szolgaltatasok/utodlas.webp'} title={'Utódlástervezés'} link={'/generaciovaltas/cegutodas-utodlastervezes'} />
-            <SzolgaltatasokTile image={'/szolgaltatasok/coaching.webp'} title={'Business coaching'} link={'/fejleszto-programok/business-coaching-team-coaching'} />
+            <SzolgaltatasokTile image={'/szolgaltatasok/business-coaching-team-coaching.webp'} title={'Business coaching'} link={'/fejleszto-programok/business-coaching-team-coaching'} />
             <SzolgaltatasokTile image={'/jobfit.webp'} title={'Job-fit mérés'} link={'/fejleszto-programok/jobfit-meres'} />
           </div>
           <MainNavButton link={'/kapcsolat'} text={'Ajánlatkérés'} classname={'my-2'} />
