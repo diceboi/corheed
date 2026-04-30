@@ -30,7 +30,11 @@ export default function NavButton({ title, items, link, scrolled, isOpen, toggle
             <span
               className={`flex flex-nowrap items-center gap-2 py-2 px-4 rounded-md group-hover/menu:bg-[--mint] font-semibold text-[--white] text-md group-hover/menu:text-[--green] whitespace-nowrap h-16`}
             >
-              {title}
+              <span>{title}</span>
+              <div className="hidden min-[1280px]:block">
+                <TbChevronDown className={`flex group-hover/menu:hidden text-[--mint]`} />
+                <TbChevronUp className={`group-hover/menu:flex hidden text-[--green]`} />
+              </div>
             </span>
           </Link>
 

@@ -137,11 +137,13 @@ export default function CoachingInner() {
                 </Paragraph>
               </li>
             </ul>
-            <Paragraph classname={"italic text-[--green] font-semibold mt-4"}>
+            <Paragraph classname={"text-[--green] font-semibold mt-4"}>
               Eredmény HR szempontból: gyorsabban fejlődő vezetők, kevesebb
-              elakadás, stabilabb működés. Minden folyamatunk személyre szabott,
-              konkrét üzleti célokhoz kötött és a mindennapi működésben hoz
-              fenntartható változást.
+              elakadás, stabilabb működés.
+            </Paragraph>
+            <Paragraph classname={"text-[--green] font-semibold mt-4"}>
+              Minden folyamatunk személyre szabott, konkrét üzleti célokhoz
+              kötött és a mindennapi működésben hoz fenntartható változást.
             </Paragraph>
           </div>
           <div className="grid lg:grid-cols-1 grid-cols-1 gap-8 lg:w-1/2 w-full items-center">
