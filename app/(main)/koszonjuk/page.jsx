@@ -1,5 +1,5 @@
-import H1 from '../Components/UI/Typo/H1'
-import Paragraph from '../Components/UI/Typo/Paragraph'
+import H1 from '@/app/Components/UI/Typo/H1'
+import Paragraph from '@/app/Components/UI/Typo/Paragraph'
 
 export default function KoszonjukPage() {
   return (

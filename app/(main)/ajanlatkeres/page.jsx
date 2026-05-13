@@ -1,9 +1,8 @@
-import KapcsolatHero from '../Components/UI/KapcsolatHero'
-import KapcsolatInner from '../Components/KapcsolatInner';
+import AjanlatkeresInner from '@/app/Components/AjanlatkeresInner';
 import nodemailer from "nodemailer"
 import { getErrorMessages } from '../utils/errors';
 
-export default function KapcsolatPage() {
+export default function AjanlatkeresPage() {
 
   const sendMail = async (formData) => {
     'use server';
@@ -20,8 +19,8 @@ export default function KapcsolatPage() {
       const mailOptions = {
         from: formData.email,
         to: 'info@coreheed.hu',
-        subject: `Új üzenet a weboldalról ${formData.name} részéről`,
-        text: `Név: ${formData.name}\nEmail: ${formData.email}\nTelefonszám: ${formData.phone}\nTárgy: ${formData.subject}\n\nÜzenet: ${formData.message}`,
+        subject: `Új ajánlatkérés érkezett a weboldalról, ${formData.name} részéről`,
+        text: `Név: ${formData.name}\nEmail: ${formData.email}\nTelefonszám: ${formData.phone}\nAjánlatkérés tárgya: ${formData.subject}\n\nÜzenet: ${formData.message}`,
         html: '',
       }
 
@@ -41,7 +40,7 @@ export default function KapcsolatPage() {
   return (
     <>
     {/*<KapcsolatHero title={"Vedd fel velünk a kapcsolatot"} image={'/kapcsolathero.webp'}/>*/}
-    <KapcsolatInner sendMail={sendMail}/>
+    <AjanlatkeresInner sendMail={sendMail}/>
     </>
   )
 }

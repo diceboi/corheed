@@ -1,11 +1,11 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import BlogCard from "../Components/Blog/BlogCard";
-import SearchBar from "../Components/Blog/SearchBar";
-import RegularContainer from "../Components/UI/RegularContainer";
-import CategoryTiles from "../Components/Blog/CategoryTiles";
-import TagCloud from "../Components/Blog/TagCloud";
+import BlogCard from "@/app/Components/Blog/BlogCard";
+import SearchBar from "@/app/Components/Blog/SearchBar";
+import RegularContainer from "@/app/Components/UI/RegularContainer";
+import CategoryTiles from "@/app/Components/Blog/CategoryTiles";
+import TagCloud from "@/app/Components/Blog/TagCloud";
 
 export default function BlogPage({ initialPosts = [], initialCategories = [], initialTags = [], currentCategorySlug, currentTagSlug = null, title, description }) {
     const [filteredPosts, setFilteredPosts] = useState(initialPosts);
