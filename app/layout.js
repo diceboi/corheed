@@ -4,6 +4,8 @@ import { GeistMono } from 'geist/font/mono';
 import './globals.css';
 import { GoogleTagManager, GoogleAnalytics } from '@next/third-parties/google'
 import ContextProvider from "./Context";
+import Nav from "./Components/UI/Nav";
+import Footer from "./Components/UI/Footer";
 import { Toaster } from "sonner";
 
 const poppins = Poppins({
@@ -31,7 +33,9 @@ export default function RootLayout({ children }) {
         <GoogleTagManager gtmId="GTM-T38LFVWM" />
           <body className={`${poppins.variable} ${inter.variable} ${GeistSans.variable} ${GeistMono.variable} text-poppins bg-[--white] text-black`}>
             <ContextProvider>
+            <Nav />
               {children}
+            <Footer />
             <Toaster position="bottom-center" richColors />
             </ContextProvider>
           </body>

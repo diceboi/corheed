@@ -48,7 +48,7 @@ export default function WebinarLandingPage() {
       <meta name="description" content="Ingyenes 60 perces webinár: hogyan formáld üzleti előnnyé a generációs sokszínűséget a konfliktusok helyett. Coreheed Consulting." />
 
       {/* ========== HERO + FORM ========== */}
-      <section className="relative overflow-hidden px-6 py-20 lg:px-8 lg:py-24" id="registracio">
+      <section className="relative overflow-hidden px-6 pt-32 pb-20 lg:px-8 lg:pt-40 lg:pb-24" id="registracio">
         {/* Decorative Gradients */}
         <div className="absolute -right-32 -top-20 z-0 h-[700px] w-[700px] rounded-full bg-[radial-gradient(circle,var(--lightgreen)_0%,transparent_70%)] opacity-70" />
         <div className="absolute -left-32 -bottom-40 z-0 h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle,rgba(63,255,186,0.18)_0%,transparent_70%)]" />
@@ -299,10 +299,6 @@ export default function WebinarLandingPage() {
         </div>
       </section>
 
-      {/* Footer minimal */}
-      <footer className="bg-black py-10 text-center text-sm text-neutral-600">
-        <p>© {new Date().getFullYear()} Coreheed Consulting Kft. — Minden jog fenntartva.</p>
-      </footer>
 
       {/* Custom Styles for non-standard Tailwind values */}
       <style jsx global>{`
