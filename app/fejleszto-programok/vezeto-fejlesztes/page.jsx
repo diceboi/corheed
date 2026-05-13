@@ -1,5 +1,5 @@
-import VezetofejlesztesInner from "../../Components/VezetofejlesztesInner"
-import SecondaryHero from "../../Components/UI/SecondaryHero"
+import VezetofejlesztesInner from "@/app/Components/VezetofejlesztesInner"
+import SecondaryHero from "@/app/Components/UI/SecondaryHero"
 
 export const metadata = {
   title: "Vezetőfejlesztés | Stratégiai Vezetői Fejlesztés | Coreheed",

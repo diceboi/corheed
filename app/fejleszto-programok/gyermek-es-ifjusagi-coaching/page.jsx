@@ -1,5 +1,5 @@
-import GyerekCoachingInner from "../../Components/GyerekCoachingInner"
-import SecondaryHero from "../../Components/UI/SecondaryHero"
+import GyerekCoachingInner from "@/app/Components/GyerekCoachingInner"
+import SecondaryHero from "@/app/Components/UI/SecondaryHero"
 
 export const metadata = {
   title: "Gyerek Coaching | Játékos Fejlesztés Gyermekeknek | Coreheed",

@@ -1,5 +1,5 @@
-import KapcsolatHero from '../../Components/UI/KapcsolatHero'
-import KapcsolatInner from '../../Components/KapcsolatInner';
+import KapcsolatHero from '@/app/Components/UI/KapcsolatHero'
+import KapcsolatInner from '@/app/Components/KapcsolatInner';
 import nodemailer from "nodemailer"
 import { getErrorMessages } from '../utils/errors';
 

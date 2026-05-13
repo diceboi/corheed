@@ -1,5 +1,5 @@
-import CoachingInner from "../../Components/CoachingInner"
-import SecondaryHero from "../../Components/UI/SecondaryHero"
+import CoachingInner from "@/app/Components/CoachingInner"
+import SecondaryHero from "@/app/Components/UI/SecondaryHero"
 
 export const metadata = {
   title: "Business Coaching & Team Coaching | Vezetői Fejlesztés | CoreHeed",

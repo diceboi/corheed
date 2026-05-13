@@ -1,6 +1,6 @@
-import TrainingHero from "../../Components/UI/TrainingHero";
-import UgyfelszolgalatZGeneracio from "../../Components/Treningek/UgyfelszolgalatZGeneracio";
-import Breadcrumbs from "../../Components/UI/Breadcrumbs";
+import TrainingHero from "@/app/Components/UI/TrainingHero";
+import UgyfelszolgalatZGeneracio from "@/app/Components/Treningek/UgyfelszolgalatZGeneracio";
+import Breadcrumbs from "@/app/Components/UI/Breadcrumbs";
 
 export const metadata = {
   title: "Ügyfélszolgálat a Z generáció világában | Gyakorlati Tréning | Coreheed",

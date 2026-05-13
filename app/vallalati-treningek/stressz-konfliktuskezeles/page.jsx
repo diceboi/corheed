@@ -1,6 +1,6 @@
-import TrainingHero from "../../Components/UI/TrainingHero";
-import StresszKonfliktuskezeles from "../../Components/Treningek/StresszKonfliktuskezeles";
-import Breadcrumbs from "../../Components/UI/Breadcrumbs";
+import TrainingHero from "@/app/Components/UI/TrainingHero";
+import StresszKonfliktuskezeles from "@/app/Components/Treningek/StresszKonfliktuskezeles";
+import Breadcrumbs from "@/app/Components/UI/Breadcrumbs";
 
 export const metadata = {
   title: "Stressz- és konfliktuskezelés | Önismereti Tréning | Coreheed",

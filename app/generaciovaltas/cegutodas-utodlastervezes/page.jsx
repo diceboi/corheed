@@ -1,5 +1,5 @@
-import CsaladiVallalkozasokInner from "../../Components/CsaladiVallalkozasokInner"
-import SecondaryHero from "../../Components/UI/SecondaryHero"
+import CsaladiVallalkozasokInner from "@/app/Components/CsaladiVallalkozasokInner"
+import SecondaryHero from "@/app/Components/UI/SecondaryHero"
 
 export default function CsaladiVallalkozasoktPage() {
   return (

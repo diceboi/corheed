@@ -1,5 +1,5 @@
-import TehetsegmenedzsmentInner from "../../Components/TehetsegmenedzsmentInner"
-import SecondaryHero from "../../Components/UI/SecondaryHero"
+import TehetsegmenedzsmentInner from "@/app/Components/TehetsegmenedzsmentInner"
+import SecondaryHero from "@/app/Components/UI/SecondaryHero"
 
 export default function TehetsegmenedzsmentPage() {
   return (

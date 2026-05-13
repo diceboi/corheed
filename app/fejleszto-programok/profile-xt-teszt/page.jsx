@@ -1,5 +1,5 @@
-import ProfileXTInner from "../../Components/ProfileXTInner"
-import SecondaryHero from "../../Components/UI/SecondaryHero"
+import ProfileXTInner from "@/app/Components/ProfileXTInner"
+import SecondaryHero from "@/app/Components/UI/SecondaryHero"
 
 export default function ProfileXTPage() {
   return (

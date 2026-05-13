@@ -1,5 +1,5 @@
-import SecondaryHero from "../../Components/UI/SecondaryHero";
-import GeneraciosKulonbsegek from "../../Components/Treningek/GeneraciosKulonbsegek";
+import SecondaryHero from "@/app/Components/UI/SecondaryHero";
+import GeneraciosKulonbsegek from "@/app/Components/Treningek/GeneraciosKulonbsegek";
 
 export const metadata = {
   title: "Generációs különbségek – munkahelyi érzékenyítés | Generációváltás | Coreheed",

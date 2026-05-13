@@ -1,6 +1,6 @@
-import TrainingHero from "../../Components/UI/TrainingHero";
-import SzemelyesHatekonysagFejlesztes from "../../Components/Treningek/SzemelyesHatekonysagFejlesztes";
-import Breadcrumbs from "../../Components/UI/Breadcrumbs";
+import TrainingHero from "@/app/Components/UI/TrainingHero";
+import SzemelyesHatekonysagFejlesztes from "@/app/Components/Treningek/SzemelyesHatekonysagFejlesztes";
+import Breadcrumbs from "@/app/Components/UI/Breadcrumbs";
 
 export const metadata = {
   title: "Személyes hatékonyság fejlesztés | Produktivitás Tréning | Coreheed",

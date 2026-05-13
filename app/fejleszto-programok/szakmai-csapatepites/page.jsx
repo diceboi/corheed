@@ -1,5 +1,5 @@
-import SzakmaiCsapatepitesInner from "../../Components/SzakmaiCsapatepitesInner"
-import SecondaryHero from "../../Components/UI/SecondaryHero"
+import SzakmaiCsapatepitesInner from "@/app/Components/SzakmaiCsapatepitesInner"
+import SecondaryHero from "@/app/Components/UI/SecondaryHero"
 
 export const metadata = {
   title: "Szakmai Csapatépítés | Élményalapú Fejlesztés | Coreheed",

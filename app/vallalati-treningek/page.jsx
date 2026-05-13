@@ -1,5 +1,5 @@
-import VallalatiTreningekInner from "../../Components/VallalatiTreningekInner"
-import SecondaryHero from "../../Components/UI/SecondaryHero"
+import VallalatiTreningekInner from "@/app/Components/VallalatiTreningekInner"
+import SecondaryHero from "@/app/Components/UI/SecondaryHero"
 
 export default function VallalatiTreningekPage() {
   return (

@@ -1,6 +1,6 @@
-import TrainingHero from "../../Components/UI/TrainingHero";
-import GeneraciosKulonbsegekVezeto from "../../Components/Treningek/GeneraciosKulonbsegekVezeto";
-import Breadcrumbs from "../../Components/UI/Breadcrumbs";
+import TrainingHero from "@/app/Components/UI/TrainingHero";
+import GeneraciosKulonbsegekVezeto from "@/app/Components/Treningek/GeneraciosKulonbsegekVezeto";
+import Breadcrumbs from "@/app/Components/UI/Breadcrumbs";
 
 export default function GeneraciosKulonbsegekVezetoPage() {
   return (

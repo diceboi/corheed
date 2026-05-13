@@ -1,5 +1,5 @@
-import GeneraciokInner from "../../Components/GeneraciokInner"
-import SecondaryHero from "../../Components/UI/SecondaryHero"
+import GeneraciokInner from "@/app/Components/GeneraciokInner"
+import SecondaryHero from "@/app/Components/UI/SecondaryHero"
 
 export default function GeneraciokPage() {
   return (

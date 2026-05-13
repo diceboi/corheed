@@ -1,5 +1,5 @@
-import RolunkInner from "../../Components/Rolunk/RolunkInner"
-import SecondaryHero from "../../Components/UI/SecondaryHero"
+import RolunkInner from "@/app/Components/Rolunk/RolunkInner"
+import SecondaryHero from "@/app/Components/UI/SecondaryHero"
 
 export default function RolunkPage() {
   return (

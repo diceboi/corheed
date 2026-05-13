@@ -1,10 +1,10 @@
-import H1 from "../../Components/UI/Typo/H1";
-import H2 from "../../Components/UI/Typo/H2";
-import H3 from "../../Components/UI/Typo/H3";
-import Paragraph from "../../Components/UI/Typo/Paragraph";
-import Label from "../../Components/UI/Typo/Label";
+import H1 from "@/app/Components/UI/Typo/H1";
+import H2 from "@/app/Components/UI/Typo/H2";
+import H3 from "@/app/Components/UI/Typo/H3";
+import Paragraph from "@/app/Components/UI/Typo/Paragraph";
+import Label from "@/app/Components/UI/Typo/Label";
 
-import RegularContainer from "../../Components/UI/RegularContainer";
+import RegularContainer from "@/app/Components/UI/RegularContainer";
 import Link from "next/link";
 
 export default function page() {

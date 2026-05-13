@@ -1,6 +1,6 @@
-import TrainingHero from "../../Components/UI/TrainingHero";
-import GeneraciosKulonbsegekMunkahelyen from "../../Components/Treningek/GeneraciosKulonbsegekMunkahelyen";
-import Breadcrumbs from "../../Components/UI/Breadcrumbs";
+import TrainingHero from "@/app/Components/UI/TrainingHero";
+import GeneraciosKulonbsegekMunkahelyen from "@/app/Components/Treningek/GeneraciosKulonbsegekMunkahelyen";
+import Breadcrumbs from "@/app/Components/UI/Breadcrumbs";
 
 export const metadata = {
   title: "Generációs különbségek a munkahelyen | Vállalati Tréning | Coreheed",

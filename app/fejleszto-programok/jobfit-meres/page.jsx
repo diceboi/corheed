@@ -1,5 +1,5 @@
-import JobfitMeresInner from "../../Components/JobfitMeresInner"
-import SecondaryHero from "../../Components/UI/SecondaryHero"
+import JobfitMeresInner from "@/app/Components/JobfitMeresInner"
+import SecondaryHero from "@/app/Components/UI/SecondaryHero"
 
 export const metadata = {
   title: "Job-fit mérés | Objektív Kiválasztási Eszköz | Coreheed",

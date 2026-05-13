@@ -1,6 +1,6 @@
-import TrainingHero from "../../Components/UI/TrainingHero";
-import EgyuttmukodesFejelsztes from "../../Components/Treningek/EgyuttmukodesFejelsztes";
-import Breadcrumbs from "../../Components/UI/Breadcrumbs";
+import TrainingHero from "@/app/Components/UI/TrainingHero";
+import EgyuttmukodesFejelsztes from "@/app/Components/Treningek/EgyuttmukodesFejelsztes";
+import Breadcrumbs from "@/app/Components/UI/Breadcrumbs";
 
 export const metadata = {
   title: "Együttműködésfejlesztés | Csapatépítő Tréning | Coreheed",

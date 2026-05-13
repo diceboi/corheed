@@ -1,4 +1,4 @@
-import AjanlatkeresInner from '../../Components/AjanlatkeresInner';
+import AjanlatkeresInner from '@/app/Components/AjanlatkeresInner';
 import nodemailer from "nodemailer"
 import { getErrorMessages } from '../utils/errors';
 

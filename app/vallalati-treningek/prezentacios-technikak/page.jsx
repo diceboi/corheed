@@ -1,6 +1,6 @@
-import TrainingHero from "../../Components/UI/TrainingHero";
-import PrezentaciosTechnikak from "../../Components/Treningek/PrezentaciosTechnikak";
-import Breadcrumbs from "../../Components/UI/Breadcrumbs";
+import TrainingHero from "@/app/Components/UI/TrainingHero";
+import PrezentaciosTechnikak from "@/app/Components/Treningek/PrezentaciosTechnikak";
+import Breadcrumbs from "@/app/Components/UI/Breadcrumbs";
 
 export const metadata = {
   title: "Prezentációs technikák | Kommunikációs Tréning | Coreheed",

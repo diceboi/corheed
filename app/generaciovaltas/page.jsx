@@ -1,5 +1,5 @@
-import GeneraciovaltasInner from "../../Components/GeneraciovaltasInner"
-import SecondaryHero from "../../Components/UI/SecondaryHero"
+import GeneraciovaltasInner from "@/app/Components/GeneraciovaltasInner"
+import SecondaryHero from "@/app/Components/UI/SecondaryHero"
 
 export default function GeneraciovaltasPage() {
   return (

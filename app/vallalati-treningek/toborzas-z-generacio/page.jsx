@@ -1,6 +1,6 @@
-import TrainingHero from "../../Components/UI/TrainingHero";
-import ToborzasZGeneracio from "../../Components/Treningek/ToborzasZGeneracio";
-import Breadcrumbs from "../../Components/UI/Breadcrumbs";
+import TrainingHero from "@/app/Components/UI/TrainingHero";
+import ToborzasZGeneracio from "@/app/Components/Treningek/ToborzasZGeneracio";
+import Breadcrumbs from "@/app/Components/UI/Breadcrumbs";
 
 export const metadata = {
   title: "Toborzás a Z generáció világában | HR Tréning | Coreheed",

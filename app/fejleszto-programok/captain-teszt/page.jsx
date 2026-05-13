@@ -1,5 +1,5 @@
-import CaptainInner from "../../Components/CaptainInner"
-import SecondaryHero from "../../Components/UI/SecondaryHero"
+import CaptainInner from "@/app/Components/CaptainInner"
+import SecondaryHero from "@/app/Components/UI/SecondaryHero"
 
 export default function CoachingPage() {
   return (

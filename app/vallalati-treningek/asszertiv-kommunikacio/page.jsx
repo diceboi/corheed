@@ -1,6 +1,6 @@
-import TrainingHero from "../../Components/UI/TrainingHero";
-import AsszertivKommunikacio from "../../Components/Treningek/AsszertivKommunikacio";
-import Breadcrumbs from "../../Components/UI/Breadcrumbs";
+import TrainingHero from "@/app/Components/UI/TrainingHero";
+import AsszertivKommunikacio from "@/app/Components/Treningek/AsszertivKommunikacio";
+import Breadcrumbs from "@/app/Components/UI/Breadcrumbs";
 
 export const metadata = {
   title: "Asszertív kommunikáció | Kommunikációfejlesztő Tréning | Coreheed",

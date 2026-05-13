@@ -1,6 +1,6 @@
-import TrainingHero from "../../Components/UI/TrainingHero";
-import Valtozaskezeles from "../../Components/Treningek/Valtozaskezeles";
-import Breadcrumbs from "../../Components/UI/Breadcrumbs";
+import TrainingHero from "@/app/Components/UI/TrainingHero";
+import Valtozaskezeles from "@/app/Components/Treningek/Valtozaskezeles";
+import Breadcrumbs from "@/app/Components/UI/Breadcrumbs";
 
 export const metadata = {
   title: "Változáskezelés és reziliencia fejlesztés | Vállalati Tréning | Coreheed",

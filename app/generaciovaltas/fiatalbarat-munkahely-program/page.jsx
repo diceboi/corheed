@@ -1,5 +1,5 @@
-import FiatalbaratInner from "../../Components/FiatalbaratInner"
-import SecondaryHero from "../../Components/UI/SecondaryHero"
+import FiatalbaratInner from "@/app/Components/FiatalbaratInner"
+import SecondaryHero from "@/app/Components/UI/SecondaryHero"
 
 export default function FiatalbaratPage() {
   return (
