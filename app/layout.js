@@ -35,7 +35,9 @@ export default function RootLayout({ children }) {
             <ContextProvider>
             <Nav />
               {children}
-            <Footer />
+            <footer id="global-footer">
+              <Footer />
+            </footer>
             <Toaster position="bottom-center" richColors />
             </ContextProvider>
           </body>
