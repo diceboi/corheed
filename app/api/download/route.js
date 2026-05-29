@@ -1,9 +1,18 @@
 import Stripe from "stripe";
-import fs from "fs";
-import path from "path";
+import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3";
+import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
   apiVersion: "2026-04-22.dahlia",
+});
+
+// S3 kliens inicializálása
+const s3Client = new S3Client({
+  region: process.env.AWS_REGION,
+  credentials: {
+    accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+  },
 });
 
 export async function GET(req) {
@@ -32,23 +41,24 @@ export async function GET(req) {
     return new Response("A fájl jelenleg nem elérhető", { status: 404 });
   }
 
-  // 3. Fájl beolvasása a védett mappából
-  const filePathEnv = process.env.WEBINAR_FILE_PATH || "./private/webinar-anyag.pdf";
-  const absolutePath = path.resolve(process.cwd(), filePathEnv);
+  // 3. Ideiglenes letöltési link (Signed URL) generálása az S3-hoz
+  try {
+    const objectKey = process.env.WEBINAR_S3_OBJECT_KEY;
+    const downloadFileName = process.env.WEBINAR_FILE_NAME || objectKey;
 
-  if (!fs.existsSync(absolutePath)) {
-    return new Response("A fájl nem található a szerveren", { status: 404 });
+    const command = new GetObjectCommand({
+      Bucket: process.env.AWS_BUCKET_NAME,
+      Key: objectKey,
+      ResponseContentDisposition: `attachment; filename="${downloadFileName}"`
+    });
+
+    // 60 másodpercig érvényes link generálása
+    const signedUrl = await getSignedUrl(s3Client, command, { expiresIn: 60 });
+
+    // 4. Átirányítás a generált biztonságos linkre
+    return Response.redirect(signedUrl, 302);
+  } catch (err) {
+    console.error("Hiba az S3 letöltési link generálásakor:", err);
+    return new Response("Szerver hiba történt a fájl elérésekor", { status: 500 });
   }
-
-  const fileBuffer = fs.readFileSync(absolutePath);
-  const fileName = process.env.WEBINAR_FILE_NAME || "webinar-anyag.pdf";
-
-  // 4. Fájl küldése letöltésre
-  return new Response(fileBuffer, {
-    status: 200,
-    headers: {
-      "Content-Type": "application/pdf",
-      "Content-Disposition": `attachment; filename="${fileName}"`,
-    },
-  });
 }
