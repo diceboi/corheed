@@ -107,7 +107,7 @@ export default function VallalatiTreningekInner() {
               image={"/szolgaltatasok/egyuttmukodesfejlesztes.webp"}
               shortwords={'önismereti, készségfejlesztő tréning'}
               title={"Együttműködésfejlesztés"}
-              text={'Fejleszd csapatod együttműködését! Gyakorlati módszerekkel érjétek el a célokat hatékonyabban és kezeljétek jobban a változásokat.'}
+              text={'Fejleszd csapatod együttműködését, hogy eredményesebben tudjátok elérni a kitűzött célokat! Az együttműködés abban is segíti a csapatot, hogy könnyebben megküzdjön az új helyzetekkel.'}
               detailLink={"/vallalati-treningek/egyuttmukodes-fejlesztes"}
             />
             <VallalatiTreningekTile
