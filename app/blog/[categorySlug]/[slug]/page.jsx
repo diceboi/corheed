@@ -108,8 +108,8 @@ export default async function BlogPostPage({ params }) {
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
                         {/* Main Content (Left Column) */}
                         <div className="lg:col-span-2">
-                            {/* Featured Image inside left column */}
-                            {post.featuredImage?.node?.sourceUrl && (
+                            {/* Media Header: Featured Image or YouTube Player fallback */}
+                            {post.featuredImage?.node?.sourceUrl && !post.featuredImage?.node?.isVideoThumbnail ? (
                                 <div className="relative w-full h-[250px] md:h-[350px] lg:h-[450px] rounded-lg overflow-hidden shadow-md mb-8">
                                     <Image
                                         src={post.featuredImage.node.sourceUrl}
@@ -120,7 +120,34 @@ export default async function BlogPostPage({ params }) {
                                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 66vw, 800px"
                                     />
                                 </div>
-                            )}
+                            ) : post.youtubeId && (!post.blocks || !post.blocks.some(b => b.name === 'core/embed' || b.name === 'core-embed/youtube' || b.name === 'core/video')) ? (
+                                <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-lg mb-8 bg-black">
+                                    <iframe
+                                        src={`https://www.youtube-nocookie.com/embed/${post.youtubeId}?rel=0`}
+                                        title={post.title}
+                                        className="absolute inset-0 w-full h-full border-0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowFullScreen
+                                    />
+                                </div>
+                            ) : post.isAudioPost && (!post.blocks || !post.blocks.some(b => b.name === 'core/audio')) ? (
+                                <div className="relative w-full rounded-3xl overflow-hidden p-8 bg-gradient-to-br from-[#0c2a21] via-[#123e31] to-[#0c2a21] text-white shadow-lg mb-8">
+                                    <div className="flex items-center gap-4 mb-6">
+                                        <div className="w-14 h-14 rounded-2xl bg-[--yellow] text-[--green] flex items-center justify-center flex-shrink-0 shadow-lg">
+                                            <svg className="w-7 h-7 fill-current" viewBox="0 0 24 24">
+                                                <path d="M12 2C6.48 2 2 6.48 2 12v7c0 1.66 1.34 3 3 3h3v-8H5v-2c0-3.87 3.13-7 7-7s7 3.13 7 7v2h-3v8h3c1.66 0 3-1.34 3-3v-7c0-5.52-4.48-10-10-10z"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <span className="text-xs font-bold text-[--yellow] uppercase tracking-wider block">Podcast adás</span>
+                                            <h3 className="text-xl font-bold text-white">{post.title}</h3>
+                                        </div>
+                                    </div>
+                                    {post.audioUrl && (
+                                        <audio src={post.audioUrl} controls className="w-full" preload="metadata" />
+                                    )}
+                                </div>
+                            ) : null}
 
                             {/* Text Content */}
                             <BlogContent blocks={post.blocks} content={post.content} />

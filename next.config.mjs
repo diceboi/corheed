@@ -1,10 +1,8 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
-    experimental: {
-        outputFileTracingIncludes: {
-            '/api/download': ['./private/**/*'],
-        },
+    outputFileTracingIncludes: {
+        '/api/download': ['./private/**/*'],
     },
     images: {
         remotePatterns: [
@@ -19,6 +17,18 @@ const nextConfig = {
                 hostname: "blog.coreheed.hu",
                 port: "",
                 pathname: "/wp-content/**",
+            },
+            {
+                protocol: "https",
+                hostname: "img.youtube.com",
+                port: "",
+                pathname: "/vi/**",
+            },
+            {
+                protocol: "https",
+                hostname: "i.ytimg.com",
+                port: "",
+                pathname: "/**",
             },
         ],
     },
